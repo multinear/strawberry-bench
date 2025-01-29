@@ -277,15 +277,475 @@
     ]
   },
   "tasks": {
-    "17bb12ef-c1c8-4ea3-97e7-4a57edad3f2a": "completed",
-    "a6cbbd7e-f4d7-4e59-be6e-4447d358e28a": "completed",
-    "5f6406b9-4dab-4367-ad7a-33465e8407c2": "completed",
-    "2c2a958f-51b3-4229-a7ac-b43b28687c4a": "completed",
-    "7d928647-a71b-4a1f-be99-4dac3d7098a6": "completed",
-    "75c5e6d3-75e7-4c6c-be6e-0783d7123d89": "completed",
-    "f9c4ce32-cdc9-4276-bb49-30a1d5d67351": "completed",
-    "09e022fe-5f8e-420e-8246-d39dd73dbcf9": "completed",
-    "24ba3d77-7d19-4a97-97a3-07d09190806a": "completed",
-    "8cdbea40-8cbd-4415-a636-4491f47212e2": "completed"
+    "grok-2-strawberry": {
+      "status": "completed",
+      "eval_score": 1.0,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer states there are 3 Rs in strawberry",
+            "score": 1.0,
+            "rationale": "The submission explicitly states that there are three 'R's in 'strawberry'. It provides a detailed breakdown of each letter in the word, highlighting the positions of the 'R's and confirming that there are indeed three occurrences. This directly satisfies the checklist item."
+          }
+        ],
+        "overall_score": 1.0
+      },
+      "task_input": {
+        "question": "How many Rs are in strawberry?",
+        "model": "xai/grok-2-1212",
+        "params": {
+          "timeout": 30
+        }
+      },
+      "eval_logs": [],
+      "task_output": "Let's count the number of 'R's in \"strawberry\".\n\nHere's the breakdown:\n\n1. s\n2. t\n3. r (Here's the first 'R')\n4. a\n5. w\n6. b\n7. e\n8. r (Here's the second 'R')\n9. r (Here's the third 'R')\n10. y\n\nSo, in \"strawberry\", there are three 'R's.",
+      "created_at": "2025-01-28T12:08:09.949298",
+      "job_id": "ae8b8ec1-3e62-447b-948f-61e20720f2f4",
+      "task_details": {
+        "model": "xai/grok-2-1212",
+        "response_time": 3.130182981491089,
+        "prompt_tokens": 13,
+        "completion_tokens": 98
+      },
+      "executed_at": "2025-01-28T12:08:13.084316",
+      "id": "17bb12ef-c1c8-4ea3-97e7-4a57edad3f2a",
+      "task_logs": [],
+      "evaluated_at": "2025-01-28T12:08:13.648090",
+      "challenge_id": "grok-2-strawberry",
+      "eval_spec": {
+        "id": "grok-2-strawberry",
+        "context": "",
+        "checklist": [
+          "Answer states there are 3 Rs in strawberry"
+        ]
+      },
+      "finished_at": "2025-01-28T12:08:13.648090",
+      "task_number": 1,
+      "eval_passed": true
+    },
+    "grok-2-strawberry_1": {
+      "status": "completed",
+      "eval_score": 1.0,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer states there are 3 Rs in strawberry",
+            "score": 1.0,
+            "rationale": "The submission correctly identifies and states that there are 3 'R's in the word 'strawberry'. The breakdown of the word into individual characters clearly shows the presence of three 'r's, and the final statement confirms this count. Therefore, the submission fully meets the criterion."
+          }
+        ],
+        "overall_score": 1.0
+      },
+      "task_input": {
+        "question": "How many Rs are in strawberry?",
+        "model": "xai/grok-2-1212",
+        "params": {
+          "timeout": 30
+        }
+      },
+      "eval_logs": [],
+      "task_output": "To count the number of 'R's in \"strawberry\", I will break it down to individual characters:\n\n- s\n- t\n- r (the 1st 'r')\n- a\n- w\n- b\n- e\n- r (the 2nd 'r')\n- r (the 3rd 'r')\n- y\n\nSo, in \"strawberry\", there are 3 'r's.",
+      "created_at": "2025-01-28T12:08:13.652013",
+      "job_id": "ae8b8ec1-3e62-447b-948f-61e20720f2f4",
+      "task_details": {
+        "model": "xai/grok-2-1212",
+        "response_time": 2.8858160972595215,
+        "prompt_tokens": 13,
+        "completion_tokens": 91
+      },
+      "executed_at": "2025-01-28T12:08:16.545606",
+      "id": "a6cbbd7e-f4d7-4e59-be6e-4447d358e28a",
+      "task_logs": [],
+      "evaluated_at": "2025-01-28T12:08:16.696332",
+      "challenge_id": "grok-2-strawberry_1",
+      "eval_spec": {
+        "id": "grok-2-strawberry",
+        "context": "",
+        "checklist": [
+          "Answer states there are 3 Rs in strawberry"
+        ]
+      },
+      "finished_at": "2025-01-28T12:08:16.696332",
+      "task_number": 2,
+      "eval_passed": true
+    },
+    "grok-2-strawberry_2": {
+      "status": "completed",
+      "eval_score": 1.0,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer states there are 3 Rs in strawberry",
+            "score": 1.0,
+            "rationale": "The submission explicitly states that there are three 'R's in 'strawberry'. It provides a detailed breakdown of each letter in the word, highlighting the positions of the 'R's and confirming that there are indeed three occurrences. This directly satisfies the checklist item."
+          }
+        ],
+        "overall_score": 1.0
+      },
+      "task_input": {
+        "question": "How many Rs are in strawberry?",
+        "model": "xai/grok-2-1212",
+        "params": {
+          "timeout": 30
+        }
+      },
+      "eval_logs": [],
+      "task_output": "Let's count the number of 'R's in \"strawberry\".\n\nHere's the breakdown:\n\n1. s\n2. t\n3. r (Here's the first 'R')\n4. a\n5. w\n6. b\n7. e\n8. r (Here's the second 'R')\n9. r (Here's the third 'R')\n10. y\n\nSo, in \"strawberry\", there are three 'R's.",
+      "created_at": "2025-01-28T12:08:16.701882",
+      "job_id": "ae8b8ec1-3e62-447b-948f-61e20720f2f4",
+      "task_details": {
+        "model": "xai/grok-2-1212",
+        "response_time": 2.7364490032196045,
+        "prompt_tokens": 13,
+        "completion_tokens": 98
+      },
+      "executed_at": "2025-01-28T12:08:19.448027",
+      "id": "5f6406b9-4dab-4367-ad7a-33465e8407c2",
+      "task_logs": [],
+      "evaluated_at": "2025-01-28T12:08:19.598397",
+      "challenge_id": "grok-2-strawberry_2",
+      "eval_spec": {
+        "id": "grok-2-strawberry",
+        "context": "",
+        "checklist": [
+          "Answer states there are 3 Rs in strawberry"
+        ]
+      },
+      "finished_at": "2025-01-28T12:08:19.598397",
+      "task_number": 3,
+      "eval_passed": true
+    },
+    "grok-2-strawberry_3": {
+      "status": "completed",
+      "eval_score": 1.0,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer states there are 3 Rs in strawberry",
+            "score": 1.0,
+            "rationale": "The submission correctly identifies and counts the number of 'R's in the word 'strawberry'. It provides a detailed breakdown of each character in the word, highlighting the positions of the 'R's, and concludes that there are 3 'R's. This directly satisfies the checklist item."
+          }
+        ],
+        "overall_score": 1.0
+      },
+      "task_input": {
+        "question": "How many Rs are in strawberry?",
+        "model": "xai/grok-2-1212",
+        "params": {
+          "timeout": 30
+        }
+      },
+      "eval_logs": [],
+      "task_output": "To count the number of Rs in \"strawberry\", I will break it down to individual characters:\n\n- s\n- t\n- r (the 1st 'r')\n- a\n- w\n- b\n- e\n- r (the 2nd 'r')\n- r (the 3rd 'r')\n- y\n\nSo, in \"strawberry\", there are 3 'r's.",
+      "created_at": "2025-01-28T12:08:19.601246",
+      "job_id": "ae8b8ec1-3e62-447b-948f-61e20720f2f4",
+      "task_details": {
+        "model": "xai/grok-2-1212",
+        "response_time": 3.6036620140075684,
+        "prompt_tokens": 13,
+        "completion_tokens": 89
+      },
+      "executed_at": "2025-01-28T12:08:23.212442",
+      "id": "2c2a958f-51b3-4229-a7ac-b43b28687c4a",
+      "task_logs": [],
+      "evaluated_at": "2025-01-28T12:08:23.370783",
+      "challenge_id": "grok-2-strawberry_3",
+      "eval_spec": {
+        "id": "grok-2-strawberry",
+        "context": "",
+        "checklist": [
+          "Answer states there are 3 Rs in strawberry"
+        ]
+      },
+      "finished_at": "2025-01-28T12:08:23.370783",
+      "task_number": 4,
+      "eval_passed": true
+    },
+    "grok-2-strawberry_4": {
+      "status": "completed",
+      "eval_score": 1.0,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer states there are 3 Rs in strawberry",
+            "score": 1.0,
+            "rationale": "The submission explicitly states that there are three 'R's in 'strawberry'. It provides a detailed breakdown of each letter in the word, highlighting the positions of the 'R's and confirming that there are indeed three occurrences. This directly satisfies the checklist item."
+          }
+        ],
+        "overall_score": 1.0
+      },
+      "task_input": {
+        "question": "How many Rs are in strawberry?",
+        "model": "xai/grok-2-1212",
+        "params": {
+          "timeout": 30
+        }
+      },
+      "eval_logs": [],
+      "task_output": "Let's count the number of 'R's in \"strawberry\".\n\nHere's the breakdown:\n\n1. s\n2. t\n3. r (Here's the first 'R')\n4. a\n5. w\n6. b\n7. e\n8. r (Here's the second 'R')\n9. r (Here's the third 'R')\n10. y\n\nSo, in \"strawberry\", there are three 'R's.",
+      "created_at": "2025-01-28T12:08:23.373861",
+      "job_id": "ae8b8ec1-3e62-447b-948f-61e20720f2f4",
+      "task_details": {
+        "model": "xai/grok-2-1212",
+        "response_time": 2.7775392532348633,
+        "prompt_tokens": 13,
+        "completion_tokens": 98
+      },
+      "executed_at": "2025-01-28T12:08:26.158691",
+      "id": "7d928647-a71b-4a1f-be99-4dac3d7098a6",
+      "task_logs": [],
+      "evaluated_at": "2025-01-28T12:08:26.328192",
+      "challenge_id": "grok-2-strawberry_4",
+      "eval_spec": {
+        "id": "grok-2-strawberry",
+        "context": "",
+        "checklist": [
+          "Answer states there are 3 Rs in strawberry"
+        ]
+      },
+      "finished_at": "2025-01-28T12:08:26.328192",
+      "task_number": 5,
+      "eval_passed": true
+    },
+    "grok-2-strawberry_5": {
+      "status": "completed",
+      "eval_score": 1.0,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer states there are 3 Rs in strawberry",
+            "score": 1.0,
+            "rationale": "The submission correctly identifies and counts the number of 'R's in the word 'strawberry'. It provides a detailed breakdown of each character in the word, highlighting the positions of the 'R's, and concludes that there are 3 'R's. This directly satisfies the checklist item."
+          }
+        ],
+        "overall_score": 1.0
+      },
+      "task_input": {
+        "question": "How many Rs are in strawberry?",
+        "model": "xai/grok-2-1212",
+        "params": {
+          "timeout": 30
+        }
+      },
+      "eval_logs": [],
+      "task_output": "To count the number of Rs in \"strawberry\", I will break it down to individual characters:\n\n- s\n- t\n- r (the 1st 'r')\n- a\n- w\n- b\n- e\n- r (the 2nd 'r')\n- r (the 3rd 'r')\n- y\n\nSo, in \"strawberry\", there are 3 'r's.",
+      "created_at": "2025-01-28T12:08:26.332665",
+      "job_id": "ae8b8ec1-3e62-447b-948f-61e20720f2f4",
+      "task_details": {
+        "model": "xai/grok-2-1212",
+        "response_time": 2.83571195602417,
+        "prompt_tokens": 13,
+        "completion_tokens": 89
+      },
+      "executed_at": "2025-01-28T12:08:29.179576",
+      "id": "75c5e6d3-75e7-4c6c-be6e-0783d7123d89",
+      "task_logs": [],
+      "evaluated_at": "2025-01-28T12:08:29.346683",
+      "challenge_id": "grok-2-strawberry_5",
+      "eval_spec": {
+        "id": "grok-2-strawberry",
+        "context": "",
+        "checklist": [
+          "Answer states there are 3 Rs in strawberry"
+        ]
+      },
+      "finished_at": "2025-01-28T12:08:29.346683",
+      "task_number": 6,
+      "eval_passed": true
+    },
+    "grok-2-strawberry_6": {
+      "status": "completed",
+      "eval_score": 1.0,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer states there are 3 Rs in strawberry",
+            "score": 1.0,
+            "rationale": "The submission correctly identifies and states that there are 3 'R's in the word 'strawberry'. The breakdown of the word into individual characters clearly shows the presence of three 'R's, and the final statement confirms this count. Therefore, the submission fully meets the criterion."
+          }
+        ],
+        "overall_score": 1.0
+      },
+      "task_input": {
+        "question": "How many Rs are in strawberry?",
+        "model": "xai/grok-2-1212",
+        "params": {
+          "timeout": 30
+        }
+      },
+      "eval_logs": [],
+      "task_output": "To count the number of 'R's in \"strawberry\", I will break it down to individual characters:\n\n- s\n- t\n- r (the 1st 'r')\n- a\n- w\n- b\n- e\n- r (the 2nd 'r')\n- r (the 3rd 'r')\n- y\n\nSo, in \"strawberry\", there are 3 'R's.",
+      "created_at": "2025-01-28T12:08:29.351693",
+      "job_id": "ae8b8ec1-3e62-447b-948f-61e20720f2f4",
+      "task_details": {
+        "model": "xai/grok-2-1212",
+        "response_time": 2.744124174118042,
+        "prompt_tokens": 13,
+        "completion_tokens": 91
+      },
+      "executed_at": "2025-01-28T12:08:32.107692",
+      "id": "f9c4ce32-cdc9-4276-bb49-30a1d5d67351",
+      "task_logs": [],
+      "evaluated_at": "2025-01-28T12:08:32.270896",
+      "challenge_id": "grok-2-strawberry_6",
+      "eval_spec": {
+        "id": "grok-2-strawberry",
+        "context": "",
+        "checklist": [
+          "Answer states there are 3 Rs in strawberry"
+        ]
+      },
+      "finished_at": "2025-01-28T12:08:32.270896",
+      "task_number": 7,
+      "eval_passed": true
+    },
+    "grok-2-strawberry_7": {
+      "status": "completed",
+      "eval_score": 1.0,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer states there are 3 Rs in strawberry",
+            "score": 1.0,
+            "rationale": "The submission explicitly states that there are three 'R's in 'strawberry'. It provides a detailed breakdown of each letter in the word, highlighting the positions of the 'R's and confirming that there are indeed three occurrences. This directly satisfies the checklist item."
+          }
+        ],
+        "overall_score": 1.0
+      },
+      "task_input": {
+        "question": "How many Rs are in strawberry?",
+        "model": "xai/grok-2-1212",
+        "params": {
+          "timeout": 30
+        }
+      },
+      "eval_logs": [],
+      "task_output": "Let's count the number of 'R's in \"strawberry\".\n\nHere's the breakdown:\n\n1. s\n2. t\n3. r (Here's the first 'R')\n4. a\n5. w\n6. b\n7. e\n8. r (Here's the second 'R')\n9. r (Here's the third 'R')\n10. y\n\nSo, in \"strawberry\", there are three 'R's.",
+      "created_at": "2025-01-28T12:08:32.274965",
+      "job_id": "ae8b8ec1-3e62-447b-948f-61e20720f2f4",
+      "task_details": {
+        "model": "xai/grok-2-1212",
+        "response_time": 2.762206792831421,
+        "prompt_tokens": 13,
+        "completion_tokens": 98
+      },
+      "executed_at": "2025-01-28T12:08:35.046176",
+      "id": "09e022fe-5f8e-420e-8246-d39dd73dbcf9",
+      "task_logs": [],
+      "evaluated_at": "2025-01-28T12:08:35.303606",
+      "challenge_id": "grok-2-strawberry_7",
+      "eval_spec": {
+        "id": "grok-2-strawberry",
+        "context": "",
+        "checklist": [
+          "Answer states there are 3 Rs in strawberry"
+        ]
+      },
+      "finished_at": "2025-01-28T12:08:35.303606",
+      "task_number": 8,
+      "eval_passed": true
+    },
+    "grok-2-strawberry_8": {
+      "status": "completed",
+      "eval_score": 1.0,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer states there are 3 Rs in strawberry",
+            "score": 1.0,
+            "rationale": "The submission correctly identifies and states that there are 3 'R's in the word 'strawberry'. The breakdown of the word into individual characters clearly shows the presence of three 'R's, and the final statement confirms this count. Therefore, the submission fully meets the criterion."
+          }
+        ],
+        "overall_score": 1.0
+      },
+      "task_input": {
+        "question": "How many Rs are in strawberry?",
+        "model": "xai/grok-2-1212",
+        "params": {
+          "timeout": 30
+        }
+      },
+      "eval_logs": [],
+      "task_output": "To count the number of 'R's in \"strawberry\", I will break it down to individual characters:\n\n- s\n- t\n- r (the 1st 'r')\n- a\n- w\n- b\n- e\n- r (the 2nd 'r')\n- r (the 3rd 'r')\n- y\n\nSo, in \"strawberry\", there are 3 'R's.",
+      "created_at": "2025-01-28T12:08:35.307657",
+      "job_id": "ae8b8ec1-3e62-447b-948f-61e20720f2f4",
+      "task_details": {
+        "model": "xai/grok-2-1212",
+        "response_time": 2.6772289276123047,
+        "prompt_tokens": 13,
+        "completion_tokens": 91
+      },
+      "executed_at": "2025-01-28T12:08:37.993967",
+      "id": "24ba3d77-7d19-4a97-97a3-07d09190806a",
+      "task_logs": [],
+      "evaluated_at": "2025-01-28T12:08:38.421942",
+      "challenge_id": "grok-2-strawberry_8",
+      "eval_spec": {
+        "id": "grok-2-strawberry",
+        "context": "",
+        "checklist": [
+          "Answer states there are 3 Rs in strawberry"
+        ]
+      },
+      "finished_at": "2025-01-28T12:08:38.421942",
+      "task_number": 9,
+      "eval_passed": true
+    },
+    "grok-2-strawberry_9": {
+      "status": "completed",
+      "eval_score": 1.0,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer states there are 3 Rs in strawberry",
+            "score": 1.0,
+            "rationale": "The submission correctly identifies and counts the number of 'R's in the word 'strawberry'. It provides a detailed breakdown of each character in the word, highlighting the positions of the 'R's, and concludes that there are 3 'R's. This directly satisfies the checklist item."
+          }
+        ],
+        "overall_score": 1.0
+      },
+      "task_input": {
+        "question": "How many Rs are in strawberry?",
+        "model": "xai/grok-2-1212",
+        "params": {
+          "timeout": 30
+        }
+      },
+      "eval_logs": [],
+      "task_output": "To count the number of Rs in \"strawberry\", I will break it down to individual characters:\n\n- s\n- t\n- r (the 1st 'r')\n- a\n- w\n- b\n- e\n- r (the 2nd 'r')\n- r (the 3rd 'r')\n- y\n\nSo, in \"strawberry\", there are 3 'r's.",
+      "created_at": "2025-01-28T12:08:38.423085",
+      "job_id": "ae8b8ec1-3e62-447b-948f-61e20720f2f4",
+      "task_details": {
+        "model": "xai/grok-2-1212",
+        "response_time": 2.6078221797943115,
+        "prompt_tokens": 13,
+        "completion_tokens": 89
+      },
+      "executed_at": "2025-01-28T12:08:41.034539",
+      "id": "8cdbea40-8cbd-4415-a636-4491f47212e2",
+      "task_logs": [],
+      "evaluated_at": "2025-01-28T12:08:41.444956",
+      "challenge_id": "grok-2-strawberry_9",
+      "eval_spec": {
+        "id": "grok-2-strawberry",
+        "context": "",
+        "checklist": [
+          "Answer states there are 3 Rs in strawberry"
+        ]
+      },
+      "finished_at": "2025-01-28T12:08:41.444956",
+      "task_number": 10,
+      "eval_passed": true
+    }
   }
 }

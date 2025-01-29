@@ -7,6 +7,22 @@
   export let sortField = 'order';
   export let sortDirection = 'asc';
   export let expandedFamilies;
+
+  // Calculate max average cost across all models that are visible
+  $: maxCost = Math.max(...families.flatMap(family => {
+    const bestModel = family.models[0];
+    const otherModels = expandedFamilies.has(family.name) ? family.models.slice(1) : [];
+    return [...(bestModel ? [bestModel] : []), ...otherModels]
+      .map(model => model.avgCost || 0);
+  }));
+
+  // Calculate max response time across all visible models
+  $: maxResponseTime = Math.max(...families.flatMap(family => {
+    const bestModel = family.models[0];
+    const otherModels = expandedFamilies.has(family.name) ? family.models.slice(1) : [];
+    return [...(bestModel ? [bestModel] : []), ...otherModels]
+      .map(model => model.avgResponseTime || 0);
+  }));
 </script>
 
 <div class="overflow-x-auto">
@@ -20,7 +36,7 @@
           {/if}
         </th>
         <th class="cursor-pointer" on:click={() => dispatch('toggleSort', { field: 'passed' })}>
-          Results 🍓
+          Results
           {#if sortField === 'passed'}
             <span class="ml-1">{sortDirection === 'asc' ? '↑' : '↓'}</span>
           {/if}
@@ -60,6 +76,8 @@
         <ModelRow 
           model={bestModel}
           {family}
+          {maxCost}
+          {maxResponseTime}
           hasExpandButton={true}
           isExpandButtonVisible={hasMoreModels}
           isExpanded={expandedFamilies.has(family.name)}
@@ -73,6 +91,8 @@
             <ModelRow 
               {model}
               {family}
+              {maxCost}
+              {maxResponseTime}
               on:showDetails
             />
           {/each}

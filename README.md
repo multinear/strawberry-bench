@@ -1,4 +1,4 @@
-# Strawberry Bench
+# Strawberry Bench 🍓
 
 > How many Rs are in strawberry?
 

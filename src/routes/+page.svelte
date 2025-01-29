@@ -2,6 +2,9 @@
   import ModelDetails from '$lib/components/ModelDetails.svelte';
   import ModelTable from '$lib/components/ModelTable.svelte';
   import { base } from '$app/paths';
+  import { onMount } from 'svelte';
+  import { writable } from 'svelte/store';
+  import { browser } from '$app/environment';
   
   /** @type {import('./$types').PageData} */
   export let data;
@@ -10,6 +13,30 @@
   let expandedFamilies = new Set();
   let sortField = 'order';
   let sortDirection = 'asc';
+
+  const selectedTestGroup = writable(null);
+
+  onMount(() => {
+    // Set initial test group from hash or default to first group
+    const hash = window.location.hash.slice(1);
+    selectedTestGroup.set(data.testGroups[hash] ? hash : Object.keys(data.testGroups)[0]);
+
+    // Listen for hash changes
+    const handleHashChange = () => {
+      const newHash = window.location.hash.slice(1);
+      if (data.testGroups[newHash]) {
+        selectedTestGroup.set(newHash);
+      }
+    };
+
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  });
+
+  // Update URL hash when test group changes
+  $: if (browser && $selectedTestGroup && window.location.hash.slice(1) !== $selectedTestGroup) {
+    window.location.hash = $selectedTestGroup;
+  }
 
   function showDetails(model) {
     selectedModel = model;
@@ -78,8 +105,14 @@
     }
   }
 
-  // Group models by family and find best model for each family
-  $: modelsByFamily = data.modelResults.reduce((acc, model, index) => {
+  // First, get the current test group
+  $: currentTestGroup = $selectedTestGroup ? data.testGroups[$selectedTestGroup] : null;
+
+  // Then, get the model results for the current group
+  $: modelResults = currentTestGroup?.modelResults ?? [];
+
+  // Finally, group models by family for the current test group
+  $: modelsByFamily = modelResults.reduce((acc, model, index) => {
     // Add original index for maintaining initial order
     model.originalIndex = index;
     if (!acc[model.family]) {
@@ -89,27 +122,29 @@
     return acc;
   }, {});
 
+  // Sort families based on their best models from the current group
+  $: sortedFamilies = data.families
+    .filter(family => modelsByFamily[family.name]?.length > 0)  // Only include families that have models in current group
+    .map(family => {
+      const models = [...(modelsByFamily[family.name] || [])];
+      const bestModel = models[0];
+      return {
+        ...family,
+        models,
+        sortValue: bestModel ? getSortValue(bestModel, sortField, family) : null
+      };
+    })
+    .sort((a, b) => {
+      if (a.sortValue === null) return 1;
+      if (b.sortValue === null) return -1;
+      const direction = sortDirection === 'asc' ? 1 : -1;
+      return (a.sortValue > b.sortValue ? 1 : -1) * direction;
+    });
+
   // Get family config by name
   function getFamilyConfig(familyName) {
     return data.families.find(f => f.name === familyName);
   }
-
-  // Sort only the families based on their best models
-  $: sortedFamilies = data.families.map(family => {
-    const models = [...(modelsByFamily[family.name] || [])];
-    // Get the best model (first one) for sorting
-    const bestModel = models[0];
-    return {
-      ...family,
-      models,
-      sortValue: bestModel ? getSortValue(bestModel, sortField, family) : null
-    };
-  }).sort((a, b) => {
-    if (a.sortValue === null) return 1;
-    if (b.sortValue === null) return -1;
-    const direction = sortDirection === 'asc' ? 1 : -1;
-    return (a.sortValue > b.sortValue ? 1 : -1) * direction;
-  });
 
   // Event handlers for ModelTable events
   function handleTableEvent(event) {
@@ -129,7 +164,25 @@
 </script>
 
 <div class="container mx-auto p-4">
-  <h1 class="text-3xl font-bold mb-6">Strawberry Bench</h1>
+  <h1 class="text-3xl font-bold mb-6">Strawberry Bench 🍓</h1>
+
+  <div class="flex justify-between items-center mb-6">
+    <div class="flex items-center gap-2">
+      {#if currentTestGroup && currentTestGroup.description}
+        <p class="text-base-content/70 mt-2 pl-4">{currentTestGroup.description}</p>
+      {/if}  
+    </div>
+    <div class="flex items-center gap-2">
+      {#each Object.entries(data.testGroups) as [id, group]}
+        <button 
+          class="btn btn-sm {$selectedTestGroup === id ? 'bg-base-200 border-base-content/20' : 'btn-ghost'}"
+          on:click={() => selectedTestGroup.set(id)}
+        >
+          {group.name}
+        </button>
+      {/each}
+    </div>
+  </div>
   
   <ModelTable 
     {sortField}

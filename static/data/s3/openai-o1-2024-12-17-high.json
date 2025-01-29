@@ -277,15 +277,475 @@
     ]
   },
   "tasks": {
-    "38fa5f73-e323-49cd-bba9-32d3a4a5b9ad": "completed",
-    "8ec7ad3f-e94b-4943-984f-dd4998997359": "completed",
-    "5cd65bf4-dfd7-4bef-82f2-2d9b1a4f25bd": "completed",
-    "d833780a-b880-49b4-983f-a5fb876cf31d": "completed",
-    "9a89dbcf-c177-455d-a722-2ed9740df4df": "completed",
-    "c2bfa254-db11-4737-ba69-d70e9d6f96d1": "completed",
-    "72244a68-3bc1-4371-a424-c962e09e1a17": "completed",
-    "5758bd67-dab7-485a-b5b5-f6d28127c7b3": "completed",
-    "8f76996b-9f3c-49ae-accd-7e8c75030810": "completed",
-    "3f7fc748-ec8a-4dc3-b19c-721d6619cbe2": "completed"
+    "o1-high-effort-strawberry": {
+      "status": "completed",
+      "eval_score": 1.0,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer states there are 3 Rs in strawberry",
+            "score": 1.0,
+            "rationale": "The submission explicitly states that there are 3 'R's in the word 'strawberry,' which directly satisfies the checklist item. The answer is clear and unambiguous, accurately reflecting the number of 'R's in the word."
+          }
+        ],
+        "overall_score": 1.0
+      },
+      "task_input": {
+        "question": "How many Rs are in strawberry?",
+        "model": "openai/o1-2024-12-17",
+        "params": {
+          "reasoning_effort": "high"
+        }
+      },
+      "eval_logs": [],
+      "task_output": "There are 3 \u201cR\u201ds in the word \"strawberry.\"",
+      "created_at": "2025-01-28T13:21:00.296898",
+      "job_id": "a0790d33-488e-432c-9738-239074b04c46",
+      "task_details": {
+        "model": "openai/o1-2024-12-17",
+        "response_time": 8.715489149093628,
+        "prompt_tokens": 13,
+        "completion_tokens": 606
+      },
+      "executed_at": "2025-01-28T13:21:09.018784",
+      "id": "38fa5f73-e323-49cd-bba9-32d3a4a5b9ad",
+      "task_logs": [],
+      "evaluated_at": "2025-01-28T13:21:13.484688",
+      "challenge_id": "o1-high-effort-strawberry",
+      "eval_spec": {
+        "id": "o1-high-effort-strawberry",
+        "context": "",
+        "checklist": [
+          "Answer states there are 3 Rs in strawberry"
+        ]
+      },
+      "finished_at": "2025-01-28T13:21:13.484688",
+      "task_number": 1,
+      "eval_passed": true
+    },
+    "o1-high-effort-strawberry_1": {
+      "status": "completed",
+      "eval_score": 1.0,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer states there are 3 Rs in strawberry",
+            "score": 1.0,
+            "rationale": "The submission correctly states that there are three 'R's in 'strawberry,' which directly satisfies the checklist item. The use of the word 'three' and the letter 'R' in quotes clearly communicates the count of the letter 'R' in the word 'strawberry.'"
+          }
+        ],
+        "overall_score": 1.0
+      },
+      "task_input": {
+        "question": "How many Rs are in strawberry?",
+        "model": "openai/o1-2024-12-17",
+        "params": {
+          "reasoning_effort": "high"
+        }
+      },
+      "eval_logs": [],
+      "task_output": "There are three \u201cR\u201ds in \u201cstrawberry.\u201d",
+      "created_at": "2025-01-28T13:21:13.488416",
+      "job_id": "a0790d33-488e-432c-9738-239074b04c46",
+      "task_details": {
+        "model": "openai/o1-2024-12-17",
+        "response_time": 67.7587399482727,
+        "prompt_tokens": 13,
+        "completion_tokens": 535
+      },
+      "executed_at": "2025-01-28T13:22:21.257070",
+      "id": "8ec7ad3f-e94b-4943-984f-dd4998997359",
+      "task_logs": [],
+      "evaluated_at": "2025-01-28T13:22:26.293211",
+      "challenge_id": "o1-high-effort-strawberry_1",
+      "eval_spec": {
+        "id": "o1-high-effort-strawberry",
+        "context": "",
+        "checklist": [
+          "Answer states there are 3 Rs in strawberry"
+        ]
+      },
+      "finished_at": "2025-01-28T13:22:26.293211",
+      "task_number": 2,
+      "eval_passed": true
+    },
+    "o1-high-effort-strawberry_2": {
+      "status": "completed",
+      "eval_score": 1.0,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer states there are 3 Rs in strawberry",
+            "score": 1.0,
+            "rationale": "The submission explicitly states that there are three 'R' letters in the word 'strawberry,' which directly satisfies the checklist item. The use of both the numeral 'three' and the letter 'R' ensures clarity and correctness in the response."
+          }
+        ],
+        "overall_score": 1.0
+      },
+      "task_input": {
+        "question": "How many Rs are in strawberry?",
+        "model": "openai/o1-2024-12-17",
+        "params": {
+          "reasoning_effort": "high"
+        }
+      },
+      "eval_logs": [],
+      "task_output": "There are three \u201cR\u201d letters in the word \u201cstrawberry.\u201d",
+      "created_at": "2025-01-28T13:22:26.297295",
+      "job_id": "a0790d33-488e-432c-9738-239074b04c46",
+      "task_details": {
+        "model": "openai/o1-2024-12-17",
+        "response_time": 66.43749904632568,
+        "prompt_tokens": 13,
+        "completion_tokens": 422
+      },
+      "executed_at": "2025-01-28T13:23:32.745974",
+      "id": "5cd65bf4-dfd7-4bef-82f2-2d9b1a4f25bd",
+      "task_logs": [],
+      "evaluated_at": "2025-01-28T13:23:37.153213",
+      "challenge_id": "o1-high-effort-strawberry_2",
+      "eval_spec": {
+        "id": "o1-high-effort-strawberry",
+        "context": "",
+        "checklist": [
+          "Answer states there are 3 Rs in strawberry"
+        ]
+      },
+      "finished_at": "2025-01-28T13:23:37.153213",
+      "task_number": 3,
+      "eval_passed": true
+    },
+    "o1-high-effort-strawberry_3": {
+      "status": "completed",
+      "eval_score": 1.0,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer states there are 3 Rs in strawberry",
+            "score": 1.0,
+            "rationale": "The submission explicitly states that there are 3 'R's in the word 'strawberry,' which directly satisfies the checklist item. The answer is clear and unambiguous, accurately reflecting the number of 'R's in the word."
+          }
+        ],
+        "overall_score": 1.0
+      },
+      "task_input": {
+        "question": "How many Rs are in strawberry?",
+        "model": "openai/o1-2024-12-17",
+        "params": {
+          "reasoning_effort": "high"
+        }
+      },
+      "eval_logs": [],
+      "task_output": "There are 3 \u201cR\u201ds in the word \u201cstrawberry.\u201d",
+      "created_at": "2025-01-28T13:23:37.157256",
+      "job_id": "a0790d33-488e-432c-9738-239074b04c46",
+      "task_details": {
+        "model": "openai/o1-2024-12-17",
+        "response_time": 67.08480525016785,
+        "prompt_tokens": 13,
+        "completion_tokens": 540
+      },
+      "executed_at": "2025-01-28T13:24:44.250609",
+      "id": "d833780a-b880-49b4-983f-a5fb876cf31d",
+      "task_logs": [],
+      "evaluated_at": "2025-01-28T13:24:47.707384",
+      "challenge_id": "o1-high-effort-strawberry_3",
+      "eval_spec": {
+        "id": "o1-high-effort-strawberry",
+        "context": "",
+        "checklist": [
+          "Answer states there are 3 Rs in strawberry"
+        ]
+      },
+      "finished_at": "2025-01-28T13:24:47.707384",
+      "task_number": 4,
+      "eval_passed": true
+    },
+    "o1-high-effort-strawberry_4": {
+      "status": "completed",
+      "eval_score": 1.0,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer states there are 3 Rs in strawberry",
+            "score": 1.0,
+            "rationale": "The submission explicitly states that there are 3 'R's in the word 'strawberry,' which directly satisfies the checklist item. The answer is clear and unambiguous, accurately reflecting the number of 'R's in the word."
+          }
+        ],
+        "overall_score": 1.0
+      },
+      "task_input": {
+        "question": "How many Rs are in strawberry?",
+        "model": "openai/o1-2024-12-17",
+        "params": {
+          "reasoning_effort": "high"
+        }
+      },
+      "eval_logs": [],
+      "task_output": "There are 3 \u201cR\u201ds in the word \u201cstrawberry.\u201d",
+      "created_at": "2025-01-28T13:24:47.711813",
+      "job_id": "a0790d33-488e-432c-9738-239074b04c46",
+      "task_details": {
+        "model": "openai/o1-2024-12-17",
+        "response_time": 64.45617723464966,
+        "prompt_tokens": 13,
+        "completion_tokens": 293
+      },
+      "executed_at": "2025-01-28T13:25:52.175900",
+      "id": "9a89dbcf-c177-455d-a722-2ed9740df4df",
+      "task_logs": [],
+      "evaluated_at": "2025-01-28T13:25:52.882912",
+      "challenge_id": "o1-high-effort-strawberry_4",
+      "eval_spec": {
+        "id": "o1-high-effort-strawberry",
+        "context": "",
+        "checklist": [
+          "Answer states there are 3 Rs in strawberry"
+        ]
+      },
+      "finished_at": "2025-01-28T13:25:52.882912",
+      "task_number": 5,
+      "eval_passed": true
+    },
+    "o1-high-effort-strawberry_5": {
+      "status": "completed",
+      "eval_score": 1.0,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer states there are 3 Rs in strawberry",
+            "score": 1.0,
+            "rationale": "The submission correctly states that there are three 'R's in 'strawberry,' which directly satisfies the checklist item. The use of the word 'three' and the letter 'R' in quotes clearly communicates the count of the letter 'R' in the word 'strawberry.'"
+          }
+        ],
+        "overall_score": 1.0
+      },
+      "task_input": {
+        "question": "How many Rs are in strawberry?",
+        "model": "openai/o1-2024-12-17",
+        "params": {
+          "reasoning_effort": "high"
+        }
+      },
+      "eval_logs": [],
+      "task_output": "There are three \u201cR\u201ds in \u201cstrawberry.\u201d",
+      "created_at": "2025-01-28T13:25:52.887043",
+      "job_id": "a0790d33-488e-432c-9738-239074b04c46",
+      "task_details": {
+        "model": "openai/o1-2024-12-17",
+        "response_time": 67.19725584983826,
+        "prompt_tokens": 13,
+        "completion_tokens": 293
+      },
+      "executed_at": "2025-01-28T13:27:00.093905",
+      "id": "c2bfa254-db11-4737-ba69-d70e9d6f96d1",
+      "task_logs": [],
+      "evaluated_at": "2025-01-28T13:27:00.748660",
+      "challenge_id": "o1-high-effort-strawberry_5",
+      "eval_spec": {
+        "id": "o1-high-effort-strawberry",
+        "context": "",
+        "checklist": [
+          "Answer states there are 3 Rs in strawberry"
+        ]
+      },
+      "finished_at": "2025-01-28T13:27:00.748660",
+      "task_number": 6,
+      "eval_passed": true
+    },
+    "o1-high-effort-strawberry_6": {
+      "status": "completed",
+      "eval_score": 1.0,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer states there are 3 Rs in strawberry",
+            "score": 1.0,
+            "rationale": "The submission explicitly states that there are three 'R's in the word 'strawberry,' which directly satisfies the checklist item. The use of the word 'three' and the letter 'R' in quotes clearly communicates the correct count of the letter 'R' in the word."
+          }
+        ],
+        "overall_score": 1.0
+      },
+      "task_input": {
+        "question": "How many Rs are in strawberry?",
+        "model": "openai/o1-2024-12-17",
+        "params": {
+          "reasoning_effort": "high"
+        }
+      },
+      "eval_logs": [],
+      "task_output": "There are three \u201cR\u201ds in the word \u201cstrawberry.\u201d",
+      "created_at": "2025-01-28T13:27:00.753781",
+      "job_id": "a0790d33-488e-432c-9738-239074b04c46",
+      "task_details": {
+        "model": "openai/o1-2024-12-17",
+        "response_time": 67.78627896308899,
+        "prompt_tokens": 13,
+        "completion_tokens": 666
+      },
+      "executed_at": "2025-01-28T13:28:08.550726",
+      "id": "72244a68-3bc1-4371-a424-c962e09e1a17",
+      "task_logs": [],
+      "evaluated_at": "2025-01-28T13:28:11.790808",
+      "challenge_id": "o1-high-effort-strawberry_6",
+      "eval_spec": {
+        "id": "o1-high-effort-strawberry",
+        "context": "",
+        "checklist": [
+          "Answer states there are 3 Rs in strawberry"
+        ]
+      },
+      "finished_at": "2025-01-28T13:28:11.790808",
+      "task_number": 7,
+      "eval_passed": true
+    },
+    "o1-high-effort-strawberry_7": {
+      "status": "completed",
+      "eval_score": 1.0,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer states there are 3 Rs in strawberry",
+            "score": 1.0,
+            "rationale": "The submission correctly states that there are three 'R's in 'strawberry,' which directly satisfies the checklist item. The use of the word 'three' and the letter 'R' in quotes clearly communicates the count of the letter 'R' in the word 'strawberry.'"
+          }
+        ],
+        "overall_score": 1.0
+      },
+      "task_input": {
+        "question": "How many Rs are in strawberry?",
+        "model": "openai/o1-2024-12-17",
+        "params": {
+          "reasoning_effort": "high"
+        }
+      },
+      "eval_logs": [],
+      "task_output": "There are three \u201cR\u201ds in \u201cstrawberry.\u201d",
+      "created_at": "2025-01-28T13:28:11.795077",
+      "job_id": "a0790d33-488e-432c-9738-239074b04c46",
+      "task_details": {
+        "model": "openai/o1-2024-12-17",
+        "response_time": 65.63381099700928,
+        "prompt_tokens": 13,
+        "completion_tokens": 293
+      },
+      "executed_at": "2025-01-28T13:29:17.439512",
+      "id": "5758bd67-dab7-485a-b5b5-f6d28127c7b3",
+      "task_logs": [],
+      "evaluated_at": "2025-01-28T13:29:17.947326",
+      "challenge_id": "o1-high-effort-strawberry_7",
+      "eval_spec": {
+        "id": "o1-high-effort-strawberry",
+        "context": "",
+        "checklist": [
+          "Answer states there are 3 Rs in strawberry"
+        ]
+      },
+      "finished_at": "2025-01-28T13:29:17.947326",
+      "task_number": 8,
+      "eval_passed": true
+    },
+    "o1-high-effort-strawberry_8": {
+      "status": "completed",
+      "eval_score": 1.0,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer states there are 3 Rs in strawberry",
+            "score": 1.0,
+            "rationale": "The submission explicitly states that there are three 'r's in the word 'strawberry,' which directly satisfies the checklist item. The use of both the numeral 'three' and the letter 'r' in quotes clearly communicates the count of 'r's in the word."
+          }
+        ],
+        "overall_score": 1.0
+      },
+      "task_input": {
+        "question": "How many Rs are in strawberry?",
+        "model": "openai/o1-2024-12-17",
+        "params": {
+          "reasoning_effort": "high"
+        }
+      },
+      "eval_logs": [],
+      "task_output": "There are three \u201cr\u201ds in the word \u201cstrawberry.\u201d",
+      "created_at": "2025-01-28T13:29:17.951262",
+      "job_id": "a0790d33-488e-432c-9738-239074b04c46",
+      "task_details": {
+        "model": "openai/o1-2024-12-17",
+        "response_time": 64.90114092826843,
+        "prompt_tokens": 13,
+        "completion_tokens": 221
+      },
+      "executed_at": "2025-01-28T13:30:22.860280",
+      "id": "8f76996b-9f3c-49ae-accd-7e8c75030810",
+      "task_logs": [],
+      "evaluated_at": "2025-01-28T13:30:28.679245",
+      "challenge_id": "o1-high-effort-strawberry_8",
+      "eval_spec": {
+        "id": "o1-high-effort-strawberry",
+        "context": "",
+        "checklist": [
+          "Answer states there are 3 Rs in strawberry"
+        ]
+      },
+      "finished_at": "2025-01-28T13:30:28.679245",
+      "task_number": 9,
+      "eval_passed": true
+    },
+    "o1-high-effort-strawberry_9": {
+      "status": "completed",
+      "eval_score": 1.0,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer states there are 3 Rs in strawberry",
+            "score": 1.0,
+            "rationale": "The submission explicitly states that there are 3 'R's in the word 'strawberry,' which directly satisfies the checklist item. The answer is clear and unambiguous, accurately reflecting the number of 'R's in the word."
+          }
+        ],
+        "overall_score": 1.0
+      },
+      "task_input": {
+        "question": "How many Rs are in strawberry?",
+        "model": "openai/o1-2024-12-17",
+        "params": {
+          "reasoning_effort": "high"
+        }
+      },
+      "eval_logs": [],
+      "task_output": "There are 3 \u201cR\u201ds in the word \u201cstrawberry.\u201d",
+      "created_at": "2025-01-28T13:30:28.681333",
+      "job_id": "a0790d33-488e-432c-9738-239074b04c46",
+      "task_details": {
+        "model": "openai/o1-2024-12-17",
+        "response_time": 68.30147290229797,
+        "prompt_tokens": 13,
+        "completion_tokens": 361
+      },
+      "executed_at": "2025-01-28T13:31:36.991129",
+      "id": "3f7fc748-ec8a-4dc3-b19c-721d6619cbe2",
+      "task_logs": [],
+      "evaluated_at": "2025-01-28T13:31:37.600992",
+      "challenge_id": "o1-high-effort-strawberry_9",
+      "eval_spec": {
+        "id": "o1-high-effort-strawberry",
+        "context": "",
+        "checklist": [
+          "Answer states there are 3 Rs in strawberry"
+        ]
+      },
+      "finished_at": "2025-01-28T13:31:37.600992",
+      "task_number": 10,
+      "eval_passed": true
+    }
   }
 }

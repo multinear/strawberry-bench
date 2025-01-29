@@ -4,6 +4,8 @@
 
   export let model;
   export let family;
+  export let maxCost;
+  export let maxResponseTime;
   export let isExpanded = false;
   export let hasExpandButton = false;
   export let isExpandButtonVisible = false;
@@ -15,7 +17,7 @@
 
   // Format cost for display
   function formatCost(cost) {
-    return `$${cost.toFixed(5)}`;
+    return cost != null ? `$${cost.toFixed(5)}` : '-';
   }
 
   // Get max delta percentage
@@ -34,6 +36,10 @@
   function getPassRateSegments(passed, total) {
     return Array(total).fill(null).map((_, i) => i < passed);
   }
+
+  // Calculate percentages for indicator lines
+  $: costPercentage = maxCost > 0 && model.avgCost != null ? (model.avgCost / maxCost * 100) : 0;
+  $: responseTimePercentage = maxResponseTime > 0 ? (model.avgResponseTime / maxResponseTime * 100) : 0;
 </script>
 
 <tr 
@@ -86,9 +92,11 @@ Max: {model.maxTokens} tokens">
       <div class="flex items-center gap-2">
         <div class="tooltip" data-tip="Min: {formatCost(model.minCost)}, Max: {formatCost(model.maxCost)}
 Cost: {formatPrice(family.price_input_tokens)}/{formatPrice(family.price_output_tokens)} per 1M tokens (in/out)">
-          <div class="flex items-center gap-2">
-            <span class="font-semibold">{formatCost(model.avgCost)}</span>
-            <span class="text-xs text-base-content/50">±{getMaxDeltaPercent(model.minCost, model.maxCost, model.avgCost).toFixed(0)}%</span>
+          <div class="flex flex-col">
+            <span class="font-mono">{formatCost(model.avgCost)}</span>
+            {#if model.avgCost != null && maxCost > 0}
+              <div class="h-[2px] bg-error/30 mt-0.5" style="width: {Math.max(costPercentage, 5)}%"></div>
+            {/if}
           </div>
         </div>
       </div>
@@ -98,7 +106,10 @@ Cost: {formatPrice(family.price_input_tokens)}/{formatPrice(family.price_output_
   </td>
   <td class="py-2">
     <div class="flex items-center gap-2 tooltip" data-tip="Min: {formatTime(model.minResponseTime)}s, Max: {formatTime(model.maxResponseTime)}s">
-      <span class="font-semibold">{formatTime(model.avgResponseTime)}s</span>
+      <div class="flex flex-col">
+        <span class="font-semibold">{formatTime(model.avgResponseTime)}s</span>
+        <div class="h-[2px] bg-error/30 mt-0.5" style="width: {Math.max(responseTimePercentage, 5)}%"></div>
+      </div>
       <span class="text-xs text-base-content/50">±{getMaxDeltaPercent(model.minResponseTime, model.maxResponseTime, model.avgResponseTime).toFixed(0)}%</span>
     </div>
   </td>
