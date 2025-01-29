@@ -207,3 +207,7 @@ tests:
       - file: brunei/xai-grok-2-1212.json
         family: grok-2
         display_name: Grok 2 (1212)
+
+      - file: brunei/anthropic-claude-3-opus-20240229.json
+        family: claude-3-opus
+        display_name: Claude 3 Opus (2024-02-29)
