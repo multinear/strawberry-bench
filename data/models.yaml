@@ -1,3 +1,17 @@
+providers:
+  - name: openai
+    display_name: OpenAI
+  - name: meta
+    display_name: Meta
+  - name: google
+    display_name: Google
+  - name: deepseek
+    display_name: DeepSeek
+  - name: anthropic
+    display_name: Anthropic
+  - name: xai
+    display_name: XAI
+
 families:
   - name: o1
     provider: openai
@@ -110,7 +124,7 @@ tests:
 
       - file: s3/deepseek-r1.json
         family: deepseek-r1
-        display_name: DeepSeek R1
+        display_name: R1
 
       - file: s3/anthropic-claude-3-opus-20240229.json
         family: claude-3-opus
@@ -118,7 +132,7 @@ tests:
 
       - file: s3/deepseek-v3.json
         family: deepseek-v3
-        display_name: DeepSeek V3
+        display_name: V3
 
       - file: s3/openai-gpt-4o-mini-2024-07-18.json
         family: gpt-4o-mini
@@ -170,44 +184,96 @@ tests:
 
       - file: s3rephrased/deepseek-r1.json
         family: deepseek-r1
-        display_name: DeepSeek R1
+        display_name: R1
 
       - file: s3rephrased/openai-gpt-4o-2024-11-20.json
         family: gpt-4o
         display_name: gpt-4o (2024-11-20)
 
+      - file: s3rephrased/google-gemini-2.0-flash-exp.json
+        family: gemini-flash
+        display_name: Gemini Flash 2.0 (Experimental)
+
+      - file: s3rephrased/openai-o1-mini-2024-09-12.json
+        family: o1-mini
+        display_name: o1-mini (2024-09-12)
+
       - file: s3rephrased/google-gemini-2.0-flash-thinking-exp-01-21.json
         family: gemini-flash-thinking
         display_name: Gemini Flash 2.0 (Thinking)
+
+      - file: s3rephrased/openai-gpt-4o-mini-2024-07-18.json
+        family: gpt-4o-mini
+        display_name: gpt-4o-mini (2024-07-18)
 
       - file: s3rephrased/anthropic-claude-3-opus-20240229.json
         family: claude-3-opus
         display_name: Claude 3 Opus (2024-02-29)
 
-  brunei:
-    name: 🇧🇳 Brunei
+      - file: s3rephrased/anthropic-claude-3-5-sonnet-20241022.json
+        family: claude-3-5-sonnet
+        display_name: Claude 3.5 Sonnet (2024-10-22)
+
+      - file: s3rephrased/meta-llama-3.3-70b-instruct.json
+        family: llama-3.3
+        display_name: Llama 3.3 (70B)
+
+      - file: s3rephrased/anthropic-claude-3-5-haiku-20241022.json
+        family: claude-3-5-haiku
+        display_name: Claude 3.5 Haiku (2024-10-22)
+
+      - file: s3rephrased/meta-llama-3.1-405b-instruct.json
+        family: llama-3.1
+        display_name: Llama 3.1 (405B)
+
+  countries:
+    name: 🇧🇳 Countries
     description: Write a list of all country names starting with the letter B, which don't have a letter E in their name.
     models:
-      - file: brunei/deepseek-r1.json
+      - file: countries/deepseek-r1.json
         family: deepseek-r1
-        display_name: DeepSeek R1
+        display_name: R1
 
-      - file: brunei/openai-o1-2024-12-17-low.json
+      - file: countries/openai-o1-2024-12-17-low.json
         family: o1
         display_name: o1 (2024-12-17)
 
-      - file: brunei/google-gemini-2.0-flash-thinking-exp-01-21.json
+      - file: countries/openai-o1-mini-2024-09-12.json
+        family: o1-mini
+        display_name: o1-mini (2024-09-12)
+
+      - file: countries/google-gemini-2.0-flash-thinking-exp-01-21.json
         family: gemini-flash-thinking
         display_name: Gemini Flash 2.0 (Thinking)
 
-      - file: brunei/openai-gpt-4o-2024-11-20.json
+      - file: countries/openai-gpt-4o-2024-11-20.json
         family: gpt-4o
         display_name: gpt-4o (2024-11-20)
 
-      - file: brunei/xai-grok-2-1212.json
+      - file: countries/xai-grok-2-1212.json
         family: grok-2
         display_name: Grok 2 (1212)
 
-      - file: brunei/anthropic-claude-3-opus-20240229.json
+      - file: countries/anthropic-claude-3-opus-20240229.json
         family: claude-3-opus
         display_name: Claude 3 Opus (2024-02-29)
+
+      - file: countries/anthropic-claude-3-5-sonnet-20241022.json
+        family: claude-3-5-sonnet
+        display_name: Claude 3.5 Sonnet (2024-10-22)
+
+      - file: countries/anthropic-claude-3-5-haiku-20241022.json
+        family: claude-3-5-haiku
+        display_name: Claude 3.5 Haiku (2024-10-22)
+
+      - file: countries/google-gemini-2.0-flash-exp.json
+        family: gemini-flash
+        display_name: Gemini Flash 2.0 (Experimental)
+
+      - file: countries/meta-llama-3.3-70b-instruct.json
+        family: llama-3.3
+        display_name: Llama 3.3 (70B)
+
+      - file: countries/meta-llama-3.1-405b-instruct.json
+        family: llama-3.1
+        display_name: Llama 3.1 (405B)
