@@ -1,13 +1,15 @@
+import { base } from '$app/paths';
+
 /** @type {import('./$types').PageLoad} */
 export async function load({ fetch }) {
   // Load models configuration
-  const modelsConfig = await fetch('/data/_models.json').then(r => r.json());
+  const modelsConfig = await fetch(`${base}/data/_models.json`).then(r => r.json());
   
   // Load each model's data
   const modelResults = await Promise.all(
     modelsConfig.models.map(async (modelConfig) => {
       try {
-        const response = await fetch(`/data/${modelConfig.file}`);
+        const response = await fetch(`${base}/data/${modelConfig.file}`);
         const data = await response.json();
 
         // Find family config for pricing
