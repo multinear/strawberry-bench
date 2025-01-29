@@ -1,0 +1,941 @@
+{
+  "job_id": "972038d5-0de5-4b6e-a42b-d9a87b3999c9",
+  "project_id": "r3-bench",
+  "created_at": "2025-01-29T19:02:06.101378",
+  "finished_at": "2025-01-29T19:04:15.646869",
+  "status": "completed",
+  "model": "openai/gpt-4o-mini-2024-07-18",
+  "details": {
+    "git_revision": null,
+    "status": "completed",
+    "total": 10,
+    "status_map": {
+      "7980610f-da40-4fe6-a68d-5dda3480b964": "failed",
+      "9e214ac2-6ded-4a3e-a834-80594049c8c2": "failed",
+      "856c00ed-cc6c-4330-977a-59e90f771f97": "failed",
+      "c1c0c478-823a-4301-8b01-dc8da6dbeae7": "failed",
+      "1c0bb1fb-28c6-433f-ad21-dfbc818800db": "failed",
+      "2f5d8b4f-d05b-4961-af15-a8472e9ed3d8": "failed",
+      "d073141c-f4d5-4fec-967c-8ee95a8b2323": "failed",
+      "9a69dd3f-d141-4882-b414-91777da2f93d": "failed",
+      "78926920-0f03-4577-8fff-eb84ce1629d0": "failed",
+      "70e95b7e-e1db-4126-98ab-522a658ff006": "failed"
+    },
+    "current": 10,
+    "details": "Evaluating task 10/10",
+    "results": [
+      [
+        {
+          "output": "Here is a list of countries that start with the letter \"B\" and do not contain the letter \"E\":\n\n1. Bahamas\n2. Bangladesh\n3. Barbados\n4. Bhutan\n5. Bolivia\n\nLet me know if you need more information!",
+          "details": {
+            "model": "openai/gpt-4o-mini-2024-07-18",
+            "response_time": 3.1896169185638428,
+            "prompt_tokens": 30,
+            "completion_tokens": 53
+          }
+        },
+        {
+          "score": 0.39999999999999997,
+          "passed": false,
+          "details": {
+            "evaluations": [
+              {
+                "criterion": "Answer doesn't have Brunei in the countries list",
+                "score": 1.0,
+                "rationale": "The submission does not include 'Brunei' in the list of countries, which meets the criterion."
+              },
+              {
+                "criterion": "Answer doesn't have Bangladesh in the countries list",
+                "score": 0.0,
+                "rationale": "The submission incorrectly includes 'Bangladesh' in the list, which violates the criterion as 'Bangladesh' contains the letter 'E'."
+              },
+              {
+                "criterion": "'Answer contains these 10 countries:\n\n  - Bahamas\n\n  - Bahrain\n\n  - Barbados\n\n  - Bhutan\n\n  - Bolivia\n\n  - Botswana\n\n  - Brazil\n\n  - Bulgaria\n\n  - Burkina Faso\n\n  - Burundi\n\n '",
+                "score": 0.2,
+                "rationale": "The submission only includes 3 out of the 10 required countries: 'Bahamas', 'Barbados', and 'Bolivia'. It is missing 'Bahrain', 'Botswana', 'Brazil', 'Bulgaria', 'Burkina Faso', and 'Burundi', and incorrectly includes 'Bangladesh'."
+              }
+            ],
+            "overall_score": 0.39999999999999997
+          }
+        }
+      ],
+      [
+        {
+          "output": "Here\u2019s a list of countries that begin with the letter B and do not contain the letter E:\n\n1. Burundi\n2. Brazil\n3. Bhutan\n\nLet me know if you need more information!",
+          "details": {
+            "model": "openai/gpt-4o-mini-2024-07-18",
+            "response_time": 2.3277008533477783,
+            "prompt_tokens": 30,
+            "completion_tokens": 42
+          }
+        },
+        {
+          "score": 0.7666666666666666,
+          "passed": false,
+          "details": {
+            "evaluations": [
+              {
+                "criterion": "Answer doesn't have Brunei in the countries list",
+                "score": 1.0,
+                "rationale": "The submission does not include Brunei in the list of countries, which meets the criterion."
+              },
+              {
+                "criterion": "Answer doesn't have Bangladesh in the countries list",
+                "score": 1.0,
+                "rationale": "The submission does not include Bangladesh in the list of countries, which meets the criterion."
+              },
+              {
+                "criterion": "'Answer contains these 10 countries:\n\n  - Bahamas\n\n  - Bahrain\n\n  - Barbados\n\n  - Bhutan\n\n  - Bolivia\n\n  - Botswana\n\n  - Brazil\n\n  - Bulgaria\n\n  - Burkina Faso\n\n  - Burundi\n\n '",
+                "score": 0.3,
+                "rationale": "The submission only includes 3 out of the 10 required countries: Bhutan, Brazil, and Burundi. The other 7 countries are missing from the list, resulting in a low score for this criterion."
+              }
+            ],
+            "overall_score": 0.7666666666666666
+          }
+        }
+      ],
+      [
+        {
+          "output": "Here is a list of countries whose names start with the letter \"B\" and do not contain the letter \"E\":\n\n1. Bhutan\n2. Burundi\n\nLet me know if you need more information or assistance!",
+          "details": {
+            "model": "openai/gpt-4o-mini-2024-07-18",
+            "response_time": 8.66262698173523,
+            "prompt_tokens": 26,
+            "completion_tokens": 44
+          }
+        },
+        {
+          "score": 0.7333333333333334,
+          "passed": false,
+          "details": {
+            "evaluations": [
+              {
+                "criterion": "Answer doesn't have Brunei in the countries list",
+                "score": 1.0,
+                "rationale": "The submission does not include Brunei in the list, which meets the criterion."
+              },
+              {
+                "criterion": "Answer doesn't have Bangladesh in the countries list",
+                "score": 1.0,
+                "rationale": "The submission does not include Bangladesh in the list, which meets the criterion."
+              },
+              {
+                "criterion": "'Answer contains these 10 countries:\n\n  - Bahamas\n\n  - Bahrain\n\n  - Barbados\n\n  - Bhutan\n\n  - Bolivia\n\n  - Botswana\n\n  - Brazil\n\n  - Bulgaria\n\n  - Burkina Faso\n\n  - Burundi\n\n '",
+                "score": 0.2,
+                "rationale": "The submission only includes Bhutan and Burundi from the required list of 10 countries. It is missing Bahamas, Bahrain, Barbados, Bolivia, Botswana, Brazil, Bulgaria, and Burkina Faso, which significantly reduces the score."
+              }
+            ],
+            "overall_score": 0.7333333333333334
+          }
+        }
+      ],
+      [
+        {
+          "output": "Here is a list of nations whose names begin with the letter \"B\" and do not include the letter \"E\":\n\n1. Bahrain\n2. Bangladesh\n3. Barbados\n4. Bolivia\n5. Brunei\n\nLet me know if you need information on any of these countries!",
+          "details": {
+            "model": "openai/gpt-4o-mini-2024-07-18",
+            "response_time": 2.5258381366729736,
+            "prompt_tokens": 28,
+            "completion_tokens": 59
+          }
+        },
+        {
+          "score": 0.06666666666666667,
+          "passed": false,
+          "details": {
+            "evaluations": [
+              {
+                "criterion": "Answer doesn't have Brunei in the countries list",
+                "score": 0,
+                "rationale": "The submission includes Brunei in the list, which violates this criterion."
+              },
+              {
+                "criterion": "Answer doesn't have Bangladesh in the countries list",
+                "score": 0,
+                "rationale": "The submission includes Bangladesh in the list, which violates this criterion."
+              },
+              {
+                "criterion": "'Answer contains these 10 countries:\n\n  - Bahamas\n\n  - Bahrain\n\n  - Barbados\n\n  - Bhutan\n\n  - Bolivia\n\n  - Botswana\n\n  - Brazil\n\n  - Bulgaria\n\n  - Burkina Faso\n\n  - Burundi\n\n  '",
+                "score": 0.2,
+                "rationale": "The submission only includes Bahrain and Barbados from the required list of 10 countries. It misses the other 8 countries: Bahamas, Bhutan, Bolivia, Botswana, Brazil, Bulgaria, Burkina Faso, and Burundi."
+              }
+            ],
+            "overall_score": 0.06666666666666667
+          }
+        }
+      ],
+      [
+        {
+          "output": "Here is a list of nations that start with the letter B and do not have the letter E in their names:\n\n1. Barbados\n2. Bangladesh\n3. Bhutan\n4. Bolivia\n5. Brunei\n\nIf you need further information or assistance, feel free to ask!",
+          "details": {
+            "model": "openai/gpt-4o-mini-2024-07-18",
+            "response_time": 2.6755080223083496,
+            "prompt_tokens": 30,
+            "completion_tokens": 58
+          }
+        },
+        {
+          "score": 0.0,
+          "passed": false,
+          "details": {
+            "evaluations": [
+              {
+                "criterion": "Answer doesn't have Brunei in the countries list",
+                "score": 0,
+                "rationale": "The submission includes 'Brunei' in the list of countries, which violates this criterion. The criterion explicitly states that Brunei should not be included."
+              },
+              {
+                "criterion": "Answer doesn't have Bangladesh in the countries list",
+                "score": 0,
+                "rationale": "The submission includes 'Bangladesh' in the list of countries, which violates this criterion. The criterion explicitly states that Bangladesh should not be included."
+              },
+              {
+                "criterion": "'Answer contains these 10 countries:\n\n  - Bahamas\n\n  - Bahrain\n\n  - Barbados\n\n  - Bhutan\n\n  - Bolivia\n\n  - Botswana\n\n  - Brazil\n\n  - Bulgaria\n\n  - Burkina Faso\n\n  - Burundi\n\n '",
+                "score": 0,
+                "rationale": "The submission only includes 'Barbados', 'Bhutan', and 'Bolivia' from the required list of 10 countries. It is missing 'Bahamas', 'Bahrain', 'Botswana', 'Brazil', 'Bulgaria', 'Burkina Faso', and 'Burundi'. Additionally, it incorrectly includes 'Bangladesh' and 'Brunei', which are not part of the required list."
+              }
+            ],
+            "overall_score": 0.0
+          }
+        }
+      ],
+      [
+        {
+          "output": "Here is a list of countries that begin with the letter \"B\" and do not contain the letter \"E\":\n\n1. Bahama\n2. Bahrain\n3. Bangladesh\n4. Barbados\n5. Bosnia and Herzegovina\n\nNote that \"Bosnia and Herzegovina\" contains an \"E,\" so it should not be on the list. The correct countries are:\n\n1. Bahamas\n2. Bahrain\n3. Bangladesh\n4. Barbados\n\nThese four countries meet your criteria.",
+          "details": {
+            "model": "openai/gpt-4o-mini-2024-07-18",
+            "response_time": 4.219959020614624,
+            "prompt_tokens": 30,
+            "completion_tokens": 101
+          }
+        },
+        {
+          "score": 0.43333333333333335,
+          "passed": false,
+          "details": {
+            "evaluations": [
+              {
+                "criterion": "Answer doesn't have Brunei in the countries list",
+                "score": 1.0,
+                "rationale": "The submission does not include 'Brunei' in the list of countries, which meets the criterion."
+              },
+              {
+                "criterion": "Answer doesn't have Bangladesh in the countries list",
+                "score": 0.0,
+                "rationale": "The submission incorrectly includes 'Bangladesh' in the list, which does not meet the criterion as 'Bangladesh' contains the letter 'E'."
+              },
+              {
+                "criterion": "'Answer contains these 10 countries:\n\n  - Bahamas\n\n  - Bahrain\n\n  - Barbados\n\n  - Bhutan\n\n  - Bolivia\n\n  - Botswana\n\n  - Brazil\n\n  - Bulgaria\n\n  - Burkina Faso\n\n  - Burundi\n\n '",
+                "score": 0.3,
+                "rationale": "The submission only includes 'Bahamas,' 'Bahrain,' and 'Barbados' from the required list of 10 countries. It misses 'Bhutan,' 'Bolivia,' 'Botswana,' 'Brazil,' 'Bulgaria,' 'Burkina Faso,' and 'Burundi,' and incorrectly includes 'Bangladesh' and 'Bosnia and Herzegovina.'"
+              }
+            ],
+            "overall_score": 0.43333333333333335
+          }
+        }
+      ],
+      [
+        {
+          "output": "Here\u2019s a list of countries that begin with the letter B and do not have the letter E in their names:\n\n1. Bahrain\n2. Bangladesh\n3. Barbados\n4. Bhutan\n5. Brunei\n\nThese countries meet the specified criteria.",
+          "details": {
+            "model": "openai/gpt-4o-mini-2024-07-18",
+            "response_time": 2.9667210578918457,
+            "prompt_tokens": 30,
+            "completion_tokens": 52
+          }
+        },
+        {
+          "score": 0.0,
+          "passed": false,
+          "details": {
+            "evaluations": [
+              {
+                "criterion": "Answer doesn't have Brunei in the countries list",
+                "score": 0,
+                "rationale": "The submission includes 'Brunei' in the list, which violates the criterion that Brunei should not be present."
+              },
+              {
+                "criterion": "Answer doesn't have Bangladesh in the countries list",
+                "score": 0,
+                "rationale": "The submission includes 'Bangladesh' in the list, which violates the criterion that Bangladesh should not be present."
+              },
+              {
+                "criterion": "'Answer contains these 10 countries:\n\n  - Bahamas\n\n  - Bahrain\n\n  - Barbados\n\n  - Bhutan\n\n  - Bolivia\n\n  - Botswana\n\n  - Brazil\n\n  - Bulgaria\n\n  - Burkina Faso\n\n  - Burundi\n\n '",
+                "score": 0,
+                "rationale": "The submission only includes 'Bahrain', 'Barbados', and 'Bhutan' from the required list of 10 countries. It is missing 'Bahamas', 'Bolivia', 'Botswana', 'Brazil', 'Bulgaria', 'Burkina Faso', and 'Burundi', thus failing to meet this criterion."
+              }
+            ],
+            "overall_score": 0.0
+          }
+        }
+      ],
+      [
+        {
+          "output": "Here\u2019s a list of countries that start with the letter \"B\" and do not include the letter \"E\":\n\n1. Bahamas\n2. Bangladesh\n3. Barbados\n4. Bolivia\n5. Bosnia and Herzegovina\n6. Burundi\n\nNote that \"Bosnia and Herzegovina\" includes an \"E,\" so the final list is:\n\n1. Bahamas\n2. Bangladesh\n3. Barbados\n4. Bolivia\n5. Burundi\n\nLet me know if you need any further assistance!",
+          "details": {
+            "model": "openai/gpt-4o-mini-2024-07-18",
+            "response_time": 4.365318775177002,
+            "prompt_tokens": 31,
+            "completion_tokens": 103
+          }
+        },
+        {
+          "score": 0.39999999999999997,
+          "passed": false,
+          "details": {
+            "evaluations": [
+              {
+                "criterion": "Answer doesn't have Brunei in the countries list",
+                "score": 1.0,
+                "rationale": "The submission does not include 'Brunei' in the list of countries, which meets the criterion."
+              },
+              {
+                "criterion": "Answer doesn't have Bangladesh in the countries list",
+                "score": 0.0,
+                "rationale": "The submission incorrectly includes 'Bangladesh' in the list, which violates the criterion as 'Bangladesh' contains the letter 'E'."
+              },
+              {
+                "criterion": "'Answer contains these 10 countries:\n\n  - Bahamas\n\n  - Bahrain\n\n  - Barbados\n\n  - Bhutan\n\n  - Bolivia\n\n  - Botswana\n\n  - Brazil\n\n  - Bulgaria\n\n  - Burkina Faso\n\n  - Burundi\n\n '",
+                "score": 0.2,
+                "rationale": "The submission only includes 'Bahamas', 'Barbados', 'Bolivia', and 'Burundi' from the required list of 10 countries. It misses 'Bahrain', 'Bhutan', 'Botswana', 'Brazil', 'Bulgaria', and 'Burkina Faso', and incorrectly includes 'Bangladesh'."
+              }
+            ],
+            "overall_score": 0.39999999999999997
+          }
+        }
+      ],
+      [
+        {
+          "output": "Here\u2019s a list of countries that start with the letter \"B\" and do not contain the letter \"E\" in their names:\n\n1. Barbados\n2. Burundi\n3. Brazil\n\nLet me know if you need any further information!",
+          "details": {
+            "model": "openai/gpt-4o-mini-2024-07-18",
+            "response_time": 2.5507328510284424,
+            "prompt_tokens": 30,
+            "completion_tokens": 50
+          }
+        },
+        {
+          "score": 0.7666666666666666,
+          "passed": false,
+          "details": {
+            "evaluations": [
+              {
+                "criterion": "Answer doesn't have Brunei in the countries list",
+                "score": 1.0,
+                "rationale": "The submission does not include 'Brunei' in the list of countries, which meets the criterion."
+              },
+              {
+                "criterion": "Answer doesn't have Bangladesh in the countries list",
+                "score": 1.0,
+                "rationale": "The submission does not include 'Bangladesh' in the list of countries, which meets the criterion."
+              },
+              {
+                "criterion": "'Answer contains these 10 countries:\n\n  - Bahamas\n\n  - Bahrain\n\n  - Barbados\n\n  - Bhutan\n\n  - Bolivia\n\n  - Botswana\n\n  - Brazil\n\n  - Bulgaria\n\n  - Burkina Faso\n\n  - Burundi\n\n  '",
+                "score": 0.3,
+                "rationale": "The submission only includes 3 out of the 10 required countries: 'Barbados', 'Brazil', and 'Burundi'. It is missing 'Bahamas', 'Bahrain', 'Bhutan', 'Bolivia', 'Botswana', 'Bulgaria', and 'Burkina Faso', which significantly reduces the score."
+              }
+            ],
+            "overall_score": 0.7666666666666666
+          }
+        }
+      ],
+      [
+        {
+          "output": "Here is a list of countries that start with the letter B and do not contain the letter E in their names:\n\n1. Bahamas\n2. Bangladesh\n3. Barbados\n4. Brunei\n\nLet me know if you need more information!",
+          "details": {
+            "model": "openai/gpt-4o-mini-2024-07-18",
+            "response_time": 1.9908099174499512,
+            "prompt_tokens": 30,
+            "completion_tokens": 50
+          }
+        },
+        {
+          "score": 0.03333333333333333,
+          "passed": false,
+          "details": {
+            "evaluations": [
+              {
+                "criterion": "Answer doesn't have Brunei in the countries list",
+                "score": 0,
+                "rationale": "The submission includes 'Brunei' in the list, which directly contradicts this criterion."
+              },
+              {
+                "criterion": "Answer doesn't have Bangladesh in the countries list",
+                "score": 0,
+                "rationale": "The submission includes 'Bangladesh' in the list, which directly contradicts this criterion."
+              },
+              {
+                "criterion": "'Answer contains these 10 countries:\n\n  - Bahamas\n\n  - Bahrain\n\n  - Barbados\n\n  - Bhutan\n\n  - Bolivia\n\n  - Botswana\n\n  - Brazil\n\n  - Bulgaria\n\n  - Burkina Faso\n\n  - Burundi\n\n  '",
+                "score": 0.1,
+                "rationale": "The submission only includes 'Bahamas' and 'Barbados' from the required list of 10 countries. It is missing the other 8 countries: Bahrain, Bhutan, Bolivia, Botswana, Brazil, Bulgaria, Burkina Faso, and Burundi."
+              }
+            ],
+            "overall_score": 0.03333333333333333
+          }
+        }
+      ]
+    ]
+  },
+  "tasks": {
+    "gpt-4o-mini-countries": {
+      "status": "failed",
+      "eval_score": 0.39999999999999997,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer doesn't have Brunei in the countries list",
+            "score": 1.0,
+            "rationale": "The submission does not include 'Brunei' in the list of countries, which meets the criterion."
+          },
+          {
+            "criterion": "Answer doesn't have Bangladesh in the countries list",
+            "score": 0.0,
+            "rationale": "The submission incorrectly includes 'Bangladesh' in the list, which violates the criterion as 'Bangladesh' contains the letter 'E'."
+          },
+          {
+            "criterion": "'Answer contains these 10 countries:\n\n  - Bahamas\n\n  - Bahrain\n\n  - Barbados\n\n  - Bhutan\n\n  - Bolivia\n\n  - Botswana\n\n  - Brazil\n\n  - Bulgaria\n\n  - Burkina Faso\n\n  - Burundi\n\n '",
+            "score": 0.2,
+            "rationale": "The submission only includes 3 out of the 10 required countries: 'Bahamas', 'Barbados', and 'Bolivia'. It is missing 'Bahrain', 'Botswana', 'Brazil', 'Bulgaria', 'Burkina Faso', and 'Burundi', and incorrectly includes 'Bangladesh'."
+          }
+        ],
+        "overall_score": 0.39999999999999997
+      },
+      "task_input": {
+        "question": "Write a list of all country names starting with the letter B, which don't have a letter E in their name.",
+        "model": "openai/gpt-4o-mini-2024-07-18"
+      },
+      "eval_logs": [],
+      "task_output": "Here is a list of countries that start with the letter \"B\" and do not contain the letter \"E\":\n\n1. Bahamas\n2. Bangladesh\n3. Barbados\n4. Bhutan\n5. Bolivia\n\nLet me know if you need more information!",
+      "created_at": "2025-01-29T19:02:06.143915",
+      "job_id": "972038d5-0de5-4b6e-a42b-d9a87b3999c9",
+      "task_details": {
+        "model": "openai/gpt-4o-mini-2024-07-18",
+        "response_time": 3.1896169185638428,
+        "prompt_tokens": 30,
+        "completion_tokens": 53
+      },
+      "executed_at": "2025-01-29T19:02:09.336970",
+      "id": "7980610f-da40-4fe6-a68d-5dda3480b964",
+      "task_logs": [],
+      "evaluated_at": "2025-01-29T19:02:22.900923",
+      "challenge_id": "gpt-4o-mini-countries",
+      "eval_spec": {
+        "id": "gpt-4o-mini-countries",
+        "context": "",
+        "checklist": [
+          "Answer doesn't have Brunei in the countries list",
+          "Answer doesn't have Bangladesh in the countries list",
+          "Answer contains these 10 countries:\n- Bahamas\n- Bahrain\n- Barbados\n- Bhutan\n- Bolivia\n- Botswana\n- Brazil\n- Bulgaria\n- Burkina Faso\n- Burundi\n"
+        ]
+      },
+      "finished_at": "2025-01-29T19:02:22.900923",
+      "task_number": 1,
+      "eval_passed": false
+    },
+    "gpt-4o-mini-countries_1": {
+      "status": "failed",
+      "eval_score": 0.7666666666666666,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer doesn't have Brunei in the countries list",
+            "score": 1.0,
+            "rationale": "The submission does not include Brunei in the list of countries, which meets the criterion."
+          },
+          {
+            "criterion": "Answer doesn't have Bangladesh in the countries list",
+            "score": 1.0,
+            "rationale": "The submission does not include Bangladesh in the list of countries, which meets the criterion."
+          },
+          {
+            "criterion": "'Answer contains these 10 countries:\n\n  - Bahamas\n\n  - Bahrain\n\n  - Barbados\n\n  - Bhutan\n\n  - Bolivia\n\n  - Botswana\n\n  - Brazil\n\n  - Bulgaria\n\n  - Burkina Faso\n\n  - Burundi\n\n '",
+            "score": 0.3,
+            "rationale": "The submission only includes 3 out of the 10 required countries: Bhutan, Brazil, and Burundi. The other 7 countries are missing from the list, resulting in a low score for this criterion."
+          }
+        ],
+        "overall_score": 0.7666666666666666
+      },
+      "task_input": {
+        "question": "Compile a list of all countries that begin with the letter B and do not contain the letter E in their names.",
+        "model": "openai/gpt-4o-mini-2024-07-18"
+      },
+      "eval_logs": [],
+      "task_output": "Here\u2019s a list of countries that begin with the letter B and do not contain the letter E:\n\n1. Burundi\n2. Brazil\n3. Bhutan\n\nLet me know if you need more information!",
+      "created_at": "2025-01-29T19:02:24.375980",
+      "job_id": "972038d5-0de5-4b6e-a42b-d9a87b3999c9",
+      "task_details": {
+        "model": "openai/gpt-4o-mini-2024-07-18",
+        "response_time": 2.3277008533477783,
+        "prompt_tokens": 30,
+        "completion_tokens": 42
+      },
+      "executed_at": "2025-01-29T19:02:26.714255",
+      "id": "9e214ac2-6ded-4a3e-a834-80594049c8c2",
+      "task_logs": [],
+      "evaluated_at": "2025-01-29T19:02:33.362511",
+      "challenge_id": "gpt-4o-mini-countries_1",
+      "eval_spec": {
+        "id": "gpt-4o-mini-countries",
+        "context": "",
+        "checklist": [
+          "Answer doesn't have Brunei in the countries list",
+          "Answer doesn't have Bangladesh in the countries list",
+          "Answer contains these 10 countries:\n- Bahamas\n- Bahrain\n- Barbados\n- Bhutan\n- Bolivia\n- Botswana\n- Brazil\n- Bulgaria\n- Burkina Faso\n- Burundi\n"
+        ]
+      },
+      "finished_at": "2025-01-29T19:02:33.362511",
+      "task_number": 2,
+      "eval_passed": false
+    },
+    "gpt-4o-mini-countries_2": {
+      "status": "failed",
+      "eval_score": 0.7333333333333334,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer doesn't have Brunei in the countries list",
+            "score": 1.0,
+            "rationale": "The submission does not include Brunei in the list, which meets the criterion."
+          },
+          {
+            "criterion": "Answer doesn't have Bangladesh in the countries list",
+            "score": 1.0,
+            "rationale": "The submission does not include Bangladesh in the list, which meets the criterion."
+          },
+          {
+            "criterion": "'Answer contains these 10 countries:\n\n  - Bahamas\n\n  - Bahrain\n\n  - Barbados\n\n  - Bhutan\n\n  - Bolivia\n\n  - Botswana\n\n  - Brazil\n\n  - Bulgaria\n\n  - Burkina Faso\n\n  - Burundi\n\n '",
+            "score": 0.2,
+            "rationale": "The submission only includes Bhutan and Burundi from the required list of 10 countries. It is missing Bahamas, Bahrain, Barbados, Bolivia, Botswana, Brazil, Bulgaria, and Burkina Faso, which significantly reduces the score."
+          }
+        ],
+        "overall_score": 0.7333333333333334
+      },
+      "task_input": {
+        "question": "Create a list of all countries whose names start with the letter B and lack the letter E.",
+        "model": "openai/gpt-4o-mini-2024-07-18"
+      },
+      "eval_logs": [],
+      "task_output": "Here is a list of countries whose names start with the letter \"B\" and do not contain the letter \"E\":\n\n1. Bhutan\n2. Burundi\n\nLet me know if you need more information or assistance!",
+      "created_at": "2025-01-29T19:02:34.287125",
+      "job_id": "972038d5-0de5-4b6e-a42b-d9a87b3999c9",
+      "task_details": {
+        "model": "openai/gpt-4o-mini-2024-07-18",
+        "response_time": 8.66262698173523,
+        "prompt_tokens": 26,
+        "completion_tokens": 44
+      },
+      "executed_at": "2025-01-29T19:02:42.962315",
+      "id": "856c00ed-cc6c-4330-977a-59e90f771f97",
+      "task_logs": [],
+      "evaluated_at": "2025-01-29T19:02:50.954775",
+      "challenge_id": "gpt-4o-mini-countries_2",
+      "eval_spec": {
+        "id": "gpt-4o-mini-countries",
+        "context": "",
+        "checklist": [
+          "Answer doesn't have Brunei in the countries list",
+          "Answer doesn't have Bangladesh in the countries list",
+          "Answer contains these 10 countries:\n- Bahamas\n- Bahrain\n- Barbados\n- Bhutan\n- Bolivia\n- Botswana\n- Brazil\n- Bulgaria\n- Burkina Faso\n- Burundi\n"
+        ]
+      },
+      "finished_at": "2025-01-29T19:02:50.954775",
+      "task_number": 3,
+      "eval_passed": false
+    },
+    "gpt-4o-mini-countries_3": {
+      "status": "failed",
+      "eval_score": 0.06666666666666667,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer doesn't have Brunei in the countries list",
+            "score": 0,
+            "rationale": "The submission includes Brunei in the list, which violates this criterion."
+          },
+          {
+            "criterion": "Answer doesn't have Bangladesh in the countries list",
+            "score": 0,
+            "rationale": "The submission includes Bangladesh in the list, which violates this criterion."
+          },
+          {
+            "criterion": "'Answer contains these 10 countries:\n\n  - Bahamas\n\n  - Bahrain\n\n  - Barbados\n\n  - Bhutan\n\n  - Bolivia\n\n  - Botswana\n\n  - Brazil\n\n  - Bulgaria\n\n  - Burkina Faso\n\n  - Burundi\n\n  '",
+            "score": 0.2,
+            "rationale": "The submission only includes Bahrain and Barbados from the required list of 10 countries. It misses the other 8 countries: Bahamas, Bhutan, Bolivia, Botswana, Brazil, Bulgaria, Burkina Faso, and Burundi."
+          }
+        ],
+        "overall_score": 0.06666666666666667
+      },
+      "task_input": {
+        "question": "Generate a list of all nations whose names begin with the letter B and do not include the letter E.",
+        "model": "openai/gpt-4o-mini-2024-07-18"
+      },
+      "eval_logs": [],
+      "task_output": "Here is a list of nations whose names begin with the letter \"B\" and do not include the letter \"E\":\n\n1. Bahrain\n2. Bangladesh\n3. Barbados\n4. Bolivia\n5. Brunei\n\nLet me know if you need information on any of these countries!",
+      "created_at": "2025-01-29T19:02:51.774503",
+      "job_id": "972038d5-0de5-4b6e-a42b-d9a87b3999c9",
+      "task_details": {
+        "model": "openai/gpt-4o-mini-2024-07-18",
+        "response_time": 2.5258381366729736,
+        "prompt_tokens": 28,
+        "completion_tokens": 59
+      },
+      "executed_at": "2025-01-29T19:02:54.320068",
+      "id": "c1c0c478-823a-4301-8b01-dc8da6dbeae7",
+      "task_logs": [],
+      "evaluated_at": "2025-01-29T19:03:04.055495",
+      "challenge_id": "gpt-4o-mini-countries_3",
+      "eval_spec": {
+        "id": "gpt-4o-mini-countries",
+        "context": "",
+        "checklist": [
+          "Answer doesn't have Brunei in the countries list",
+          "Answer doesn't have Bangladesh in the countries list",
+          "Answer contains these 10 countries:\n- Bahamas\n- Bahrain\n- Barbados\n- Bhutan\n- Bolivia\n- Botswana\n- Brazil\n- Bulgaria\n- Burkina Faso\n- Burundi\n"
+        ]
+      },
+      "finished_at": "2025-01-29T19:03:04.055495",
+      "task_number": 4,
+      "eval_passed": false
+    },
+    "gpt-4o-mini-countries_4": {
+      "status": "failed",
+      "eval_score": 0.0,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer doesn't have Brunei in the countries list",
+            "score": 0,
+            "rationale": "The submission includes 'Brunei' in the list of countries, which violates this criterion. The criterion explicitly states that Brunei should not be included."
+          },
+          {
+            "criterion": "Answer doesn't have Bangladesh in the countries list",
+            "score": 0,
+            "rationale": "The submission includes 'Bangladesh' in the list of countries, which violates this criterion. The criterion explicitly states that Bangladesh should not be included."
+          },
+          {
+            "criterion": "'Answer contains these 10 countries:\n\n  - Bahamas\n\n  - Bahrain\n\n  - Barbados\n\n  - Bhutan\n\n  - Bolivia\n\n  - Botswana\n\n  - Brazil\n\n  - Bulgaria\n\n  - Burkina Faso\n\n  - Burundi\n\n '",
+            "score": 0,
+            "rationale": "The submission only includes 'Barbados', 'Bhutan', and 'Bolivia' from the required list of 10 countries. It is missing 'Bahamas', 'Bahrain', 'Botswana', 'Brazil', 'Bulgaria', 'Burkina Faso', and 'Burundi'. Additionally, it incorrectly includes 'Bangladesh' and 'Brunei', which are not part of the required list."
+          }
+        ],
+        "overall_score": 0.0
+      },
+      "task_input": {
+        "question": "Compile a list of all nations that start with the letter B and do not feature the letter E in their names.",
+        "model": "openai/gpt-4o-mini-2024-07-18"
+      },
+      "eval_logs": [],
+      "task_output": "Here is a list of nations that start with the letter B and do not have the letter E in their names:\n\n1. Barbados\n2. Bangladesh\n3. Bhutan\n4. Bolivia\n5. Brunei\n\nIf you need further information or assistance, feel free to ask!",
+      "created_at": "2025-01-29T19:03:05.017284",
+      "job_id": "972038d5-0de5-4b6e-a42b-d9a87b3999c9",
+      "task_details": {
+        "model": "openai/gpt-4o-mini-2024-07-18",
+        "response_time": 2.6755080223083496,
+        "prompt_tokens": 30,
+        "completion_tokens": 58
+      },
+      "executed_at": "2025-01-29T19:03:07.707679",
+      "id": "1c0bb1fb-28c6-433f-ad21-dfbc818800db",
+      "task_logs": [],
+      "evaluated_at": "2025-01-29T19:03:16.112159",
+      "challenge_id": "gpt-4o-mini-countries_4",
+      "eval_spec": {
+        "id": "gpt-4o-mini-countries",
+        "context": "",
+        "checklist": [
+          "Answer doesn't have Brunei in the countries list",
+          "Answer doesn't have Bangladesh in the countries list",
+          "Answer contains these 10 countries:\n- Bahamas\n- Bahrain\n- Barbados\n- Bhutan\n- Bolivia\n- Botswana\n- Brazil\n- Bulgaria\n- Burkina Faso\n- Burundi\n"
+        ]
+      },
+      "finished_at": "2025-01-29T19:03:16.112159",
+      "task_number": 5,
+      "eval_passed": false
+    },
+    "gpt-4o-mini-countries_5": {
+      "status": "failed",
+      "eval_score": 0.43333333333333335,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer doesn't have Brunei in the countries list",
+            "score": 1.0,
+            "rationale": "The submission does not include 'Brunei' in the list of countries, which meets the criterion."
+          },
+          {
+            "criterion": "Answer doesn't have Bangladesh in the countries list",
+            "score": 0.0,
+            "rationale": "The submission incorrectly includes 'Bangladesh' in the list, which does not meet the criterion as 'Bangladesh' contains the letter 'E'."
+          },
+          {
+            "criterion": "'Answer contains these 10 countries:\n\n  - Bahamas\n\n  - Bahrain\n\n  - Barbados\n\n  - Bhutan\n\n  - Bolivia\n\n  - Botswana\n\n  - Brazil\n\n  - Bulgaria\n\n  - Burkina Faso\n\n  - Burundi\n\n '",
+            "score": 0.3,
+            "rationale": "The submission only includes 'Bahamas,' 'Bahrain,' and 'Barbados' from the required list of 10 countries. It misses 'Bhutan,' 'Bolivia,' 'Botswana,' 'Brazil,' 'Bulgaria,' 'Burkina Faso,' and 'Burundi,' and incorrectly includes 'Bangladesh' and 'Bosnia and Herzegovina.'"
+          }
+        ],
+        "overall_score": 0.43333333333333335
+      },
+      "task_input": {
+        "question": "Draft a list of all countries that begin with the letter B and do not contain the letter E in their titles.",
+        "model": "openai/gpt-4o-mini-2024-07-18"
+      },
+      "eval_logs": [],
+      "task_output": "Here is a list of countries that begin with the letter \"B\" and do not contain the letter \"E\":\n\n1. Bahama\n2. Bahrain\n3. Bangladesh\n4. Barbados\n5. Bosnia and Herzegovina\n\nNote that \"Bosnia and Herzegovina\" contains an \"E,\" so it should not be on the list. The correct countries are:\n\n1. Bahamas\n2. Bahrain\n3. Bangladesh\n4. Barbados\n\nThese four countries meet your criteria.",
+      "created_at": "2025-01-29T19:03:16.978642",
+      "job_id": "972038d5-0de5-4b6e-a42b-d9a87b3999c9",
+      "task_details": {
+        "model": "openai/gpt-4o-mini-2024-07-18",
+        "response_time": 4.219959020614624,
+        "prompt_tokens": 30,
+        "completion_tokens": 101
+      },
+      "executed_at": "2025-01-29T19:03:21.212918",
+      "id": "2f5d8b4f-d05b-4961-af15-a8472e9ed3d8",
+      "task_logs": [],
+      "evaluated_at": "2025-01-29T19:03:27.860684",
+      "challenge_id": "gpt-4o-mini-countries_5",
+      "eval_spec": {
+        "id": "gpt-4o-mini-countries",
+        "context": "",
+        "checklist": [
+          "Answer doesn't have Brunei in the countries list",
+          "Answer doesn't have Bangladesh in the countries list",
+          "Answer contains these 10 countries:\n- Bahamas\n- Bahrain\n- Barbados\n- Bhutan\n- Bolivia\n- Botswana\n- Brazil\n- Bulgaria\n- Burkina Faso\n- Burundi\n"
+        ]
+      },
+      "finished_at": "2025-01-29T19:03:27.860684",
+      "task_number": 6,
+      "eval_passed": false
+    },
+    "gpt-4o-mini-countries_6": {
+      "status": "failed",
+      "eval_score": 0.0,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer doesn't have Brunei in the countries list",
+            "score": 0,
+            "rationale": "The submission includes 'Brunei' in the list, which violates the criterion that Brunei should not be present."
+          },
+          {
+            "criterion": "Answer doesn't have Bangladesh in the countries list",
+            "score": 0,
+            "rationale": "The submission includes 'Bangladesh' in the list, which violates the criterion that Bangladesh should not be present."
+          },
+          {
+            "criterion": "'Answer contains these 10 countries:\n\n  - Bahamas\n\n  - Bahrain\n\n  - Barbados\n\n  - Bhutan\n\n  - Bolivia\n\n  - Botswana\n\n  - Brazil\n\n  - Bulgaria\n\n  - Burkina Faso\n\n  - Burundi\n\n '",
+            "score": 0,
+            "rationale": "The submission only includes 'Bahrain', 'Barbados', and 'Bhutan' from the required list of 10 countries. It is missing 'Bahamas', 'Bolivia', 'Botswana', 'Brazil', 'Bulgaria', 'Burkina Faso', and 'Burundi', thus failing to meet this criterion."
+          }
+        ],
+        "overall_score": 0.0
+      },
+      "task_input": {
+        "question": "Create a list of all countries that begin with the letter B and do not have the letter E in their names.",
+        "model": "openai/gpt-4o-mini-2024-07-18"
+      },
+      "eval_logs": [],
+      "task_output": "Here\u2019s a list of countries that begin with the letter B and do not have the letter E in their names:\n\n1. Bahrain\n2. Bangladesh\n3. Barbados\n4. Bhutan\n5. Brunei\n\nThese countries meet the specified criteria.",
+      "created_at": "2025-01-29T19:03:29.165754",
+      "job_id": "972038d5-0de5-4b6e-a42b-d9a87b3999c9",
+      "task_details": {
+        "model": "openai/gpt-4o-mini-2024-07-18",
+        "response_time": 2.9667210578918457,
+        "prompt_tokens": 30,
+        "completion_tokens": 52
+      },
+      "executed_at": "2025-01-29T19:03:32.143371",
+      "id": "d073141c-f4d5-4fec-967c-8ee95a8b2323",
+      "task_logs": [],
+      "evaluated_at": "2025-01-29T19:03:39.189732",
+      "challenge_id": "gpt-4o-mini-countries_6",
+      "eval_spec": {
+        "id": "gpt-4o-mini-countries",
+        "context": "",
+        "checklist": [
+          "Answer doesn't have Brunei in the countries list",
+          "Answer doesn't have Bangladesh in the countries list",
+          "Answer contains these 10 countries:\n- Bahamas\n- Bahrain\n- Barbados\n- Bhutan\n- Bolivia\n- Botswana\n- Brazil\n- Bulgaria\n- Burkina Faso\n- Burundi\n"
+        ]
+      },
+      "finished_at": "2025-01-29T19:03:39.189732",
+      "task_number": 7,
+      "eval_passed": false
+    },
+    "gpt-4o-mini-countries_7": {
+      "status": "failed",
+      "eval_score": 0.39999999999999997,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer doesn't have Brunei in the countries list",
+            "score": 1.0,
+            "rationale": "The submission does not include 'Brunei' in the list of countries, which meets the criterion."
+          },
+          {
+            "criterion": "Answer doesn't have Bangladesh in the countries list",
+            "score": 0.0,
+            "rationale": "The submission incorrectly includes 'Bangladesh' in the list, which violates the criterion as 'Bangladesh' contains the letter 'E'."
+          },
+          {
+            "criterion": "'Answer contains these 10 countries:\n\n  - Bahamas\n\n  - Bahrain\n\n  - Barbados\n\n  - Bhutan\n\n  - Bolivia\n\n  - Botswana\n\n  - Brazil\n\n  - Bulgaria\n\n  - Burkina Faso\n\n  - Burundi\n\n '",
+            "score": 0.2,
+            "rationale": "The submission only includes 'Bahamas', 'Barbados', 'Bolivia', and 'Burundi' from the required list of 10 countries. It misses 'Bahrain', 'Bhutan', 'Botswana', 'Brazil', 'Bulgaria', and 'Burkina Faso', and incorrectly includes 'Bangladesh'."
+          }
+        ],
+        "overall_score": 0.39999999999999997
+      },
+      "task_input": {
+        "question": "Compile a list of all country names that start with the letter B and do not include the letter E within their names.",
+        "model": "openai/gpt-4o-mini-2024-07-18"
+      },
+      "eval_logs": [],
+      "task_output": "Here\u2019s a list of countries that start with the letter \"B\" and do not include the letter \"E\":\n\n1. Bahamas\n2. Bangladesh\n3. Barbados\n4. Bolivia\n5. Bosnia and Herzegovina\n6. Burundi\n\nNote that \"Bosnia and Herzegovina\" includes an \"E,\" so the final list is:\n\n1. Bahamas\n2. Bangladesh\n3. Barbados\n4. Bolivia\n5. Burundi\n\nLet me know if you need any further assistance!",
+      "created_at": "2025-01-29T19:03:40.322046",
+      "job_id": "972038d5-0de5-4b6e-a42b-d9a87b3999c9",
+      "task_details": {
+        "model": "openai/gpt-4o-mini-2024-07-18",
+        "response_time": 4.365318775177002,
+        "prompt_tokens": 31,
+        "completion_tokens": 103
+      },
+      "executed_at": "2025-01-29T19:03:44.697155",
+      "id": "9a69dd3f-d141-4882-b414-91777da2f93d",
+      "task_logs": [],
+      "evaluated_at": "2025-01-29T19:03:52.519156",
+      "challenge_id": "gpt-4o-mini-countries_7",
+      "eval_spec": {
+        "id": "gpt-4o-mini-countries",
+        "context": "",
+        "checklist": [
+          "Answer doesn't have Brunei in the countries list",
+          "Answer doesn't have Bangladesh in the countries list",
+          "Answer contains these 10 countries:\n- Bahamas\n- Bahrain\n- Barbados\n- Bhutan\n- Bolivia\n- Botswana\n- Brazil\n- Bulgaria\n- Burkina Faso\n- Burundi\n"
+        ]
+      },
+      "finished_at": "2025-01-29T19:03:52.519156",
+      "task_number": 8,
+      "eval_passed": false
+    },
+    "gpt-4o-mini-countries_8": {
+      "status": "failed",
+      "eval_score": 0.7666666666666666,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer doesn't have Brunei in the countries list",
+            "score": 1.0,
+            "rationale": "The submission does not include 'Brunei' in the list of countries, which meets the criterion."
+          },
+          {
+            "criterion": "Answer doesn't have Bangladesh in the countries list",
+            "score": 1.0,
+            "rationale": "The submission does not include 'Bangladesh' in the list of countries, which meets the criterion."
+          },
+          {
+            "criterion": "'Answer contains these 10 countries:\n\n  - Bahamas\n\n  - Bahrain\n\n  - Barbados\n\n  - Bhutan\n\n  - Bolivia\n\n  - Botswana\n\n  - Brazil\n\n  - Bulgaria\n\n  - Burkina Faso\n\n  - Burundi\n\n  '",
+            "score": 0.3,
+            "rationale": "The submission only includes 3 out of the 10 required countries: 'Barbados', 'Brazil', and 'Burundi'. It is missing 'Bahamas', 'Bahrain', 'Bhutan', 'Bolivia', 'Botswana', 'Bulgaria', and 'Burkina Faso', which significantly reduces the score."
+          }
+        ],
+        "overall_score": 0.7666666666666666
+      },
+      "task_input": {
+        "question": "Generate a list of all countries that begin with the letter B and do not feature the letter E in their names.",
+        "model": "openai/gpt-4o-mini-2024-07-18"
+      },
+      "eval_logs": [],
+      "task_output": "Here\u2019s a list of countries that start with the letter \"B\" and do not contain the letter \"E\" in their names:\n\n1. Barbados\n2. Burundi\n3. Brazil\n\nLet me know if you need any further information!",
+      "created_at": "2025-01-29T19:03:53.418604",
+      "job_id": "972038d5-0de5-4b6e-a42b-d9a87b3999c9",
+      "task_details": {
+        "model": "openai/gpt-4o-mini-2024-07-18",
+        "response_time": 2.5507328510284424,
+        "prompt_tokens": 30,
+        "completion_tokens": 50
+      },
+      "executed_at": "2025-01-29T19:03:55.978041",
+      "id": "78926920-0f03-4577-8fff-eb84ce1629d0",
+      "task_logs": [],
+      "evaluated_at": "2025-01-29T19:04:04.143247",
+      "challenge_id": "gpt-4o-mini-countries_8",
+      "eval_spec": {
+        "id": "gpt-4o-mini-countries",
+        "context": "",
+        "checklist": [
+          "Answer doesn't have Brunei in the countries list",
+          "Answer doesn't have Bangladesh in the countries list",
+          "Answer contains these 10 countries:\n- Bahamas\n- Bahrain\n- Barbados\n- Bhutan\n- Bolivia\n- Botswana\n- Brazil\n- Bulgaria\n- Burkina Faso\n- Burundi\n"
+        ]
+      },
+      "finished_at": "2025-01-29T19:04:04.143247",
+      "task_number": 9,
+      "eval_passed": false
+    },
+    "gpt-4o-mini-countries_9": {
+      "status": "failed",
+      "eval_score": 0.03333333333333333,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer doesn't have Brunei in the countries list",
+            "score": 0,
+            "rationale": "The submission includes 'Brunei' in the list, which directly contradicts this criterion."
+          },
+          {
+            "criterion": "Answer doesn't have Bangladesh in the countries list",
+            "score": 0,
+            "rationale": "The submission includes 'Bangladesh' in the list, which directly contradicts this criterion."
+          },
+          {
+            "criterion": "'Answer contains these 10 countries:\n\n  - Bahamas\n\n  - Bahrain\n\n  - Barbados\n\n  - Bhutan\n\n  - Bolivia\n\n  - Botswana\n\n  - Brazil\n\n  - Bulgaria\n\n  - Burkina Faso\n\n  - Burundi\n\n  '",
+            "score": 0.1,
+            "rationale": "The submission only includes 'Bahamas' and 'Barbados' from the required list of 10 countries. It is missing the other 8 countries: Bahrain, Bhutan, Bolivia, Botswana, Brazil, Bulgaria, Burkina Faso, and Burundi."
+          }
+        ],
+        "overall_score": 0.03333333333333333
+      },
+      "task_input": {
+        "question": "Create a list of all countries that start with the letter B and do not contain the letter E in their names.",
+        "model": "openai/gpt-4o-mini-2024-07-18"
+      },
+      "eval_logs": [],
+      "task_output": "Here is a list of countries that start with the letter B and do not contain the letter E in their names:\n\n1. Bahamas\n2. Bangladesh\n3. Barbados\n4. Brunei\n\nLet me know if you need more information!",
+      "created_at": "2025-01-29T19:04:04.920288",
+      "job_id": "972038d5-0de5-4b6e-a42b-d9a87b3999c9",
+      "task_details": {
+        "model": "openai/gpt-4o-mini-2024-07-18",
+        "response_time": 1.9908099174499512,
+        "prompt_tokens": 30,
+        "completion_tokens": 50
+      },
+      "executed_at": "2025-01-29T19:04:06.920469",
+      "id": "70e95b7e-e1db-4126-98ab-522a658ff006",
+      "task_logs": [],
+      "evaluated_at": "2025-01-29T19:04:15.639128",
+      "challenge_id": "gpt-4o-mini-countries_9",
+      "eval_spec": {
+        "id": "gpt-4o-mini-countries",
+        "context": "",
+        "checklist": [
+          "Answer doesn't have Brunei in the countries list",
+          "Answer doesn't have Bangladesh in the countries list",
+          "Answer contains these 10 countries:\n- Bahamas\n- Bahrain\n- Barbados\n- Bhutan\n- Bolivia\n- Botswana\n- Brazil\n- Bulgaria\n- Burkina Faso\n- Burundi\n"
+        ]
+      },
+      "finished_at": "2025-01-29T19:04:15.639128",
+      "task_number": 10,
+      "eval_passed": false
+    }
+  }
+}

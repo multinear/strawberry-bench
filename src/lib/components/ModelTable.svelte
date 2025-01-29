@@ -24,6 +24,14 @@
     return [...(bestModel ? [bestModel] : []), ...otherModels]
       .map(model => model.avgResponseTime || 0);
   }));
+
+  // Calculate max tokens across all visible models
+  $: maxTokens = Math.max(...families.flatMap(family => {
+    const bestModel = family.models[0];
+    const otherModels = expandedFamilies.has(family.name) ? family.models.slice(1) : [];
+    return [...(bestModel ? [bestModel] : []), ...otherModels]
+      .map(model => model.avgTokens || 0);
+  }));
 </script>
 
 <div class="overflow-x-auto">
@@ -79,6 +87,7 @@
           {family}
           {maxCost}
           {maxResponseTime}
+          {maxTokens}
           {providers}
           hasExpandButton={true}
           isExpandButtonVisible={hasMoreModels}
@@ -95,6 +104,7 @@
               {family}
               {maxCost}
               {maxResponseTime}
+              {maxTokens}
               {providers}
               on:showDetails
             />
