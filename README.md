@@ -10,4 +10,4 @@ So we decided to test how well different LLMs perform on this task.
 
 And we had found a lot of interesting insights doing so.
 
-Check out [the results](https://multinear.github.io/strawberry-bench/).
+Check out [the results](https://multinear.github.io/strawberry-bench/) and the [testbed](https://github.com/multinear/strawberry-bench-testbed).
