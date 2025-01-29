@@ -1,9 +1,11 @@
 import { base } from '$app/paths';
+import yaml from 'js-yaml';
 
 /** @type {import('./$types').PageLoad} */
 export async function load({ fetch }) {
   // Load models configuration
-  const modelsConfig = await fetch(`${base}/data/_models.json`).then(r => r.json());
+  const modelsYaml = await fetch(`${base}/data/models.yaml`).then(r => r.text());
+  const modelsConfig = yaml.load(modelsYaml);
   
   // Load each model's data
   const modelResults = await Promise.all(

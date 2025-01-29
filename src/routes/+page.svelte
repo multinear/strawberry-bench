@@ -144,7 +144,7 @@
   <div class="flex justify-center mt-8 text-sm text-base-content/70 gap-8">
     <a href="https://multinear.com" class="flex items-center gap-2 hover:text-base-content transition-colors" target="_blank">
       <img src={`${base}/mirable.png`} alt="Mirable" class="h-6 w-8" />
-      Built with Multinear
+      Built by Multinear
     </a>
     <a href="https://github.com/multinear/strawberry-bench" class="flex items-center gap-2 hover:text-base-content transition-colors" target="_blank">
       <div class="w-6 h-6 rounded-full bg-white flex items-center justify-center">

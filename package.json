@@ -19,5 +19,8 @@
     "svelte": "^5.17.3",
     "tailwindcss": "3.4.1",
     "vite": "^6.0.7"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0"
   }
 }
