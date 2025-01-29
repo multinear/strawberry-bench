@@ -6,9 +6,13 @@
   export let family;
   export let maxCost;
   export let maxResponseTime;
+  export let providers;
   export let isExpanded = false;
   export let hasExpandButton = false;
   export let isExpandButtonVisible = false;
+
+  // Get provider display name
+  $: providerName = providers.find(p => p.name === family.provider)?.display_name;
 
   // Format price for display
   function formatPrice(price) {
@@ -60,7 +64,12 @@
       {/if}
     </div>
     <div>
-      <span>{model.name}</span>
+      <span>
+        {#if providerName}
+          <span class="text-base-content/70">{providerName} / </span>
+        {/if}
+        {model.name}
+      </span>
     </div>
   </td>
   <td class="py-2">

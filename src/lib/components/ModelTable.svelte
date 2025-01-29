@@ -7,6 +7,7 @@
   export let sortField = 'order';
   export let sortDirection = 'asc';
   export let expandedFamilies;
+  export let providers;
 
   // Calculate max average cost across all models that are visible
   $: maxCost = Math.max(...families.flatMap(family => {
@@ -78,6 +79,7 @@
           {family}
           {maxCost}
           {maxResponseTime}
+          {providers}
           hasExpandButton={true}
           isExpandButtonVisible={hasMoreModels}
           isExpanded={expandedFamilies.has(family.name)}
@@ -93,6 +95,7 @@
               {family}
               {maxCost}
               {maxResponseTime}
+              {providers}
               on:showDetails
             />
           {/each}

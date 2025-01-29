@@ -83,7 +83,7 @@
 
     <!-- Scrollable content -->
     <div class="overflow-y-auto p-6">
-      <div class="flex flex-col gap-6">
+      <div class="flex flex-col gap-12">
         <!-- Test details -->
         {#each model.details as test, i}
           <div class="flex flex-col gap-4" id="task-{i}">

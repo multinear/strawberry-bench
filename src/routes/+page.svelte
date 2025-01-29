@@ -63,6 +63,10 @@
 
   function toggleSort(field) {
     if (sortField === field) {
+      if ((sortDirection === 'desc' && field !== 'passRate') || (sortDirection === 'asc' && field === 'passRate')) {
+        sortDirection = 'desc';
+        sortField = 'order';  // Reset to original order
+      }
       sortDirection = sortDirection === 'asc' ? 'desc' : 'asc';
     } else {
       sortField = field;
@@ -76,8 +80,6 @@
         case 'tokens':
         case 'cost':
         case 'time':
-          sortDirection = 'asc';
-          break;
         default:
           sortDirection = 'asc';
       }
@@ -189,6 +191,7 @@
     {sortDirection}
     {expandedFamilies}
     families={sortedFamilies}
+    providers={data.providers}
     on:toggleSort={handleTableEvent}
     on:showDetails={handleTableEvent}
     on:toggleFamily={handleTableEvent}

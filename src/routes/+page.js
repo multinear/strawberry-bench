@@ -115,6 +115,7 @@ export async function load({ fetch }) {
 
   return {
     testGroups,
-    families: modelsConfig.families
+    families: modelsConfig.families,
+    providers: modelsConfig.providers
   };
 }
