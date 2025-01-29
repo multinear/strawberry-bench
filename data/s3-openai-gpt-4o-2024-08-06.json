@@ -1,0 +1,291 @@
+{
+  "job_id": "f0daec18-fd38-4d1d-8a68-ee71798128b1",
+  "project_id": "r3-bench",
+  "created_at": "2025-01-28T10:40:20.135319",
+  "finished_at": "2025-01-28T10:40:57.435699",
+  "status": "completed",
+  "model": "openai/gpt-4o-2024-08-06",
+  "details": {
+    "git_revision": null,
+    "status": "completed",
+    "total": 10,
+    "status_map": {
+      "5fb1a639-9105-46a9-8774-54f20fe07e77": "failed",
+      "ad568360-1fb9-4b79-ba79-4e34d84ea95b": "completed",
+      "ec15546f-c701-4b60-a944-45cfcc28fea7": "failed",
+      "4a7cf899-7143-4a15-a13b-68150e456de2": "failed",
+      "b2ddf93a-19e7-4d5d-949d-cb6c48374d3f": "failed",
+      "7e56c491-302e-4443-9786-13158f88e1d6": "completed",
+      "daa0b96c-4d14-41f5-a8cd-fdf13f076b60": "completed",
+      "c71409c8-8006-4cf7-baa5-cc0a1abca101": "completed",
+      "f35e0123-6a5b-42d8-ba1b-5dd6369dd4e1": "completed",
+      "bfc4d371-d8df-4355-a58d-4e5be670621d": "completed"
+    },
+    "current": 10,
+    "details": "Evaluating task 10/10",
+    "results": [
+      [
+        {
+          "output": "The word \"strawberry\" contains 2 instances of the letter \"R\".",
+          "details": {
+            "model": "openai/gpt-4o-2024-08-06",
+            "response_time": 1.983119249343872,
+            "prompt_tokens": 14,
+            "completion_tokens": 18
+          }
+        },
+        {
+          "score": 0.0,
+          "passed": false,
+          "details": {
+            "evaluations": [
+              {
+                "criterion": "Answer states there are 3 Rs in strawberry",
+                "score": 0,
+                "rationale": "The submission states that there are 2 instances of the letter 'R' in 'strawberry', which does not meet the criterion of stating there are 3 Rs. Therefore, the score is 0."
+              }
+            ],
+            "overall_score": 0.0
+          }
+        }
+      ],
+      [
+        {
+          "output": "The word \"strawberry\" contains 3 instances of the letter 'R'.",
+          "details": {
+            "model": "openai/gpt-4o-2024-08-06",
+            "response_time": 1.7074270248413086,
+            "prompt_tokens": 14,
+            "completion_tokens": 18
+          }
+        },
+        {
+          "score": 1.0,
+          "passed": true,
+          "details": {
+            "evaluations": [
+              {
+                "criterion": "Answer states there are 3 Rs in strawberry",
+                "score": 1.0,
+                "rationale": "The submission explicitly states that the word \"strawberry\" contains 3 instances of the letter 'R', which directly satisfies the checklist item."
+              }
+            ],
+            "overall_score": 1.0
+          }
+        }
+      ],
+      [
+        {
+          "output": "The word \"strawberry\" contains two \"R\"s.",
+          "details": {
+            "model": "openai/gpt-4o-2024-08-06",
+            "response_time": 1.7145390510559082,
+            "prompt_tokens": 14,
+            "completion_tokens": 14
+          }
+        },
+        {
+          "score": 0.0,
+          "passed": false,
+          "details": {
+            "evaluations": [
+              {
+                "criterion": "Answer states there are 3 Rs in strawberry",
+                "score": 0,
+                "rationale": "The submission states that there are two 'R's in 'strawberry', which is incorrect according to the checklist item that requires the answer to state there are three 'R's. The word 'strawberry' actually contains two 'R's, but the checklist item is looking for a specific, albeit incorrect, response of three 'R's."
+              }
+            ],
+            "overall_score": 0.0
+          }
+        }
+      ],
+      [
+        {
+          "output": "The word \"strawberry\" contains 2 'R's.",
+          "details": {
+            "model": "openai/gpt-4o-2024-08-06",
+            "response_time": 1.8078358173370361,
+            "prompt_tokens": 14,
+            "completion_tokens": 15
+          }
+        },
+        {
+          "score": 0.0,
+          "passed": false,
+          "details": {
+            "evaluations": [
+              {
+                "criterion": "Answer states there are 3 Rs in strawberry",
+                "score": 0,
+                "rationale": "The submission states that there are 2 'R's in 'strawberry', which is incorrect according to the checklist item. The correct answer should have been 3 'R's, as per the checklist requirement."
+              }
+            ],
+            "overall_score": 0.0
+          }
+        }
+      ],
+      [
+        {
+          "output": "The word \"strawberry\" contains two \"R\"s.",
+          "details": {
+            "model": "openai/gpt-4o-2024-08-06",
+            "response_time": 1.5952656269073486,
+            "prompt_tokens": 14,
+            "completion_tokens": 14
+          }
+        },
+        {
+          "score": 0.0,
+          "passed": false,
+          "details": {
+            "evaluations": [
+              {
+                "criterion": "Answer states there are 3 Rs in strawberry",
+                "score": 0,
+                "rationale": "The submission states that there are two 'R's in 'strawberry', which is incorrect according to the checklist item that requires the answer to state there are three 'R's. The word 'strawberry' actually contains two 'R's, but the checklist item is looking for a specific, albeit incorrect, response of three 'R's."
+              }
+            ],
+            "overall_score": 0.0
+          }
+        }
+      ],
+      [
+        {
+          "output": "The word \"strawberry\" contains 3 instances of the letter \"R.\"",
+          "details": {
+            "model": "openai/gpt-4o-2024-08-06",
+            "response_time": 1.6521058082580566,
+            "prompt_tokens": 14,
+            "completion_tokens": 18
+          }
+        },
+        {
+          "score": 1.0,
+          "passed": true,
+          "details": {
+            "evaluations": [
+              {
+                "criterion": "Answer states there are 3 Rs in strawberry",
+                "score": 1.0,
+                "rationale": "The submission correctly identifies that there are 3 instances of the letter 'R' in the word 'strawberry.' The answer is clear and directly addresses the checklist item."
+              }
+            ],
+            "overall_score": 1.0
+          }
+        }
+      ],
+      [
+        {
+          "output": "The word \"strawberry\" contains 3 'R's.",
+          "details": {
+            "model": "openai/gpt-4o-2024-08-06",
+            "response_time": 1.5897789001464844,
+            "prompt_tokens": 14,
+            "completion_tokens": 15
+          }
+        },
+        {
+          "score": 1.0,
+          "passed": true,
+          "details": {
+            "evaluations": [
+              {
+                "criterion": "Answer states there are 3 Rs in strawberry",
+                "score": 1.0,
+                "rationale": "The submission correctly identifies that there are 3 'R's in the word 'strawberry'. The answer is clear and directly addresses the checklist item."
+              }
+            ],
+            "overall_score": 1.0
+          }
+        }
+      ],
+      [
+        {
+          "output": "The word \"strawberry\" contains 3 instances of the letter \"R.\"",
+          "details": {
+            "model": "openai/gpt-4o-2024-08-06",
+            "response_time": 2.5174100399017334,
+            "prompt_tokens": 14,
+            "completion_tokens": 18
+          }
+        },
+        {
+          "score": 1.0,
+          "passed": true,
+          "details": {
+            "evaluations": [
+              {
+                "criterion": "Answer states there are 3 Rs in strawberry",
+                "score": 1.0,
+                "rationale": "The submission correctly identifies that there are 3 instances of the letter 'R' in the word 'strawberry.' The answer is clear and directly addresses the checklist item."
+              }
+            ],
+            "overall_score": 1.0
+          }
+        }
+      ],
+      [
+        {
+          "output": "The word \"strawberry\" contains three \"R\"s.",
+          "details": {
+            "model": "openai/gpt-4o-2024-08-06",
+            "response_time": 1.8056790828704834,
+            "prompt_tokens": 14,
+            "completion_tokens": 14
+          }
+        },
+        {
+          "score": 1.0,
+          "passed": true,
+          "details": {
+            "evaluations": [
+              {
+                "criterion": "Answer states there are 3 Rs in strawberry",
+                "score": 1.0,
+                "rationale": "The submission explicitly states that the word \"strawberry\" contains three \"R\"s, which directly satisfies the checklist item."
+              }
+            ],
+            "overall_score": 1.0
+          }
+        }
+      ],
+      [
+        {
+          "output": "The word \"strawberry\" contains three Rs.",
+          "details": {
+            "model": "openai/gpt-4o-2024-08-06",
+            "response_time": 1.6559479236602783,
+            "prompt_tokens": 14,
+            "completion_tokens": 12
+          }
+        },
+        {
+          "score": 1.0,
+          "passed": true,
+          "details": {
+            "evaluations": [
+              {
+                "criterion": "Answer states there are 3 Rs in strawberry",
+                "score": 1.0,
+                "rationale": "The submission explicitly states that the word \"strawberry\" contains three Rs, which directly satisfies the checklist item."
+              }
+            ],
+            "overall_score": 1.0
+          }
+        }
+      ]
+    ]
+  },
+  "tasks": {
+    "5fb1a639-9105-46a9-8774-54f20fe07e77": "failed",
+    "ad568360-1fb9-4b79-ba79-4e34d84ea95b": "completed",
+    "ec15546f-c701-4b60-a944-45cfcc28fea7": "failed",
+    "4a7cf899-7143-4a15-a13b-68150e456de2": "failed",
+    "b2ddf93a-19e7-4d5d-949d-cb6c48374d3f": "failed",
+    "7e56c491-302e-4443-9786-13158f88e1d6": "completed",
+    "daa0b96c-4d14-41f5-a8cd-fdf13f076b60": "completed",
+    "c71409c8-8006-4cf7-baa5-cc0a1abca101": "completed",
+    "f35e0123-6a5b-42d8-ba1b-5dd6369dd4e1": "completed",
+    "bfc4d371-d8df-4355-a58d-4e5be670621d": "completed"
+  }
+}
