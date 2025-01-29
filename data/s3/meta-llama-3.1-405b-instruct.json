@@ -1,0 +1,751 @@
+{
+  "job_id": "bd33b7ac-507a-4094-923d-1c6a94e386de",
+  "project_id": "r3-bench",
+  "created_at": "2025-01-28T10:46:59.066743",
+  "finished_at": "2025-01-28T10:47:35.282269",
+  "status": "completed",
+  "model": "meta-llama/llama-3.1-405b-instruct",
+  "details": {
+    "git_revision": null,
+    "status": "completed",
+    "total": 10,
+    "status_map": {
+      "c39ce6b5-a12a-48d6-9a31-5144ff0ecb9b": "failed",
+      "8c9b7abb-04d9-4ec3-b84a-4a9cbf718bdd": "failed",
+      "36a90885-fe49-4a4e-a856-aebe2ada00f3": "failed",
+      "51ddfc80-4990-44f3-bb88-bd1ad9418d49": "failed",
+      "3f54afb3-150a-4474-884c-bb406caca922": "failed",
+      "b9cd221c-2739-414c-8de2-d0f92ec6ea95": "failed",
+      "5a7df425-92d5-4117-85c4-05c6be0a72fd": "failed",
+      "33e339b1-57c4-49e2-a86a-32a556fe0d08": "failed",
+      "57e46f03-d588-4b1d-b5e1-03183c9202f2": "failed",
+      "89bb0b11-5c6b-4d16-8e1d-03b4763a500d": "failed"
+    },
+    "current": 10,
+    "details": "Evaluating task 10/10",
+    "results": [
+      [
+        {
+          "output": "There are 2 Rs in the word \"strawberry\"",
+          "details": {
+            "model": "meta-llama/llama-3.1-405b-instruct",
+            "response_time": 2.7168362140655518,
+            "prompt_tokens": 17,
+            "completion_tokens": 13
+          }
+        },
+        {
+          "score": 0.0,
+          "passed": false,
+          "details": {
+            "evaluations": [
+              {
+                "criterion": "Answer states there are 3 Rs in strawberry",
+                "score": 0,
+                "rationale": "The submission states that there are 2 Rs in the word 'strawberry', which is incorrect. The correct number of Rs in 'strawberry' is 3. Therefore, the submission does not meet the criterion."
+              }
+            ],
+            "overall_score": 0.0
+          }
+        }
+      ],
+      [
+        {
+          "output": "There are 2 Rs in \"strawberry\".",
+          "details": {
+            "model": "meta-llama/llama-3.1-405b-instruct",
+            "response_time": 2.4938108921051025,
+            "prompt_tokens": 42,
+            "completion_tokens": 13
+          }
+        },
+        {
+          "score": 0.0,
+          "passed": false,
+          "details": {
+            "evaluations": [
+              {
+                "criterion": "Answer states there are 3 Rs in strawberry",
+                "score": 0,
+                "rationale": "The submission states that there are 2 Rs in 'strawberry', which is incorrect. The correct number of Rs in 'strawberry' is 3. Therefore, the submission does not meet the criterion."
+              }
+            ],
+            "overall_score": 0.0
+          }
+        }
+      ],
+      [
+        {
+          "output": "There are 2 Rs and also 2 other R's no there is not. There are  2 R's in \"strawberry.\"",
+          "details": {
+            "model": "meta-llama/llama-3.1-405b-instruct",
+            "response_time": 2.3564860820770264,
+            "prompt_tokens": 51,
+            "completion_tokens": 31
+          }
+        },
+        {
+          "score": 0.0,
+          "passed": false,
+          "details": {
+            "evaluations": [
+              {
+                "criterion": "Answer states there are 3 Rs in strawberry",
+                "score": 0,
+                "rationale": "The submission incorrectly states that there are 2 Rs in 'strawberry.' The correct answer should be that there are 3 Rs in 'strawberry.' Therefore, the submission does not meet the criterion."
+              }
+            ],
+            "overall_score": 0.0
+          }
+        }
+      ],
+      [
+        {
+          "output": "There are 2 Rs in strawberry",
+          "details": {
+            "model": "meta-llama/llama-3.1-405b-instruct",
+            "response_time": 1.8983840942382812,
+            "prompt_tokens": 51,
+            "completion_tokens": 8
+          }
+        },
+        {
+          "score": 0.0,
+          "passed": false,
+          "details": {
+            "evaluations": [
+              {
+                "criterion": "Answer states there are 3 Rs in strawberry",
+                "score": 0,
+                "rationale": "The submission states that there are 2 Rs in 'strawberry', which is incorrect according to the checklist item. The correct answer should be 3 Rs, as the word 'strawberry' contains three 'R' letters."
+              }
+            ],
+            "overall_score": 0.0
+          }
+        }
+      ],
+      [
+        {
+          "output": "There are 2 Rs in the word \"strawberry\".",
+          "details": {
+            "model": "meta-llama/llama-3.1-405b-instruct",
+            "response_time": 1.78082275390625,
+            "prompt_tokens": 51,
+            "completion_tokens": 14
+          }
+        },
+        {
+          "score": 0.0,
+          "passed": false,
+          "details": {
+            "evaluations": [
+              {
+                "criterion": "Answer states there are 3 Rs in strawberry",
+                "score": 0,
+                "rationale": "The submission states that there are 2 Rs in the word 'strawberry', which is incorrect. The correct number of Rs in 'strawberry' is 3. Therefore, the submission does not meet the criterion."
+              }
+            ],
+            "overall_score": 0.0
+          }
+        }
+      ],
+      [
+        {
+          "output": "There are 2 Rs in the word \"strawberry\".",
+          "details": {
+            "model": "meta-llama/llama-3.1-405b-instruct",
+            "response_time": 2.2100179195404053,
+            "prompt_tokens": 17,
+            "completion_tokens": 13
+          }
+        },
+        {
+          "score": 0.0,
+          "passed": false,
+          "details": {
+            "evaluations": [
+              {
+                "criterion": "Answer states there are 3 Rs in strawberry",
+                "score": 0,
+                "rationale": "The submission states that there are 2 Rs in the word 'strawberry', which is incorrect. The correct number of Rs in 'strawberry' is 3. Therefore, the submission does not meet the criterion."
+              }
+            ],
+            "overall_score": 0.0
+          }
+        }
+      ],
+      [
+        {
+          "output": "There are 2 Rs in \"strawberry\".",
+          "details": {
+            "model": "meta-llama/llama-3.1-405b-instruct",
+            "response_time": 2.1178619861602783,
+            "prompt_tokens": 17,
+            "completion_tokens": 11
+          }
+        },
+        {
+          "score": 0.0,
+          "passed": false,
+          "details": {
+            "evaluations": [
+              {
+                "criterion": "Answer states there are 3 Rs in strawberry",
+                "score": 0,
+                "rationale": "The submission states that there are 2 Rs in 'strawberry', which is incorrect. The correct number of Rs in 'strawberry' is 3. Therefore, the submission does not meet the criterion."
+              }
+            ],
+            "overall_score": 0.0
+          }
+        }
+      ],
+      [
+        {
+          "output": "There are 2 Rs in \"strawberry\".",
+          "details": {
+            "model": "meta-llama/llama-3.1-405b-instruct",
+            "response_time": 2.4259352684020996,
+            "prompt_tokens": 17,
+            "completion_tokens": 11
+          }
+        },
+        {
+          "score": 0.0,
+          "passed": false,
+          "details": {
+            "evaluations": [
+              {
+                "criterion": "Answer states there are 3 Rs in strawberry",
+                "score": 0,
+                "rationale": "The submission states that there are 2 Rs in 'strawberry', which is incorrect. The correct number of Rs in 'strawberry' is 3. Therefore, the submission does not meet the criterion."
+              }
+            ],
+            "overall_score": 0.0
+          }
+        }
+      ],
+      [
+        {
+          "output": "There are 2 Rs in \"strawberry\".",
+          "details": {
+            "model": "meta-llama/llama-3.1-405b-instruct",
+            "response_time": 2.247788906097412,
+            "prompt_tokens": 51,
+            "completion_tokens": 12
+          }
+        },
+        {
+          "score": 0.0,
+          "passed": false,
+          "details": {
+            "evaluations": [
+              {
+                "criterion": "Answer states there are 3 Rs in strawberry",
+                "score": 0,
+                "rationale": "The submission states that there are 2 Rs in 'strawberry', which is incorrect. The correct number of Rs in 'strawberry' is 3. Therefore, the submission does not meet the criterion."
+              }
+            ],
+            "overall_score": 0.0
+          }
+        }
+      ],
+      [
+        {
+          "output": "There are 2 Rs in the word 'strawberry'.",
+          "details": {
+            "model": "meta-llama/llama-3.1-405b-instruct",
+            "response_time": 1.776883840560913,
+            "prompt_tokens": 51,
+            "completion_tokens": 14
+          }
+        },
+        {
+          "score": 0.0,
+          "passed": false,
+          "details": {
+            "evaluations": [
+              {
+                "criterion": "Answer states there are 3 Rs in strawberry",
+                "score": 0,
+                "rationale": "The submission states that there are 2 Rs in the word 'strawberry', which is incorrect. The correct number of Rs in 'strawberry' is 3. Therefore, the submission does not meet the criterion."
+              }
+            ],
+            "overall_score": 0.0
+          }
+        }
+      ]
+    ]
+  },
+  "tasks": {
+    "llama-3.1-405b-strawberry": {
+      "status": "failed",
+      "eval_score": 0.0,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer states there are 3 Rs in strawberry",
+            "score": 0,
+            "rationale": "The submission states that there are 2 Rs in the word 'strawberry', which is incorrect. The correct number of Rs in 'strawberry' is 3. Therefore, the submission does not meet the criterion."
+          }
+        ],
+        "overall_score": 0.0
+      },
+      "task_input": {
+        "question": "How many Rs are in strawberry?",
+        "model": "openrouter/meta-llama/llama-3.1-405b-instruct",
+        "params": {
+          "timeout": 30
+        }
+      },
+      "eval_logs": [],
+      "task_output": "There are 2 Rs in the word \"strawberry\"",
+      "created_at": "2025-01-28T10:47:00.140409",
+      "job_id": "bd33b7ac-507a-4094-923d-1c6a94e386de",
+      "task_details": {
+        "model": "meta-llama/llama-3.1-405b-instruct",
+        "response_time": 2.7168362140655518,
+        "prompt_tokens": 17,
+        "completion_tokens": 13
+      },
+      "executed_at": "2025-01-28T10:47:02.864618",
+      "id": "c39ce6b5-a12a-48d6-9a31-5144ff0ecb9b",
+      "task_logs": [],
+      "evaluated_at": "2025-01-28T10:47:06.612073",
+      "challenge_id": "llama-3.1-405b-strawberry",
+      "eval_spec": {
+        "id": "llama-3.1-405b-strawberry",
+        "context": "",
+        "checklist": [
+          "Answer states there are 3 Rs in strawberry"
+        ]
+      },
+      "finished_at": "2025-01-28T10:47:06.612073",
+      "task_number": 1,
+      "eval_passed": false
+    },
+    "llama-3.1-405b-strawberry_1": {
+      "status": "failed",
+      "eval_score": 0.0,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer states there are 3 Rs in strawberry",
+            "score": 0,
+            "rationale": "The submission states that there are 2 Rs in 'strawberry', which is incorrect. The correct number of Rs in 'strawberry' is 3. Therefore, the submission does not meet the criterion."
+          }
+        ],
+        "overall_score": 0.0
+      },
+      "task_input": {
+        "question": "How many Rs are in strawberry?",
+        "model": "openrouter/meta-llama/llama-3.1-405b-instruct",
+        "params": {
+          "timeout": 30
+        }
+      },
+      "eval_logs": [],
+      "task_output": "There are 2 Rs in \"strawberry\".",
+      "created_at": "2025-01-28T10:47:06.614938",
+      "job_id": "bd33b7ac-507a-4094-923d-1c6a94e386de",
+      "task_details": {
+        "model": "meta-llama/llama-3.1-405b-instruct",
+        "response_time": 2.4938108921051025,
+        "prompt_tokens": 42,
+        "completion_tokens": 13
+      },
+      "executed_at": "2025-01-28T10:47:09.114749",
+      "id": "8c9b7abb-04d9-4ec3-b84a-4a9cbf718bdd",
+      "task_logs": [],
+      "evaluated_at": "2025-01-28T10:47:09.537413",
+      "challenge_id": "llama-3.1-405b-strawberry_1",
+      "eval_spec": {
+        "id": "llama-3.1-405b-strawberry",
+        "context": "",
+        "checklist": [
+          "Answer states there are 3 Rs in strawberry"
+        ]
+      },
+      "finished_at": "2025-01-28T10:47:09.537413",
+      "task_number": 2,
+      "eval_passed": false
+    },
+    "llama-3.1-405b-strawberry_2": {
+      "status": "failed",
+      "eval_score": 0.0,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer states there are 3 Rs in strawberry",
+            "score": 0,
+            "rationale": "The submission incorrectly states that there are 2 Rs in 'strawberry.' The correct answer should be that there are 3 Rs in 'strawberry.' Therefore, the submission does not meet the criterion."
+          }
+        ],
+        "overall_score": 0.0
+      },
+      "task_input": {
+        "question": "How many Rs are in strawberry?",
+        "model": "openrouter/meta-llama/llama-3.1-405b-instruct",
+        "params": {
+          "timeout": 30
+        }
+      },
+      "eval_logs": [],
+      "task_output": "There are 2 Rs and also 2 other R's no there is not. There are  2 R's in \"strawberry.\"",
+      "created_at": "2025-01-28T10:47:09.541515",
+      "job_id": "bd33b7ac-507a-4094-923d-1c6a94e386de",
+      "task_details": {
+        "model": "meta-llama/llama-3.1-405b-instruct",
+        "response_time": 2.3564860820770264,
+        "prompt_tokens": 51,
+        "completion_tokens": 31
+      },
+      "executed_at": "2025-01-28T10:47:11.907579",
+      "id": "36a90885-fe49-4a4e-a856-aebe2ada00f3",
+      "task_logs": [],
+      "evaluated_at": "2025-01-28T10:47:14.264620",
+      "challenge_id": "llama-3.1-405b-strawberry_2",
+      "eval_spec": {
+        "id": "llama-3.1-405b-strawberry",
+        "context": "",
+        "checklist": [
+          "Answer states there are 3 Rs in strawberry"
+        ]
+      },
+      "finished_at": "2025-01-28T10:47:14.264620",
+      "task_number": 3,
+      "eval_passed": false
+    },
+    "llama-3.1-405b-strawberry_3": {
+      "status": "failed",
+      "eval_score": 0.0,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer states there are 3 Rs in strawberry",
+            "score": 0,
+            "rationale": "The submission states that there are 2 Rs in 'strawberry', which is incorrect according to the checklist item. The correct answer should be 3 Rs, as the word 'strawberry' contains three 'R' letters."
+          }
+        ],
+        "overall_score": 0.0
+      },
+      "task_input": {
+        "question": "How many Rs are in strawberry?",
+        "model": "openrouter/meta-llama/llama-3.1-405b-instruct",
+        "params": {
+          "timeout": 30
+        }
+      },
+      "eval_logs": [],
+      "task_output": "There are 2 Rs in strawberry",
+      "created_at": "2025-01-28T10:47:14.268027",
+      "job_id": "bd33b7ac-507a-4094-923d-1c6a94e386de",
+      "task_details": {
+        "model": "meta-llama/llama-3.1-405b-instruct",
+        "response_time": 1.8983840942382812,
+        "prompt_tokens": 51,
+        "completion_tokens": 8
+      },
+      "executed_at": "2025-01-28T10:47:16.173943",
+      "id": "51ddfc80-4990-44f3-bb88-bd1ad9418d49",
+      "task_logs": [],
+      "evaluated_at": "2025-01-28T10:47:18.389578",
+      "challenge_id": "llama-3.1-405b-strawberry_3",
+      "eval_spec": {
+        "id": "llama-3.1-405b-strawberry",
+        "context": "",
+        "checklist": [
+          "Answer states there are 3 Rs in strawberry"
+        ]
+      },
+      "finished_at": "2025-01-28T10:47:18.389578",
+      "task_number": 4,
+      "eval_passed": false
+    },
+    "llama-3.1-405b-strawberry_4": {
+      "status": "failed",
+      "eval_score": 0.0,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer states there are 3 Rs in strawberry",
+            "score": 0,
+            "rationale": "The submission states that there are 2 Rs in the word 'strawberry', which is incorrect. The correct number of Rs in 'strawberry' is 3. Therefore, the submission does not meet the criterion."
+          }
+        ],
+        "overall_score": 0.0
+      },
+      "task_input": {
+        "question": "How many Rs are in strawberry?",
+        "model": "openrouter/meta-llama/llama-3.1-405b-instruct",
+        "params": {
+          "timeout": 30
+        }
+      },
+      "eval_logs": [],
+      "task_output": "There are 2 Rs in the word \"strawberry\".",
+      "created_at": "2025-01-28T10:47:18.394103",
+      "job_id": "bd33b7ac-507a-4094-923d-1c6a94e386de",
+      "task_details": {
+        "model": "meta-llama/llama-3.1-405b-instruct",
+        "response_time": 1.78082275390625,
+        "prompt_tokens": 51,
+        "completion_tokens": 14
+      },
+      "executed_at": "2025-01-28T10:47:20.184817",
+      "id": "3f54afb3-150a-4474-884c-bb406caca922",
+      "task_logs": [],
+      "evaluated_at": "2025-01-28T10:47:20.771788",
+      "challenge_id": "llama-3.1-405b-strawberry_4",
+      "eval_spec": {
+        "id": "llama-3.1-405b-strawberry",
+        "context": "",
+        "checklist": [
+          "Answer states there are 3 Rs in strawberry"
+        ]
+      },
+      "finished_at": "2025-01-28T10:47:20.771788",
+      "task_number": 5,
+      "eval_passed": false
+    },
+    "llama-3.1-405b-strawberry_5": {
+      "status": "failed",
+      "eval_score": 0.0,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer states there are 3 Rs in strawberry",
+            "score": 0,
+            "rationale": "The submission states that there are 2 Rs in the word 'strawberry', which is incorrect. The correct number of Rs in 'strawberry' is 3. Therefore, the submission does not meet the criterion."
+          }
+        ],
+        "overall_score": 0.0
+      },
+      "task_input": {
+        "question": "How many Rs are in strawberry?",
+        "model": "openrouter/meta-llama/llama-3.1-405b-instruct",
+        "params": {
+          "timeout": 30
+        }
+      },
+      "eval_logs": [],
+      "task_output": "There are 2 Rs in the word \"strawberry\".",
+      "created_at": "2025-01-28T10:47:20.774293",
+      "job_id": "bd33b7ac-507a-4094-923d-1c6a94e386de",
+      "task_details": {
+        "model": "meta-llama/llama-3.1-405b-instruct",
+        "response_time": 2.2100179195404053,
+        "prompt_tokens": 17,
+        "completion_tokens": 13
+      },
+      "executed_at": "2025-01-28T10:47:22.991379",
+      "id": "b9cd221c-2739-414c-8de2-d0f92ec6ea95",
+      "task_logs": [],
+      "evaluated_at": "2025-01-28T10:47:23.149051",
+      "challenge_id": "llama-3.1-405b-strawberry_5",
+      "eval_spec": {
+        "id": "llama-3.1-405b-strawberry",
+        "context": "",
+        "checklist": [
+          "Answer states there are 3 Rs in strawberry"
+        ]
+      },
+      "finished_at": "2025-01-28T10:47:23.149051",
+      "task_number": 6,
+      "eval_passed": false
+    },
+    "llama-3.1-405b-strawberry_6": {
+      "status": "failed",
+      "eval_score": 0.0,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer states there are 3 Rs in strawberry",
+            "score": 0,
+            "rationale": "The submission states that there are 2 Rs in 'strawberry', which is incorrect. The correct number of Rs in 'strawberry' is 3. Therefore, the submission does not meet the criterion."
+          }
+        ],
+        "overall_score": 0.0
+      },
+      "task_input": {
+        "question": "How many Rs are in strawberry?",
+        "model": "openrouter/meta-llama/llama-3.1-405b-instruct",
+        "params": {
+          "timeout": 30
+        }
+      },
+      "eval_logs": [],
+      "task_output": "There are 2 Rs in \"strawberry\".",
+      "created_at": "2025-01-28T10:47:23.152379",
+      "job_id": "bd33b7ac-507a-4094-923d-1c6a94e386de",
+      "task_details": {
+        "model": "meta-llama/llama-3.1-405b-instruct",
+        "response_time": 2.1178619861602783,
+        "prompt_tokens": 17,
+        "completion_tokens": 11
+      },
+      "executed_at": "2025-01-28T10:47:25.278328",
+      "id": "5a7df425-92d5-4117-85c4-05c6be0a72fd",
+      "task_logs": [],
+      "evaluated_at": "2025-01-28T10:47:25.650562",
+      "challenge_id": "llama-3.1-405b-strawberry_6",
+      "eval_spec": {
+        "id": "llama-3.1-405b-strawberry",
+        "context": "",
+        "checklist": [
+          "Answer states there are 3 Rs in strawberry"
+        ]
+      },
+      "finished_at": "2025-01-28T10:47:25.650562",
+      "task_number": 7,
+      "eval_passed": false
+    },
+    "llama-3.1-405b-strawberry_7": {
+      "status": "failed",
+      "eval_score": 0.0,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer states there are 3 Rs in strawberry",
+            "score": 0,
+            "rationale": "The submission states that there are 2 Rs in 'strawberry', which is incorrect. The correct number of Rs in 'strawberry' is 3. Therefore, the submission does not meet the criterion."
+          }
+        ],
+        "overall_score": 0.0
+      },
+      "task_input": {
+        "question": "How many Rs are in strawberry?",
+        "model": "openrouter/meta-llama/llama-3.1-405b-instruct",
+        "params": {
+          "timeout": 30
+        }
+      },
+      "eval_logs": [],
+      "task_output": "There are 2 Rs in \"strawberry\".",
+      "created_at": "2025-01-28T10:47:25.655009",
+      "job_id": "bd33b7ac-507a-4094-923d-1c6a94e386de",
+      "task_details": {
+        "model": "meta-llama/llama-3.1-405b-instruct",
+        "response_time": 2.4259352684020996,
+        "prompt_tokens": 17,
+        "completion_tokens": 11
+      },
+      "executed_at": "2025-01-28T10:47:28.091230",
+      "id": "33e339b1-57c4-49e2-a86a-32a556fe0d08",
+      "task_logs": [],
+      "evaluated_at": "2025-01-28T10:47:28.330721",
+      "challenge_id": "llama-3.1-405b-strawberry_7",
+      "eval_spec": {
+        "id": "llama-3.1-405b-strawberry",
+        "context": "",
+        "checklist": [
+          "Answer states there are 3 Rs in strawberry"
+        ]
+      },
+      "finished_at": "2025-01-28T10:47:28.330721",
+      "task_number": 8,
+      "eval_passed": false
+    },
+    "llama-3.1-405b-strawberry_8": {
+      "status": "failed",
+      "eval_score": 0.0,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer states there are 3 Rs in strawberry",
+            "score": 0,
+            "rationale": "The submission states that there are 2 Rs in 'strawberry', which is incorrect. The correct number of Rs in 'strawberry' is 3. Therefore, the submission does not meet the criterion."
+          }
+        ],
+        "overall_score": 0.0
+      },
+      "task_input": {
+        "question": "How many Rs are in strawberry?",
+        "model": "openrouter/meta-llama/llama-3.1-405b-instruct",
+        "params": {
+          "timeout": 30
+        }
+      },
+      "eval_logs": [],
+      "task_output": "There are 2 Rs in \"strawberry\".",
+      "created_at": "2025-01-28T10:47:28.332420",
+      "job_id": "bd33b7ac-507a-4094-923d-1c6a94e386de",
+      "task_details": {
+        "model": "meta-llama/llama-3.1-405b-instruct",
+        "response_time": 2.247788906097412,
+        "prompt_tokens": 51,
+        "completion_tokens": 12
+      },
+      "executed_at": "2025-01-28T10:47:30.583462",
+      "id": "57e46f03-d588-4b1d-b5e1-03183c9202f2",
+      "task_logs": [],
+      "evaluated_at": "2025-01-28T10:47:30.726224",
+      "challenge_id": "llama-3.1-405b-strawberry_8",
+      "eval_spec": {
+        "id": "llama-3.1-405b-strawberry",
+        "context": "",
+        "checklist": [
+          "Answer states there are 3 Rs in strawberry"
+        ]
+      },
+      "finished_at": "2025-01-28T10:47:30.726224",
+      "task_number": 9,
+      "eval_passed": false
+    },
+    "llama-3.1-405b-strawberry_9": {
+      "status": "failed",
+      "eval_score": 0.0,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer states there are 3 Rs in strawberry",
+            "score": 0,
+            "rationale": "The submission states that there are 2 Rs in the word 'strawberry', which is incorrect. The correct number of Rs in 'strawberry' is 3. Therefore, the submission does not meet the criterion."
+          }
+        ],
+        "overall_score": 0.0
+      },
+      "task_input": {
+        "question": "How many Rs are in strawberry?",
+        "model": "openrouter/meta-llama/llama-3.1-405b-instruct",
+        "params": {
+          "timeout": 30
+        }
+      },
+      "eval_logs": [],
+      "task_output": "There are 2 Rs in the word 'strawberry'.",
+      "created_at": "2025-01-28T10:47:30.729141",
+      "job_id": "bd33b7ac-507a-4094-923d-1c6a94e386de",
+      "task_details": {
+        "model": "meta-llama/llama-3.1-405b-instruct",
+        "response_time": 1.776883840560913,
+        "prompt_tokens": 51,
+        "completion_tokens": 14
+      },
+      "executed_at": "2025-01-28T10:47:32.513804",
+      "id": "89bb0b11-5c6b-4d16-8e1d-03b4763a500d",
+      "task_logs": [],
+      "evaluated_at": "2025-01-28T10:47:35.275313",
+      "challenge_id": "llama-3.1-405b-strawberry_9",
+      "eval_spec": {
+        "id": "llama-3.1-405b-strawberry",
+        "context": "",
+        "checklist": [
+          "Answer states there are 3 Rs in strawberry"
+        ]
+      },
+      "finished_at": "2025-01-28T10:47:35.275313",
+      "task_number": 10,
+      "eval_passed": false
+    }
+  }
+}

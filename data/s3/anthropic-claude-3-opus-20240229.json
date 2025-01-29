@@ -1,0 +1,751 @@
+{
+  "job_id": "c7ae3e70-5656-426f-94fc-2054002fd9d6",
+  "project_id": "r3-bench",
+  "created_at": "2025-01-28T12:30:26.805081",
+  "finished_at": "2025-01-28T12:31:05.031080",
+  "status": "completed",
+  "model": "anthropic/claude-3-opus-20240229",
+  "details": {
+    "git_revision": null,
+    "status": "completed",
+    "total": 10,
+    "status_map": {
+      "f863770b-930c-46d2-b4da-3773e18e7bd9": "completed",
+      "c890252b-a695-4768-a89c-06120a538ceb": "completed",
+      "b3813b15-c3cc-4c7e-918b-87b48c0b8a55": "completed",
+      "ba434aac-655f-4b2f-810d-8c6578e72055": "completed",
+      "66275770-db5d-403c-9364-b119ad342c3e": "completed",
+      "aab24523-6067-4ca4-ac83-78d949745ddb": "failed",
+      "eb80d27c-26dc-4e5e-ba73-0ed9b8a79454": "completed",
+      "b26ea2d3-e0b0-4ef1-a25b-59c30b94690a": "completed",
+      "49c94d07-1316-4c5a-9470-769612fbad30": "completed",
+      "e689a5e8-6f92-4c85-b28b-a3e7f29d34a7": "completed"
+    },
+    "current": 10,
+    "details": "Evaluating task 10/10",
+    "results": [
+      [
+        {
+          "output": "There are 3 Rs in the word \"strawberry\".\n\nS T R A W B E R R Y",
+          "details": {
+            "model": "anthropic/claude-3-opus-20240229",
+            "response_time": 2.8971340656280518,
+            "prompt_tokens": 15,
+            "completion_tokens": 27
+          }
+        },
+        {
+          "score": 1.0,
+          "passed": true,
+          "details": {
+            "evaluations": [
+              {
+                "criterion": "Answer states there are 3 Rs in strawberry",
+                "score": 1.0,
+                "rationale": "The submission explicitly states that there are 3 Rs in the word 'strawberry', which directly satisfies the checklist item. The answer is clear and unambiguous, providing the correct count of the letter 'R' in the word."
+              }
+            ],
+            "overall_score": 1.0
+          }
+        }
+      ],
+      [
+        {
+          "output": "There are three Rs in the word \"strawberry\".",
+          "details": {
+            "model": "anthropic/claude-3-opus-20240229",
+            "response_time": 2.1473259925842285,
+            "prompt_tokens": 15,
+            "completion_tokens": 14
+          }
+        },
+        {
+          "score": 1.0,
+          "passed": true,
+          "details": {
+            "evaluations": [
+              {
+                "criterion": "Answer states there are 3 Rs in strawberry",
+                "score": 1.0,
+                "rationale": "The submission correctly states that there are three Rs in the word 'strawberry', which directly satisfies the checklist item."
+              }
+            ],
+            "overall_score": 1.0
+          }
+        }
+      ],
+      [
+        {
+          "output": "There are 3 Rs in the word \"strawberry\".",
+          "details": {
+            "model": "anthropic/claude-3-opus-20240229",
+            "response_time": 2.140397071838379,
+            "prompt_tokens": 15,
+            "completion_tokens": 16
+          }
+        },
+        {
+          "score": 1.0,
+          "passed": true,
+          "details": {
+            "evaluations": [
+              {
+                "criterion": "Answer states there are 3 Rs in strawberry",
+                "score": 1.0,
+                "rationale": "The submission explicitly states that there are 3 Rs in the word \"strawberry,\" which directly satisfies the checklist item."
+              }
+            ],
+            "overall_score": 1.0
+          }
+        }
+      ],
+      [
+        {
+          "output": "There are 3 Rs in the word \"strawberry\".",
+          "details": {
+            "model": "anthropic/claude-3-opus-20240229",
+            "response_time": 2.3234550952911377,
+            "prompt_tokens": 15,
+            "completion_tokens": 16
+          }
+        },
+        {
+          "score": 1.0,
+          "passed": true,
+          "details": {
+            "evaluations": [
+              {
+                "criterion": "Answer states there are 3 Rs in strawberry",
+                "score": 1.0,
+                "rationale": "The submission explicitly states that there are 3 Rs in the word \"strawberry,\" which directly satisfies the checklist item."
+              }
+            ],
+            "overall_score": 1.0
+          }
+        }
+      ],
+      [
+        {
+          "output": "There are 3 Rs in the word \"strawberry\".",
+          "details": {
+            "model": "anthropic/claude-3-opus-20240229",
+            "response_time": 2.788512945175171,
+            "prompt_tokens": 15,
+            "completion_tokens": 16
+          }
+        },
+        {
+          "score": 1.0,
+          "passed": true,
+          "details": {
+            "evaluations": [
+              {
+                "criterion": "Answer states there are 3 Rs in strawberry",
+                "score": 1.0,
+                "rationale": "The submission explicitly states that there are 3 Rs in the word \"strawberry,\" which directly satisfies the checklist item."
+              }
+            ],
+            "overall_score": 1.0
+          }
+        }
+      ],
+      [
+        {
+          "output": "There are two Rs in the word \"strawberry\".",
+          "details": {
+            "model": "anthropic/claude-3-opus-20240229",
+            "response_time": 2.2936620712280273,
+            "prompt_tokens": 15,
+            "completion_tokens": 14
+          }
+        },
+        {
+          "score": 0.0,
+          "passed": false,
+          "details": {
+            "evaluations": [
+              {
+                "criterion": "Answer states there are 3 Rs in strawberry",
+                "score": 0,
+                "rationale": "The submission incorrectly states that there are two Rs in the word 'strawberry'. The correct count of Rs in 'strawberry' is three. Therefore, the submission does not meet the criterion."
+              }
+            ],
+            "overall_score": 0.0
+          }
+        }
+      ],
+      [
+        {
+          "output": "There are 3 Rs in the word \"strawberry\".",
+          "details": {
+            "model": "anthropic/claude-3-opus-20240229",
+            "response_time": 2.2209880352020264,
+            "prompt_tokens": 15,
+            "completion_tokens": 16
+          }
+        },
+        {
+          "score": 1.0,
+          "passed": true,
+          "details": {
+            "evaluations": [
+              {
+                "criterion": "Answer states there are 3 Rs in strawberry",
+                "score": 1.0,
+                "rationale": "The submission explicitly states that there are 3 Rs in the word \"strawberry,\" which directly satisfies the checklist item."
+              }
+            ],
+            "overall_score": 1.0
+          }
+        }
+      ],
+      [
+        {
+          "output": "There are 3 Rs in the word \"strawberry\".",
+          "details": {
+            "model": "anthropic/claude-3-opus-20240229",
+            "response_time": 2.2691810131073,
+            "prompt_tokens": 15,
+            "completion_tokens": 16
+          }
+        },
+        {
+          "score": 1.0,
+          "passed": true,
+          "details": {
+            "evaluations": [
+              {
+                "criterion": "Answer states there are 3 Rs in strawberry",
+                "score": 1.0,
+                "rationale": "The submission explicitly states that there are 3 Rs in the word \"strawberry,\" which directly satisfies the checklist item."
+              }
+            ],
+            "overall_score": 1.0
+          }
+        }
+      ],
+      [
+        {
+          "output": "There are 3 Rs in the word \"strawberry\".",
+          "details": {
+            "model": "anthropic/claude-3-opus-20240229",
+            "response_time": 2.3381741046905518,
+            "prompt_tokens": 15,
+            "completion_tokens": 16
+          }
+        },
+        {
+          "score": 1.0,
+          "passed": true,
+          "details": {
+            "evaluations": [
+              {
+                "criterion": "Answer states there are 3 Rs in strawberry",
+                "score": 1.0,
+                "rationale": "The submission explicitly states that there are 3 Rs in the word \"strawberry,\" which directly satisfies the checklist item."
+              }
+            ],
+            "overall_score": 1.0
+          }
+        }
+      ],
+      [
+        {
+          "output": "There are 3 Rs in the word \"strawberry\".",
+          "details": {
+            "model": "anthropic/claude-3-opus-20240229",
+            "response_time": 2.5827789306640625,
+            "prompt_tokens": 15,
+            "completion_tokens": 16
+          }
+        },
+        {
+          "score": 1.0,
+          "passed": true,
+          "details": {
+            "evaluations": [
+              {
+                "criterion": "Answer states there are 3 Rs in strawberry",
+                "score": 1.0,
+                "rationale": "The submission explicitly states that there are 3 Rs in the word \"strawberry,\" which directly satisfies the checklist item."
+              }
+            ],
+            "overall_score": 1.0
+          }
+        }
+      ]
+    ]
+  },
+  "tasks": {
+    "claude-3-opus-strawberry": {
+      "status": "completed",
+      "eval_score": 1.0,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer states there are 3 Rs in strawberry",
+            "score": 1.0,
+            "rationale": "The submission explicitly states that there are 3 Rs in the word 'strawberry', which directly satisfies the checklist item. The answer is clear and unambiguous, providing the correct count of the letter 'R' in the word."
+          }
+        ],
+        "overall_score": 1.0
+      },
+      "task_input": {
+        "question": "How many Rs are in strawberry?",
+        "model": "anthropic/claude-3-opus-20240229",
+        "params": {
+          "timeout": 30
+        }
+      },
+      "eval_logs": [],
+      "task_output": "There are 3 Rs in the word \"strawberry\".\n\nS T R A W B E R R Y",
+      "created_at": "2025-01-28T12:30:27.906186",
+      "job_id": "c7ae3e70-5656-426f-94fc-2054002fd9d6",
+      "task_details": {
+        "model": "anthropic/claude-3-opus-20240229",
+        "response_time": 2.8971340656280518,
+        "prompt_tokens": 15,
+        "completion_tokens": 27
+      },
+      "executed_at": "2025-01-28T12:30:30.809079",
+      "id": "f863770b-930c-46d2-b4da-3773e18e7bd9",
+      "task_logs": [],
+      "evaluated_at": "2025-01-28T12:30:34.889639",
+      "challenge_id": "claude-3-opus-strawberry",
+      "eval_spec": {
+        "id": "claude-3-opus-strawberry",
+        "context": "",
+        "checklist": [
+          "Answer states there are 3 Rs in strawberry"
+        ]
+      },
+      "finished_at": "2025-01-28T12:30:34.889639",
+      "task_number": 1,
+      "eval_passed": true
+    },
+    "claude-3-opus-strawberry_1": {
+      "status": "completed",
+      "eval_score": 1.0,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer states there are 3 Rs in strawberry",
+            "score": 1.0,
+            "rationale": "The submission correctly states that there are three Rs in the word 'strawberry', which directly satisfies the checklist item."
+          }
+        ],
+        "overall_score": 1.0
+      },
+      "task_input": {
+        "question": "How many Rs are in strawberry?",
+        "model": "anthropic/claude-3-opus-20240229",
+        "params": {
+          "timeout": 30
+        }
+      },
+      "eval_logs": [],
+      "task_output": "There are three Rs in the word \"strawberry\".",
+      "created_at": "2025-01-28T12:30:34.895375",
+      "job_id": "c7ae3e70-5656-426f-94fc-2054002fd9d6",
+      "task_details": {
+        "model": "anthropic/claude-3-opus-20240229",
+        "response_time": 2.1473259925842285,
+        "prompt_tokens": 15,
+        "completion_tokens": 14
+      },
+      "executed_at": "2025-01-28T12:30:37.050726",
+      "id": "c890252b-a695-4768-a89c-06120a538ceb",
+      "task_logs": [],
+      "evaluated_at": "2025-01-28T12:30:39.188945",
+      "challenge_id": "claude-3-opus-strawberry_1",
+      "eval_spec": {
+        "id": "claude-3-opus-strawberry",
+        "context": "",
+        "checklist": [
+          "Answer states there are 3 Rs in strawberry"
+        ]
+      },
+      "finished_at": "2025-01-28T12:30:39.188945",
+      "task_number": 2,
+      "eval_passed": true
+    },
+    "claude-3-opus-strawberry_2": {
+      "status": "completed",
+      "eval_score": 1.0,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer states there are 3 Rs in strawberry",
+            "score": 1.0,
+            "rationale": "The submission explicitly states that there are 3 Rs in the word \"strawberry,\" which directly satisfies the checklist item."
+          }
+        ],
+        "overall_score": 1.0
+      },
+      "task_input": {
+        "question": "How many Rs are in strawberry?",
+        "model": "anthropic/claude-3-opus-20240229",
+        "params": {
+          "timeout": 30
+        }
+      },
+      "eval_logs": [],
+      "task_output": "There are 3 Rs in the word \"strawberry\".",
+      "created_at": "2025-01-28T12:30:39.192409",
+      "job_id": "c7ae3e70-5656-426f-94fc-2054002fd9d6",
+      "task_details": {
+        "model": "anthropic/claude-3-opus-20240229",
+        "response_time": 2.140397071838379,
+        "prompt_tokens": 15,
+        "completion_tokens": 16
+      },
+      "executed_at": "2025-01-28T12:30:41.340545",
+      "id": "b3813b15-c3cc-4c7e-918b-87b48c0b8a55",
+      "task_logs": [],
+      "evaluated_at": "2025-01-28T12:30:44.070057",
+      "challenge_id": "claude-3-opus-strawberry_2",
+      "eval_spec": {
+        "id": "claude-3-opus-strawberry",
+        "context": "",
+        "checklist": [
+          "Answer states there are 3 Rs in strawberry"
+        ]
+      },
+      "finished_at": "2025-01-28T12:30:44.070057",
+      "task_number": 3,
+      "eval_passed": true
+    },
+    "claude-3-opus-strawberry_3": {
+      "status": "completed",
+      "eval_score": 1.0,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer states there are 3 Rs in strawberry",
+            "score": 1.0,
+            "rationale": "The submission explicitly states that there are 3 Rs in the word \"strawberry,\" which directly satisfies the checklist item."
+          }
+        ],
+        "overall_score": 1.0
+      },
+      "task_input": {
+        "question": "How many Rs are in strawberry?",
+        "model": "anthropic/claude-3-opus-20240229",
+        "params": {
+          "timeout": 30
+        }
+      },
+      "eval_logs": [],
+      "task_output": "There are 3 Rs in the word \"strawberry\".",
+      "created_at": "2025-01-28T12:30:44.074028",
+      "job_id": "c7ae3e70-5656-426f-94fc-2054002fd9d6",
+      "task_details": {
+        "model": "anthropic/claude-3-opus-20240229",
+        "response_time": 2.3234550952911377,
+        "prompt_tokens": 15,
+        "completion_tokens": 16
+      },
+      "executed_at": "2025-01-28T12:30:46.405740",
+      "id": "ba434aac-655f-4b2f-810d-8c6578e72055",
+      "task_logs": [],
+      "evaluated_at": "2025-01-28T12:30:46.669376",
+      "challenge_id": "claude-3-opus-strawberry_3",
+      "eval_spec": {
+        "id": "claude-3-opus-strawberry",
+        "context": "",
+        "checklist": [
+          "Answer states there are 3 Rs in strawberry"
+        ]
+      },
+      "finished_at": "2025-01-28T12:30:46.669376",
+      "task_number": 4,
+      "eval_passed": true
+    },
+    "claude-3-opus-strawberry_4": {
+      "status": "completed",
+      "eval_score": 1.0,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer states there are 3 Rs in strawberry",
+            "score": 1.0,
+            "rationale": "The submission explicitly states that there are 3 Rs in the word \"strawberry,\" which directly satisfies the checklist item."
+          }
+        ],
+        "overall_score": 1.0
+      },
+      "task_input": {
+        "question": "How many Rs are in strawberry?",
+        "model": "anthropic/claude-3-opus-20240229",
+        "params": {
+          "timeout": 30
+        }
+      },
+      "eval_logs": [],
+      "task_output": "There are 3 Rs in the word \"strawberry\".",
+      "created_at": "2025-01-28T12:30:46.673154",
+      "job_id": "c7ae3e70-5656-426f-94fc-2054002fd9d6",
+      "task_details": {
+        "model": "anthropic/claude-3-opus-20240229",
+        "response_time": 2.788512945175171,
+        "prompt_tokens": 15,
+        "completion_tokens": 16
+      },
+      "executed_at": "2025-01-28T12:30:49.470862",
+      "id": "66275770-db5d-403c-9364-b119ad342c3e",
+      "task_logs": [],
+      "evaluated_at": "2025-01-28T12:30:49.626466",
+      "challenge_id": "claude-3-opus-strawberry_4",
+      "eval_spec": {
+        "id": "claude-3-opus-strawberry",
+        "context": "",
+        "checklist": [
+          "Answer states there are 3 Rs in strawberry"
+        ]
+      },
+      "finished_at": "2025-01-28T12:30:49.626466",
+      "task_number": 5,
+      "eval_passed": true
+    },
+    "claude-3-opus-strawberry_5": {
+      "status": "failed",
+      "eval_score": 0.0,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer states there are 3 Rs in strawberry",
+            "score": 0,
+            "rationale": "The submission incorrectly states that there are two Rs in the word 'strawberry'. The correct count of Rs in 'strawberry' is three. Therefore, the submission does not meet the criterion."
+          }
+        ],
+        "overall_score": 0.0
+      },
+      "task_input": {
+        "question": "How many Rs are in strawberry?",
+        "model": "anthropic/claude-3-opus-20240229",
+        "params": {
+          "timeout": 30
+        }
+      },
+      "eval_logs": [],
+      "task_output": "There are two Rs in the word \"strawberry\".",
+      "created_at": "2025-01-28T12:30:49.631215",
+      "job_id": "c7ae3e70-5656-426f-94fc-2054002fd9d6",
+      "task_details": {
+        "model": "anthropic/claude-3-opus-20240229",
+        "response_time": 2.2936620712280273,
+        "prompt_tokens": 15,
+        "completion_tokens": 14
+      },
+      "executed_at": "2025-01-28T12:30:51.935897",
+      "id": "aab24523-6067-4ca4-ac83-78d949745ddb",
+      "task_logs": [],
+      "evaluated_at": "2025-01-28T12:30:54.705248",
+      "challenge_id": "claude-3-opus-strawberry_5",
+      "eval_spec": {
+        "id": "claude-3-opus-strawberry",
+        "context": "",
+        "checklist": [
+          "Answer states there are 3 Rs in strawberry"
+        ]
+      },
+      "finished_at": "2025-01-28T12:30:54.705248",
+      "task_number": 6,
+      "eval_passed": false
+    },
+    "claude-3-opus-strawberry_6": {
+      "status": "completed",
+      "eval_score": 1.0,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer states there are 3 Rs in strawberry",
+            "score": 1.0,
+            "rationale": "The submission explicitly states that there are 3 Rs in the word \"strawberry,\" which directly satisfies the checklist item."
+          }
+        ],
+        "overall_score": 1.0
+      },
+      "task_input": {
+        "question": "How many Rs are in strawberry?",
+        "model": "anthropic/claude-3-opus-20240229",
+        "params": {
+          "timeout": 30
+        }
+      },
+      "eval_logs": [],
+      "task_output": "There are 3 Rs in the word \"strawberry\".",
+      "created_at": "2025-01-28T12:30:54.709035",
+      "job_id": "c7ae3e70-5656-426f-94fc-2054002fd9d6",
+      "task_details": {
+        "model": "anthropic/claude-3-opus-20240229",
+        "response_time": 2.2209880352020264,
+        "prompt_tokens": 15,
+        "completion_tokens": 16
+      },
+      "executed_at": "2025-01-28T12:30:56.940245",
+      "id": "eb80d27c-26dc-4e5e-ba73-0ed9b8a79454",
+      "task_logs": [],
+      "evaluated_at": "2025-01-28T12:30:57.149105",
+      "challenge_id": "claude-3-opus-strawberry_6",
+      "eval_spec": {
+        "id": "claude-3-opus-strawberry",
+        "context": "",
+        "checklist": [
+          "Answer states there are 3 Rs in strawberry"
+        ]
+      },
+      "finished_at": "2025-01-28T12:30:57.149105",
+      "task_number": 7,
+      "eval_passed": true
+    },
+    "claude-3-opus-strawberry_7": {
+      "status": "completed",
+      "eval_score": 1.0,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer states there are 3 Rs in strawberry",
+            "score": 1.0,
+            "rationale": "The submission explicitly states that there are 3 Rs in the word \"strawberry,\" which directly satisfies the checklist item."
+          }
+        ],
+        "overall_score": 1.0
+      },
+      "task_input": {
+        "question": "How many Rs are in strawberry?",
+        "model": "anthropic/claude-3-opus-20240229",
+        "params": {
+          "timeout": 30
+        }
+      },
+      "eval_logs": [],
+      "task_output": "There are 3 Rs in the word \"strawberry\".",
+      "created_at": "2025-01-28T12:30:57.156109",
+      "job_id": "c7ae3e70-5656-426f-94fc-2054002fd9d6",
+      "task_details": {
+        "model": "anthropic/claude-3-opus-20240229",
+        "response_time": 2.2691810131073,
+        "prompt_tokens": 15,
+        "completion_tokens": 16
+      },
+      "executed_at": "2025-01-28T12:30:59.437510",
+      "id": "b26ea2d3-e0b0-4ef1-a25b-59c30b94690a",
+      "task_logs": [],
+      "evaluated_at": "2025-01-28T12:30:59.617600",
+      "challenge_id": "claude-3-opus-strawberry_7",
+      "eval_spec": {
+        "id": "claude-3-opus-strawberry",
+        "context": "",
+        "checklist": [
+          "Answer states there are 3 Rs in strawberry"
+        ]
+      },
+      "finished_at": "2025-01-28T12:30:59.617600",
+      "task_number": 8,
+      "eval_passed": true
+    },
+    "claude-3-opus-strawberry_8": {
+      "status": "completed",
+      "eval_score": 1.0,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer states there are 3 Rs in strawberry",
+            "score": 1.0,
+            "rationale": "The submission explicitly states that there are 3 Rs in the word \"strawberry,\" which directly satisfies the checklist item."
+          }
+        ],
+        "overall_score": 1.0
+      },
+      "task_input": {
+        "question": "How many Rs are in strawberry?",
+        "model": "anthropic/claude-3-opus-20240229",
+        "params": {
+          "timeout": 30
+        }
+      },
+      "eval_logs": [],
+      "task_output": "There are 3 Rs in the word \"strawberry\".",
+      "created_at": "2025-01-28T12:30:59.621883",
+      "job_id": "c7ae3e70-5656-426f-94fc-2054002fd9d6",
+      "task_details": {
+        "model": "anthropic/claude-3-opus-20240229",
+        "response_time": 2.3381741046905518,
+        "prompt_tokens": 15,
+        "completion_tokens": 16
+      },
+      "executed_at": "2025-01-28T12:31:01.972640",
+      "id": "49c94d07-1316-4c5a-9470-769612fbad30",
+      "task_logs": [],
+      "evaluated_at": "2025-01-28T12:31:02.134471",
+      "challenge_id": "claude-3-opus-strawberry_8",
+      "eval_spec": {
+        "id": "claude-3-opus-strawberry",
+        "context": "",
+        "checklist": [
+          "Answer states there are 3 Rs in strawberry"
+        ]
+      },
+      "finished_at": "2025-01-28T12:31:02.134471",
+      "task_number": 9,
+      "eval_passed": true
+    },
+    "claude-3-opus-strawberry_9": {
+      "status": "completed",
+      "eval_score": 1.0,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer states there are 3 Rs in strawberry",
+            "score": 1.0,
+            "rationale": "The submission explicitly states that there are 3 Rs in the word \"strawberry,\" which directly satisfies the checklist item."
+          }
+        ],
+        "overall_score": 1.0
+      },
+      "task_input": {
+        "question": "How many Rs are in strawberry?",
+        "model": "anthropic/claude-3-opus-20240229",
+        "params": {
+          "timeout": 30
+        }
+      },
+      "eval_logs": [],
+      "task_output": "There are 3 Rs in the word \"strawberry\".",
+      "created_at": "2025-01-28T12:31:02.138248",
+      "job_id": "c7ae3e70-5656-426f-94fc-2054002fd9d6",
+      "task_details": {
+        "model": "anthropic/claude-3-opus-20240229",
+        "response_time": 2.5827789306640625,
+        "prompt_tokens": 15,
+        "completion_tokens": 16
+      },
+      "executed_at": "2025-01-28T12:31:04.733117",
+      "id": "e689a5e8-6f92-4c85-b28b-a3e7f29d34a7",
+      "task_logs": [],
+      "evaluated_at": "2025-01-28T12:31:05.002332",
+      "challenge_id": "claude-3-opus-strawberry_9",
+      "eval_spec": {
+        "id": "claude-3-opus-strawberry",
+        "context": "",
+        "checklist": [
+          "Answer states there are 3 Rs in strawberry"
+        ]
+      },
+      "finished_at": "2025-01-28T12:31:05.002332",
+      "task_number": 10,
+      "eval_passed": true
+    }
+  }
+}

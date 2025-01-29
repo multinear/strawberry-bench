@@ -1,0 +1,721 @@
+{
+  "job_id": "f1e297b4-a1f5-4f7f-9ec2-4c25408ad9af",
+  "project_id": "r3-bench",
+  "created_at": "2025-01-28T10:37:20.278717",
+  "finished_at": "2025-01-28T10:37:53.343761",
+  "status": "completed",
+  "model": "openai/gpt-4o-2024-11-20",
+  "details": {
+    "git_revision": null,
+    "status": "completed",
+    "total": 10,
+    "status_map": {
+      "bc3fad4a-5e8f-428b-8957-99d572c0d759": "completed",
+      "9bb348de-3897-4e4f-a4bc-6b7bc0b49380": "completed",
+      "cdd7b795-7bb5-4cf3-b670-2c1fcccf2bff": "completed",
+      "acbbe357-6b88-429c-8cb9-807731702ba4": "completed",
+      "967364c9-61cc-4a75-a9c4-3414e52053ab": "completed",
+      "09e55ce5-a0d2-4833-9a45-4a9a5f741eba": "completed",
+      "aa8c83c4-6db0-4399-981b-5f7d31c10664": "completed",
+      "e87c8e35-34fa-48af-b471-c79983ce6742": "completed",
+      "9996f83a-30c7-48fd-b1a8-aa9ac5db6f52": "completed",
+      "3d74940c-f226-47e4-870b-2fb4cd79c71e": "completed"
+    },
+    "current": 10,
+    "details": "Evaluating task 10/10",
+    "results": [
+      [
+        {
+          "output": "The word \"**strawberry**\" contains **3 Rs**.",
+          "details": {
+            "model": "openai/gpt-4o-2024-11-20",
+            "response_time": 2.9798338413238525,
+            "prompt_tokens": 14,
+            "completion_tokens": 15
+          }
+        },
+        {
+          "score": 1.0,
+          "passed": true,
+          "details": {
+            "evaluations": [
+              {
+                "criterion": "Answer states there are 3 Rs in strawberry",
+                "score": 1.0,
+                "rationale": "The submission correctly states that the word 'strawberry' contains 3 Rs, which directly matches the checklist item. The answer is clear and unambiguous, fulfilling the requirement completely."
+              }
+            ],
+            "overall_score": 1.0
+          }
+        }
+      ],
+      [
+        {
+          "output": "The word \"strawberry\" contains **3 R's**.",
+          "details": {
+            "model": "openai/gpt-4o-2024-11-20",
+            "response_time": 1.9027540683746338,
+            "prompt_tokens": 14,
+            "completion_tokens": 15
+          }
+        },
+        {
+          "score": 1.0,
+          "passed": true,
+          "details": {
+            "evaluations": [
+              {
+                "criterion": "Answer states there are 3 Rs in strawberry",
+                "score": 1.0,
+                "rationale": "The submission explicitly states that the word 'strawberry' contains 3 R's, which directly satisfies the checklist item."
+              }
+            ],
+            "overall_score": 1.0
+          }
+        }
+      ],
+      [
+        {
+          "output": "The word **strawberry** contains **3 \"R\"s**.",
+          "details": {
+            "model": "openai/gpt-4o-2024-11-20",
+            "response_time": 1.7005958557128906,
+            "prompt_tokens": 14,
+            "completion_tokens": 16
+          }
+        },
+        {
+          "score": 1.0,
+          "passed": true,
+          "details": {
+            "evaluations": [
+              {
+                "criterion": "Answer states there are 3 Rs in strawberry",
+                "score": 1.0,
+                "rationale": "The submission explicitly states that the word 'strawberry' contains 3 'R's, which directly satisfies the checklist item. The answer is clear and unambiguous, accurately reflecting the number of 'R's in the word 'strawberry'."
+              }
+            ],
+            "overall_score": 1.0
+          }
+        }
+      ],
+      [
+        {
+          "output": "The word \"strawberry\" contains **3 'R's**.",
+          "details": {
+            "model": "openai/gpt-4o-2024-11-20",
+            "response_time": 2.2071502208709717,
+            "prompt_tokens": 14,
+            "completion_tokens": 16
+          }
+        },
+        {
+          "score": 1.0,
+          "passed": true,
+          "details": {
+            "evaluations": [
+              {
+                "criterion": "Answer states there are 3 Rs in strawberry",
+                "score": 1.0,
+                "rationale": "The submission correctly identifies that there are 3 'R's in the word 'strawberry'. The answer is clear and directly addresses the checklist item."
+              }
+            ],
+            "overall_score": 1.0
+          }
+        }
+      ],
+      [
+        {
+          "output": "The word \"strawberry\" contains **3 Rs**.",
+          "details": {
+            "model": "openai/gpt-4o-2024-11-20",
+            "response_time": 1.7468271255493164,
+            "prompt_tokens": 14,
+            "completion_tokens": 14
+          }
+        },
+        {
+          "score": 1.0,
+          "passed": true,
+          "details": {
+            "evaluations": [
+              {
+                "criterion": "Answer states there are 3 Rs in strawberry",
+                "score": 1.0,
+                "rationale": "The submission explicitly states that there are 3 Rs in the word 'strawberry', which directly satisfies the checklist item."
+              }
+            ],
+            "overall_score": 1.0
+          }
+        }
+      ],
+      [
+        {
+          "output": "The word \"strawberry\" has 3 \"R\"s.",
+          "details": {
+            "model": "openai/gpt-4o-2024-11-20",
+            "response_time": 1.571707010269165,
+            "prompt_tokens": 14,
+            "completion_tokens": 15
+          }
+        },
+        {
+          "score": 1.0,
+          "passed": true,
+          "details": {
+            "evaluations": [
+              {
+                "criterion": "Answer states there are 3 Rs in strawberry",
+                "score": 1.0,
+                "rationale": "The submission correctly states that there are 3 'R's in the word 'strawberry'. This directly matches the checklist item, fulfilling the requirement completely."
+              }
+            ],
+            "overall_score": 1.0
+          }
+        }
+      ],
+      [
+        {
+          "output": "The word **strawberry** contains 3 \"R\"s.",
+          "details": {
+            "model": "openai/gpt-4o-2024-11-20",
+            "response_time": 1.6887259483337402,
+            "prompt_tokens": 14,
+            "completion_tokens": 15
+          }
+        },
+        {
+          "score": 1.0,
+          "passed": true,
+          "details": {
+            "evaluations": [
+              {
+                "criterion": "Answer states there are 3 Rs in strawberry",
+                "score": 1.0,
+                "rationale": "The submission correctly identifies that the word 'strawberry' contains 3 'R's, which directly satisfies the checklist item. The answer is clear and unambiguous, accurately reflecting the number of 'R's in the word."
+              }
+            ],
+            "overall_score": 1.0
+          }
+        }
+      ],
+      [
+        {
+          "output": "The word \"strawberry\" contains **3 Rs**.",
+          "details": {
+            "model": "openai/gpt-4o-2024-11-20",
+            "response_time": 1.4624590873718262,
+            "prompt_tokens": 14,
+            "completion_tokens": 14
+          }
+        },
+        {
+          "score": 1.0,
+          "passed": true,
+          "details": {
+            "evaluations": [
+              {
+                "criterion": "Answer states there are 3 Rs in strawberry",
+                "score": 1.0,
+                "rationale": "The submission explicitly states that there are 3 Rs in the word 'strawberry', which directly satisfies the checklist item."
+              }
+            ],
+            "overall_score": 1.0
+          }
+        }
+      ],
+      [
+        {
+          "output": "The word \"strawberry\" contains **3 R's**.",
+          "details": {
+            "model": "openai/gpt-4o-2024-11-20",
+            "response_time": 1.711766004562378,
+            "prompt_tokens": 14,
+            "completion_tokens": 15
+          }
+        },
+        {
+          "score": 1.0,
+          "passed": true,
+          "details": {
+            "evaluations": [
+              {
+                "criterion": "Answer states there are 3 Rs in strawberry",
+                "score": 1.0,
+                "rationale": "The submission explicitly states that the word 'strawberry' contains 3 R's, which directly satisfies the checklist item."
+              }
+            ],
+            "overall_score": 1.0
+          }
+        }
+      ],
+      [
+        {
+          "output": "The word \"strawberry\" contains **3 Rs**.",
+          "details": {
+            "model": "openai/gpt-4o-2024-11-20",
+            "response_time": 1.4774658679962158,
+            "prompt_tokens": 14,
+            "completion_tokens": 14
+          }
+        },
+        {
+          "score": 1.0,
+          "passed": true,
+          "details": {
+            "evaluations": [
+              {
+                "criterion": "Answer states there are 3 Rs in strawberry",
+                "score": 1.0,
+                "rationale": "The submission explicitly states that there are 3 Rs in the word 'strawberry', which directly satisfies the checklist item."
+              }
+            ],
+            "overall_score": 1.0
+          }
+        }
+      ]
+    ]
+  },
+  "tasks": {
+    "gpt-4o-strawberry": {
+      "status": "completed",
+      "eval_score": 1.0,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer states there are 3 Rs in strawberry",
+            "score": 1.0,
+            "rationale": "The submission correctly states that the word 'strawberry' contains 3 Rs, which directly matches the checklist item. The answer is clear and unambiguous, fulfilling the requirement completely."
+          }
+        ],
+        "overall_score": 1.0
+      },
+      "task_input": {
+        "question": "How many Rs are in strawberry?",
+        "model": "openai/gpt-4o-2024-11-20"
+      },
+      "eval_logs": [],
+      "task_output": "The word \"**strawberry**\" contains **3 Rs**.",
+      "created_at": "2025-01-28T10:37:20.334487",
+      "job_id": "f1e297b4-a1f5-4f7f-9ec2-4c25408ad9af",
+      "task_details": {
+        "model": "openai/gpt-4o-2024-11-20",
+        "response_time": 2.9798338413238525,
+        "prompt_tokens": 14,
+        "completion_tokens": 15
+      },
+      "executed_at": "2025-01-28T10:37:23.318894",
+      "id": "bc3fad4a-5e8f-428b-8957-99d572c0d759",
+      "task_logs": [],
+      "evaluated_at": "2025-01-28T10:37:25.996642",
+      "challenge_id": "gpt-4o-strawberry",
+      "eval_spec": {
+        "id": "gpt-4o-strawberry",
+        "context": "",
+        "checklist": [
+          "Answer states there are 3 Rs in strawberry"
+        ]
+      },
+      "finished_at": "2025-01-28T10:37:25.996642",
+      "task_number": 1,
+      "eval_passed": true
+    },
+    "gpt-4o-strawberry_1": {
+      "status": "completed",
+      "eval_score": 1.0,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer states there are 3 Rs in strawberry",
+            "score": 1.0,
+            "rationale": "The submission explicitly states that the word 'strawberry' contains 3 R's, which directly satisfies the checklist item."
+          }
+        ],
+        "overall_score": 1.0
+      },
+      "task_input": {
+        "question": "How many Rs are in strawberry?",
+        "model": "openai/gpt-4o-2024-11-20"
+      },
+      "eval_logs": [],
+      "task_output": "The word \"strawberry\" contains **3 R's**.",
+      "created_at": "2025-01-28T10:37:26.000909",
+      "job_id": "f1e297b4-a1f5-4f7f-9ec2-4c25408ad9af",
+      "task_details": {
+        "model": "openai/gpt-4o-2024-11-20",
+        "response_time": 1.9027540683746338,
+        "prompt_tokens": 14,
+        "completion_tokens": 15
+      },
+      "executed_at": "2025-01-28T10:37:27.915810",
+      "id": "9bb348de-3897-4e4f-a4bc-6b7bc0b49380",
+      "task_logs": [],
+      "evaluated_at": "2025-01-28T10:37:28.088073",
+      "challenge_id": "gpt-4o-strawberry_1",
+      "eval_spec": {
+        "id": "gpt-4o-strawberry",
+        "context": "",
+        "checklist": [
+          "Answer states there are 3 Rs in strawberry"
+        ]
+      },
+      "finished_at": "2025-01-28T10:37:28.088073",
+      "task_number": 2,
+      "eval_passed": true
+    },
+    "gpt-4o-strawberry_2": {
+      "status": "completed",
+      "eval_score": 1.0,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer states there are 3 Rs in strawberry",
+            "score": 1.0,
+            "rationale": "The submission explicitly states that the word 'strawberry' contains 3 'R's, which directly satisfies the checklist item. The answer is clear and unambiguous, accurately reflecting the number of 'R's in the word 'strawberry'."
+          }
+        ],
+        "overall_score": 1.0
+      },
+      "task_input": {
+        "question": "How many Rs are in strawberry?",
+        "model": "openai/gpt-4o-2024-11-20"
+      },
+      "eval_logs": [],
+      "task_output": "The word **strawberry** contains **3 \"R\"s**.",
+      "created_at": "2025-01-28T10:37:28.091658",
+      "job_id": "f1e297b4-a1f5-4f7f-9ec2-4c25408ad9af",
+      "task_details": {
+        "model": "openai/gpt-4o-2024-11-20",
+        "response_time": 1.7005958557128906,
+        "prompt_tokens": 14,
+        "completion_tokens": 16
+      },
+      "executed_at": "2025-01-28T10:37:29.802837",
+      "id": "cdd7b795-7bb5-4cf3-b670-2c1fcccf2bff",
+      "task_logs": [],
+      "evaluated_at": "2025-01-28T10:37:32.255513",
+      "challenge_id": "gpt-4o-strawberry_2",
+      "eval_spec": {
+        "id": "gpt-4o-strawberry",
+        "context": "",
+        "checklist": [
+          "Answer states there are 3 Rs in strawberry"
+        ]
+      },
+      "finished_at": "2025-01-28T10:37:32.255513",
+      "task_number": 3,
+      "eval_passed": true
+    },
+    "gpt-4o-strawberry_3": {
+      "status": "completed",
+      "eval_score": 1.0,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer states there are 3 Rs in strawberry",
+            "score": 1.0,
+            "rationale": "The submission correctly identifies that there are 3 'R's in the word 'strawberry'. The answer is clear and directly addresses the checklist item."
+          }
+        ],
+        "overall_score": 1.0
+      },
+      "task_input": {
+        "question": "How many Rs are in strawberry?",
+        "model": "openai/gpt-4o-2024-11-20"
+      },
+      "eval_logs": [],
+      "task_output": "The word \"strawberry\" contains **3 'R's**.",
+      "created_at": "2025-01-28T10:37:32.259498",
+      "job_id": "f1e297b4-a1f5-4f7f-9ec2-4c25408ad9af",
+      "task_details": {
+        "model": "openai/gpt-4o-2024-11-20",
+        "response_time": 2.2071502208709717,
+        "prompt_tokens": 14,
+        "completion_tokens": 16
+      },
+      "executed_at": "2025-01-28T10:37:34.474773",
+      "id": "acbbe357-6b88-429c-8cb9-807731702ba4",
+      "task_logs": [],
+      "evaluated_at": "2025-01-28T10:37:36.368004",
+      "challenge_id": "gpt-4o-strawberry_3",
+      "eval_spec": {
+        "id": "gpt-4o-strawberry",
+        "context": "",
+        "checklist": [
+          "Answer states there are 3 Rs in strawberry"
+        ]
+      },
+      "finished_at": "2025-01-28T10:37:36.368004",
+      "task_number": 4,
+      "eval_passed": true
+    },
+    "gpt-4o-strawberry_4": {
+      "status": "completed",
+      "eval_score": 1.0,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer states there are 3 Rs in strawberry",
+            "score": 1.0,
+            "rationale": "The submission explicitly states that there are 3 Rs in the word 'strawberry', which directly satisfies the checklist item."
+          }
+        ],
+        "overall_score": 1.0
+      },
+      "task_input": {
+        "question": "How many Rs are in strawberry?",
+        "model": "openai/gpt-4o-2024-11-20"
+      },
+      "eval_logs": [],
+      "task_output": "The word \"strawberry\" contains **3 Rs**.",
+      "created_at": "2025-01-28T10:37:36.372858",
+      "job_id": "f1e297b4-a1f5-4f7f-9ec2-4c25408ad9af",
+      "task_details": {
+        "model": "openai/gpt-4o-2024-11-20",
+        "response_time": 1.7468271255493164,
+        "prompt_tokens": 14,
+        "completion_tokens": 14
+      },
+      "executed_at": "2025-01-28T10:37:38.128046",
+      "id": "967364c9-61cc-4a75-a9c4-3414e52053ab",
+      "task_logs": [],
+      "evaluated_at": "2025-01-28T10:37:40.380576",
+      "challenge_id": "gpt-4o-strawberry_4",
+      "eval_spec": {
+        "id": "gpt-4o-strawberry",
+        "context": "",
+        "checklist": [
+          "Answer states there are 3 Rs in strawberry"
+        ]
+      },
+      "finished_at": "2025-01-28T10:37:40.380576",
+      "task_number": 5,
+      "eval_passed": true
+    },
+    "gpt-4o-strawberry_5": {
+      "status": "completed",
+      "eval_score": 1.0,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer states there are 3 Rs in strawberry",
+            "score": 1.0,
+            "rationale": "The submission correctly states that there are 3 'R's in the word 'strawberry'. This directly matches the checklist item, fulfilling the requirement completely."
+          }
+        ],
+        "overall_score": 1.0
+      },
+      "task_input": {
+        "question": "How many Rs are in strawberry?",
+        "model": "openai/gpt-4o-2024-11-20"
+      },
+      "eval_logs": [],
+      "task_output": "The word \"strawberry\" has 3 \"R\"s.",
+      "created_at": "2025-01-28T10:37:40.384703",
+      "job_id": "f1e297b4-a1f5-4f7f-9ec2-4c25408ad9af",
+      "task_details": {
+        "model": "openai/gpt-4o-2024-11-20",
+        "response_time": 1.571707010269165,
+        "prompt_tokens": 14,
+        "completion_tokens": 15
+      },
+      "executed_at": "2025-01-28T10:37:41.965028",
+      "id": "09e55ce5-a0d2-4833-9a45-4a9a5f741eba",
+      "task_logs": [],
+      "evaluated_at": "2025-01-28T10:37:43.918034",
+      "challenge_id": "gpt-4o-strawberry_5",
+      "eval_spec": {
+        "id": "gpt-4o-strawberry",
+        "context": "",
+        "checklist": [
+          "Answer states there are 3 Rs in strawberry"
+        ]
+      },
+      "finished_at": "2025-01-28T10:37:43.918034",
+      "task_number": 6,
+      "eval_passed": true
+    },
+    "gpt-4o-strawberry_6": {
+      "status": "completed",
+      "eval_score": 1.0,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer states there are 3 Rs in strawberry",
+            "score": 1.0,
+            "rationale": "The submission correctly identifies that the word 'strawberry' contains 3 'R's, which directly satisfies the checklist item. The answer is clear and unambiguous, accurately reflecting the number of 'R's in the word."
+          }
+        ],
+        "overall_score": 1.0
+      },
+      "task_input": {
+        "question": "How many Rs are in strawberry?",
+        "model": "openai/gpt-4o-2024-11-20"
+      },
+      "eval_logs": [],
+      "task_output": "The word **strawberry** contains 3 \"R\"s.",
+      "created_at": "2025-01-28T10:37:43.922702",
+      "job_id": "f1e297b4-a1f5-4f7f-9ec2-4c25408ad9af",
+      "task_details": {
+        "model": "openai/gpt-4o-2024-11-20",
+        "response_time": 1.6887259483337402,
+        "prompt_tokens": 14,
+        "completion_tokens": 15
+      },
+      "executed_at": "2025-01-28T10:37:45.620427",
+      "id": "aa8c83c4-6db0-4399-981b-5f7d31c10664",
+      "task_logs": [],
+      "evaluated_at": "2025-01-28T10:37:47.877343",
+      "challenge_id": "gpt-4o-strawberry_6",
+      "eval_spec": {
+        "id": "gpt-4o-strawberry",
+        "context": "",
+        "checklist": [
+          "Answer states there are 3 Rs in strawberry"
+        ]
+      },
+      "finished_at": "2025-01-28T10:37:47.877343",
+      "task_number": 7,
+      "eval_passed": true
+    },
+    "gpt-4o-strawberry_7": {
+      "status": "completed",
+      "eval_score": 1.0,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer states there are 3 Rs in strawberry",
+            "score": 1.0,
+            "rationale": "The submission explicitly states that there are 3 Rs in the word 'strawberry', which directly satisfies the checklist item."
+          }
+        ],
+        "overall_score": 1.0
+      },
+      "task_input": {
+        "question": "How many Rs are in strawberry?",
+        "model": "openai/gpt-4o-2024-11-20"
+      },
+      "eval_logs": [],
+      "task_output": "The word \"strawberry\" contains **3 Rs**.",
+      "created_at": "2025-01-28T10:37:47.881432",
+      "job_id": "f1e297b4-a1f5-4f7f-9ec2-4c25408ad9af",
+      "task_details": {
+        "model": "openai/gpt-4o-2024-11-20",
+        "response_time": 1.4624590873718262,
+        "prompt_tokens": 14,
+        "completion_tokens": 14
+      },
+      "executed_at": "2025-01-28T10:37:49.355989",
+      "id": "e87c8e35-34fa-48af-b471-c79983ce6742",
+      "task_logs": [],
+      "evaluated_at": "2025-01-28T10:37:49.543382",
+      "challenge_id": "gpt-4o-strawberry_7",
+      "eval_spec": {
+        "id": "gpt-4o-strawberry",
+        "context": "",
+        "checklist": [
+          "Answer states there are 3 Rs in strawberry"
+        ]
+      },
+      "finished_at": "2025-01-28T10:37:49.543382",
+      "task_number": 8,
+      "eval_passed": true
+    },
+    "gpt-4o-strawberry_8": {
+      "status": "completed",
+      "eval_score": 1.0,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer states there are 3 Rs in strawberry",
+            "score": 1.0,
+            "rationale": "The submission explicitly states that the word 'strawberry' contains 3 R's, which directly satisfies the checklist item."
+          }
+        ],
+        "overall_score": 1.0
+      },
+      "task_input": {
+        "question": "How many Rs are in strawberry?",
+        "model": "openai/gpt-4o-2024-11-20"
+      },
+      "eval_logs": [],
+      "task_output": "The word \"strawberry\" contains **3 R's**.",
+      "created_at": "2025-01-28T10:37:49.546544",
+      "job_id": "f1e297b4-a1f5-4f7f-9ec2-4c25408ad9af",
+      "task_details": {
+        "model": "openai/gpt-4o-2024-11-20",
+        "response_time": 1.711766004562378,
+        "prompt_tokens": 14,
+        "completion_tokens": 15
+      },
+      "executed_at": "2025-01-28T10:37:51.267131",
+      "id": "9996f83a-30c7-48fd-b1a8-aa9ac5db6f52",
+      "task_logs": [],
+      "evaluated_at": "2025-01-28T10:37:51.677776",
+      "challenge_id": "gpt-4o-strawberry_8",
+      "eval_spec": {
+        "id": "gpt-4o-strawberry",
+        "context": "",
+        "checklist": [
+          "Answer states there are 3 Rs in strawberry"
+        ]
+      },
+      "finished_at": "2025-01-28T10:37:51.677776",
+      "task_number": 9,
+      "eval_passed": true
+    },
+    "gpt-4o-strawberry_9": {
+      "status": "completed",
+      "eval_score": 1.0,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer states there are 3 Rs in strawberry",
+            "score": 1.0,
+            "rationale": "The submission explicitly states that there are 3 Rs in the word 'strawberry', which directly satisfies the checklist item."
+          }
+        ],
+        "overall_score": 1.0
+      },
+      "task_input": {
+        "question": "How many Rs are in strawberry?",
+        "model": "openai/gpt-4o-2024-11-20"
+      },
+      "eval_logs": [],
+      "task_output": "The word \"strawberry\" contains **3 Rs**.",
+      "created_at": "2025-01-28T10:37:51.679039",
+      "job_id": "f1e297b4-a1f5-4f7f-9ec2-4c25408ad9af",
+      "task_details": {
+        "model": "openai/gpt-4o-2024-11-20",
+        "response_time": 1.4774658679962158,
+        "prompt_tokens": 14,
+        "completion_tokens": 14
+      },
+      "executed_at": "2025-01-28T10:37:53.161709",
+      "id": "3d74940c-f226-47e4-870b-2fb4cd79c71e",
+      "task_logs": [],
+      "evaluated_at": "2025-01-28T10:37:53.330684",
+      "challenge_id": "gpt-4o-strawberry_9",
+      "eval_spec": {
+        "id": "gpt-4o-strawberry",
+        "context": "",
+        "checklist": [
+          "Answer states there are 3 Rs in strawberry"
+        ]
+      },
+      "finished_at": "2025-01-28T10:37:53.330684",
+      "task_number": 10,
+      "eval_passed": true
+    }
+  }
+}

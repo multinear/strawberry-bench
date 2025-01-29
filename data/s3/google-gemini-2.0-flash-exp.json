@@ -1,0 +1,751 @@
+{
+  "job_id": "0230caf6-d1f4-4878-a277-0ddd8f4354fc",
+  "project_id": "r3-bench",
+  "created_at": "2025-01-28T11:06:13.711300",
+  "finished_at": "2025-01-28T11:06:48.773497",
+  "status": "completed",
+  "model": "gemini/gemini-2.0-flash-exp",
+  "details": {
+    "git_revision": null,
+    "status": "completed",
+    "total": 10,
+    "status_map": {
+      "e0b154fe-e1f9-4668-b881-38b183ff344d": "failed",
+      "69cb7ac4-7596-4272-a81c-cc6be0144171": "failed",
+      "47a69f60-fe18-4da9-88f1-c4c568481c1c": "failed",
+      "3a70de3f-758c-43b2-9c2e-4ca489cb4aea": "failed",
+      "db21328e-1416-45cf-97b0-b0a73074d929": "completed",
+      "c00d00d2-0983-4a49-8a95-49e921713487": "failed",
+      "15f31a59-3376-40fc-82a2-41a6ffd99fee": "failed",
+      "e1a3e7ef-4648-4ea9-8c1f-df27b9cd323a": "completed",
+      "6e21a2b0-25cb-4a42-9470-63545f75e13d": "failed",
+      "c6b52216-5a2a-43e4-a9c6-385dec911500": "failed"
+    },
+    "current": 10,
+    "details": "Evaluating task 10/10",
+    "results": [
+      [
+        {
+          "output": "There are **two** \"R\"s in the word \"strawberry\".\n",
+          "details": {
+            "model": "gemini/gemini-2.0-flash-exp",
+            "response_time": 1.843893051147461,
+            "prompt_tokens": 8,
+            "completion_tokens": 16
+          }
+        },
+        {
+          "score": 0.0,
+          "passed": false,
+          "details": {
+            "evaluations": [
+              {
+                "criterion": "Answer states there are 3 Rs in strawberry",
+                "score": 0,
+                "rationale": "The submission incorrectly states that there are two 'R's in the word 'strawberry'. The correct number of 'R's is three. Therefore, the submission does not meet the criterion."
+              }
+            ],
+            "overall_score": 0.0
+          }
+        }
+      ],
+      [
+        {
+          "output": "There are **two** \"R\"s in the word \"strawberry\".\n",
+          "details": {
+            "model": "gemini/gemini-2.0-flash-exp",
+            "response_time": 2.018326997756958,
+            "prompt_tokens": 8,
+            "completion_tokens": 16
+          }
+        },
+        {
+          "score": 0.0,
+          "passed": false,
+          "details": {
+            "evaluations": [
+              {
+                "criterion": "Answer states there are 3 Rs in strawberry",
+                "score": 0,
+                "rationale": "The submission incorrectly states that there are two 'R's in the word 'strawberry'. The correct number of 'R's is three. Therefore, the submission does not meet the criterion."
+              }
+            ],
+            "overall_score": 0.0
+          }
+        }
+      ],
+      [
+        {
+          "output": "There are **two** \"R\"s in the word \"strawberry\".\n",
+          "details": {
+            "model": "gemini/gemini-2.0-flash-exp",
+            "response_time": 2.1264829635620117,
+            "prompt_tokens": 8,
+            "completion_tokens": 16
+          }
+        },
+        {
+          "score": 0.0,
+          "passed": false,
+          "details": {
+            "evaluations": [
+              {
+                "criterion": "Answer states there are 3 Rs in strawberry",
+                "score": 0,
+                "rationale": "The submission incorrectly states that there are two 'R's in the word 'strawberry'. The correct number of 'R's is three. Therefore, the submission does not meet the criterion."
+              }
+            ],
+            "overall_score": 0.0
+          }
+        }
+      ],
+      [
+        {
+          "output": "There are **two** \"R\"s in the word \"strawberry\".\n",
+          "details": {
+            "model": "gemini/gemini-2.0-flash-exp",
+            "response_time": 2.3398447036743164,
+            "prompt_tokens": 8,
+            "completion_tokens": 16
+          }
+        },
+        {
+          "score": 0.0,
+          "passed": false,
+          "details": {
+            "evaluations": [
+              {
+                "criterion": "Answer states there are 3 Rs in strawberry",
+                "score": 0,
+                "rationale": "The submission incorrectly states that there are two 'R's in the word 'strawberry'. The correct number of 'R's is three. Therefore, the submission does not meet the criterion."
+              }
+            ],
+            "overall_score": 0.0
+          }
+        }
+      ],
+      [
+        {
+          "output": "Let's count them:\n\ns**t**r**r**a**w**be**rr**y\n\nThere are **3** \"r\"s in the word \"strawberry\".\n",
+          "details": {
+            "model": "gemini/gemini-2.0-flash-exp",
+            "response_time": 2.6893157958984375,
+            "prompt_tokens": 8,
+            "completion_tokens": 41
+          }
+        },
+        {
+          "score": 1.0,
+          "passed": true,
+          "details": {
+            "evaluations": [
+              {
+                "criterion": "Answer states there are 3 Rs in strawberry",
+                "score": 1.0,
+                "rationale": "The submission explicitly states that there are 3 'r's in the word 'strawberry'. It provides a clear count and highlights the 'r's in the word, confirming the correct number."
+              }
+            ],
+            "overall_score": 1.0
+          }
+        }
+      ],
+      [
+        {
+          "output": "There are **two** \"R\"s in the word \"strawberry\".\n",
+          "details": {
+            "model": "gemini/gemini-2.0-flash-exp",
+            "response_time": 1.8061139583587646,
+            "prompt_tokens": 8,
+            "completion_tokens": 16
+          }
+        },
+        {
+          "score": 0.0,
+          "passed": false,
+          "details": {
+            "evaluations": [
+              {
+                "criterion": "Answer states there are 3 Rs in strawberry",
+                "score": 0,
+                "rationale": "The submission incorrectly states that there are two 'R's in the word 'strawberry'. The correct number of 'R's is three. Therefore, the submission does not meet the criterion."
+              }
+            ],
+            "overall_score": 0.0
+          }
+        }
+      ],
+      [
+        {
+          "output": "There are **two** \"R\"s in the word \"strawberry\".\n",
+          "details": {
+            "model": "gemini/gemini-2.0-flash-exp",
+            "response_time": 1.9761772155761719,
+            "prompt_tokens": 8,
+            "completion_tokens": 16
+          }
+        },
+        {
+          "score": 0.0,
+          "passed": false,
+          "details": {
+            "evaluations": [
+              {
+                "criterion": "Answer states there are 3 Rs in strawberry",
+                "score": 0,
+                "rationale": "The submission incorrectly states that there are two 'R's in the word 'strawberry'. The correct number of 'R's is three. Therefore, the submission does not meet the criterion."
+              }
+            ],
+            "overall_score": 0.0
+          }
+        }
+      ],
+      [
+        {
+          "output": "There are **three** \"R\"s in the word \"strawberry\".\n",
+          "details": {
+            "model": "gemini/gemini-2.0-flash-exp",
+            "response_time": 1.8090550899505615,
+            "prompt_tokens": 8,
+            "completion_tokens": 16
+          }
+        },
+        {
+          "score": 1.0,
+          "passed": true,
+          "details": {
+            "evaluations": [
+              {
+                "criterion": "Answer states there are 3 Rs in strawberry",
+                "score": 1.0,
+                "rationale": "The submission explicitly states that there are \"three\" Rs in the word \"strawberry,\" which directly satisfies the checklist item. The use of the word \"three\" clearly indicates the correct count of Rs, aligning perfectly with the requirement."
+              }
+            ],
+            "overall_score": 1.0
+          }
+        }
+      ],
+      [
+        {
+          "output": "Let's count the \"R\"s in the word \"strawberry\":\n\ns**tr**awbe**rr**y\n\nThere are **two** \"R\"s in the word \"strawberry\".\n",
+          "details": {
+            "model": "gemini/gemini-2.0-flash-exp",
+            "response_time": 2.7326459884643555,
+            "prompt_tokens": 8,
+            "completion_tokens": 43
+          }
+        },
+        {
+          "score": 0.0,
+          "passed": false,
+          "details": {
+            "evaluations": [
+              {
+                "criterion": "Answer states there are 3 Rs in strawberry",
+                "score": 0,
+                "rationale": "The submission states that there are two 'R's in the word 'strawberry', which is incorrect. The correct number of 'R's in 'strawberry' is three. Therefore, the submission does not meet the criterion."
+              }
+            ],
+            "overall_score": 0.0
+          }
+        }
+      ],
+      [
+        {
+          "output": "There are **two** \"R\"s in the word \"strawberry\".\n",
+          "details": {
+            "model": "gemini/gemini-2.0-flash-exp",
+            "response_time": 1.8154072761535645,
+            "prompt_tokens": 8,
+            "completion_tokens": 16
+          }
+        },
+        {
+          "score": 0.0,
+          "passed": false,
+          "details": {
+            "evaluations": [
+              {
+                "criterion": "Answer states there are 3 Rs in strawberry",
+                "score": 0,
+                "rationale": "The submission incorrectly states that there are two 'R's in the word 'strawberry'. The correct number of 'R's is three. Therefore, the submission does not meet the criterion."
+              }
+            ],
+            "overall_score": 0.0
+          }
+        }
+      ]
+    ]
+  },
+  "tasks": {
+    "gemini-2.0-flash-exp-strawberry": {
+      "status": "failed",
+      "eval_score": 0.0,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer states there are 3 Rs in strawberry",
+            "score": 0,
+            "rationale": "The submission incorrectly states that there are two 'R's in the word 'strawberry'. The correct number of 'R's is three. Therefore, the submission does not meet the criterion."
+          }
+        ],
+        "overall_score": 0.0
+      },
+      "task_input": {
+        "question": "How many Rs are in strawberry?",
+        "model": "gemini/gemini-2.0-flash-exp",
+        "params": {
+          "timeout": 30
+        }
+      },
+      "eval_logs": [],
+      "task_output": "There are **two** \"R\"s in the word \"strawberry\".\n",
+      "created_at": "2025-01-28T11:06:13.757930",
+      "job_id": "0230caf6-d1f4-4878-a277-0ddd8f4354fc",
+      "task_details": {
+        "model": "gemini/gemini-2.0-flash-exp",
+        "response_time": 1.843893051147461,
+        "prompt_tokens": 8,
+        "completion_tokens": 16
+      },
+      "executed_at": "2025-01-28T11:06:15.606102",
+      "id": "e0b154fe-e1f9-4668-b881-38b183ff344d",
+      "task_logs": [],
+      "evaluated_at": "2025-01-28T11:06:16.173924",
+      "challenge_id": "gemini-2.0-flash-exp-strawberry",
+      "eval_spec": {
+        "id": "gemini-2.0-flash-exp-strawberry",
+        "context": "",
+        "checklist": [
+          "Answer states there are 3 Rs in strawberry"
+        ]
+      },
+      "finished_at": "2025-01-28T11:06:16.173924",
+      "task_number": 1,
+      "eval_passed": false
+    },
+    "gemini-2.0-flash-exp-strawberry_1": {
+      "status": "failed",
+      "eval_score": 0.0,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer states there are 3 Rs in strawberry",
+            "score": 0,
+            "rationale": "The submission incorrectly states that there are two 'R's in the word 'strawberry'. The correct number of 'R's is three. Therefore, the submission does not meet the criterion."
+          }
+        ],
+        "overall_score": 0.0
+      },
+      "task_input": {
+        "question": "How many Rs are in strawberry?",
+        "model": "gemini/gemini-2.0-flash-exp",
+        "params": {
+          "timeout": 30
+        }
+      },
+      "eval_logs": [],
+      "task_output": "There are **two** \"R\"s in the word \"strawberry\".\n",
+      "created_at": "2025-01-28T11:06:16.177231",
+      "job_id": "0230caf6-d1f4-4878-a277-0ddd8f4354fc",
+      "task_details": {
+        "model": "gemini/gemini-2.0-flash-exp",
+        "response_time": 2.018326997756958,
+        "prompt_tokens": 8,
+        "completion_tokens": 16
+      },
+      "executed_at": "2025-01-28T11:06:18.203086",
+      "id": "69cb7ac4-7596-4272-a81c-cc6be0144171",
+      "task_logs": [],
+      "evaluated_at": "2025-01-28T11:06:18.365338",
+      "challenge_id": "gemini-2.0-flash-exp-strawberry_1",
+      "eval_spec": {
+        "id": "gemini-2.0-flash-exp-strawberry",
+        "context": "",
+        "checklist": [
+          "Answer states there are 3 Rs in strawberry"
+        ]
+      },
+      "finished_at": "2025-01-28T11:06:18.365338",
+      "task_number": 2,
+      "eval_passed": false
+    },
+    "gemini-2.0-flash-exp-strawberry_2": {
+      "status": "failed",
+      "eval_score": 0.0,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer states there are 3 Rs in strawberry",
+            "score": 0,
+            "rationale": "The submission incorrectly states that there are two 'R's in the word 'strawberry'. The correct number of 'R's is three. Therefore, the submission does not meet the criterion."
+          }
+        ],
+        "overall_score": 0.0
+      },
+      "task_input": {
+        "question": "How many Rs are in strawberry?",
+        "model": "gemini/gemini-2.0-flash-exp",
+        "params": {
+          "timeout": 30
+        }
+      },
+      "eval_logs": [],
+      "task_output": "There are **two** \"R\"s in the word \"strawberry\".\n",
+      "created_at": "2025-01-28T11:06:18.371079",
+      "job_id": "0230caf6-d1f4-4878-a277-0ddd8f4354fc",
+      "task_details": {
+        "model": "gemini/gemini-2.0-flash-exp",
+        "response_time": 2.1264829635620117,
+        "prompt_tokens": 8,
+        "completion_tokens": 16
+      },
+      "executed_at": "2025-01-28T11:06:20.507800",
+      "id": "47a69f60-fe18-4da9-88f1-c4c568481c1c",
+      "task_logs": [],
+      "evaluated_at": "2025-01-28T11:06:20.652835",
+      "challenge_id": "gemini-2.0-flash-exp-strawberry_2",
+      "eval_spec": {
+        "id": "gemini-2.0-flash-exp-strawberry",
+        "context": "",
+        "checklist": [
+          "Answer states there are 3 Rs in strawberry"
+        ]
+      },
+      "finished_at": "2025-01-28T11:06:20.652835",
+      "task_number": 3,
+      "eval_passed": false
+    },
+    "gemini-2.0-flash-exp-strawberry_3": {
+      "status": "failed",
+      "eval_score": 0.0,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer states there are 3 Rs in strawberry",
+            "score": 0,
+            "rationale": "The submission incorrectly states that there are two 'R's in the word 'strawberry'. The correct number of 'R's is three. Therefore, the submission does not meet the criterion."
+          }
+        ],
+        "overall_score": 0.0
+      },
+      "task_input": {
+        "question": "How many Rs are in strawberry?",
+        "model": "gemini/gemini-2.0-flash-exp",
+        "params": {
+          "timeout": 30
+        }
+      },
+      "eval_logs": [],
+      "task_output": "There are **two** \"R\"s in the word \"strawberry\".\n",
+      "created_at": "2025-01-28T11:06:20.654683",
+      "job_id": "0230caf6-d1f4-4878-a277-0ddd8f4354fc",
+      "task_details": {
+        "model": "gemini/gemini-2.0-flash-exp",
+        "response_time": 2.3398447036743164,
+        "prompt_tokens": 8,
+        "completion_tokens": 16
+      },
+      "executed_at": "2025-01-28T11:06:22.999925",
+      "id": "3a70de3f-758c-43b2-9c2e-4ca489cb4aea",
+      "task_logs": [],
+      "evaluated_at": "2025-01-28T11:06:23.156573",
+      "challenge_id": "gemini-2.0-flash-exp-strawberry_3",
+      "eval_spec": {
+        "id": "gemini-2.0-flash-exp-strawberry",
+        "context": "",
+        "checklist": [
+          "Answer states there are 3 Rs in strawberry"
+        ]
+      },
+      "finished_at": "2025-01-28T11:06:23.156573",
+      "task_number": 4,
+      "eval_passed": false
+    },
+    "gemini-2.0-flash-exp-strawberry_4": {
+      "status": "completed",
+      "eval_score": 1.0,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer states there are 3 Rs in strawberry",
+            "score": 1.0,
+            "rationale": "The submission explicitly states that there are 3 'r's in the word 'strawberry'. It provides a clear count and highlights the 'r's in the word, confirming the correct number."
+          }
+        ],
+        "overall_score": 1.0
+      },
+      "task_input": {
+        "question": "How many Rs are in strawberry?",
+        "model": "gemini/gemini-2.0-flash-exp",
+        "params": {
+          "timeout": 30
+        }
+      },
+      "eval_logs": [],
+      "task_output": "Let's count them:\n\ns**t**r**r**a**w**be**rr**y\n\nThere are **3** \"r\"s in the word \"strawberry\".\n",
+      "created_at": "2025-01-28T11:06:23.159657",
+      "job_id": "0230caf6-d1f4-4878-a277-0ddd8f4354fc",
+      "task_details": {
+        "model": "gemini/gemini-2.0-flash-exp",
+        "response_time": 2.6893157958984375,
+        "prompt_tokens": 8,
+        "completion_tokens": 41
+      },
+      "executed_at": "2025-01-28T11:06:25.857538",
+      "id": "db21328e-1416-45cf-97b0-b0a73074d929",
+      "task_logs": [],
+      "evaluated_at": "2025-01-28T11:06:30.982209",
+      "challenge_id": "gemini-2.0-flash-exp-strawberry_4",
+      "eval_spec": {
+        "id": "gemini-2.0-flash-exp-strawberry",
+        "context": "",
+        "checklist": [
+          "Answer states there are 3 Rs in strawberry"
+        ]
+      },
+      "finished_at": "2025-01-28T11:06:30.982209",
+      "task_number": 5,
+      "eval_passed": true
+    },
+    "gemini-2.0-flash-exp-strawberry_5": {
+      "status": "failed",
+      "eval_score": 0.0,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer states there are 3 Rs in strawberry",
+            "score": 0,
+            "rationale": "The submission incorrectly states that there are two 'R's in the word 'strawberry'. The correct number of 'R's is three. Therefore, the submission does not meet the criterion."
+          }
+        ],
+        "overall_score": 0.0
+      },
+      "task_input": {
+        "question": "How many Rs are in strawberry?",
+        "model": "gemini/gemini-2.0-flash-exp",
+        "params": {
+          "timeout": 30
+        }
+      },
+      "eval_logs": [],
+      "task_output": "There are **two** \"R\"s in the word \"strawberry\".\n",
+      "created_at": "2025-01-28T11:06:30.988582",
+      "job_id": "0230caf6-d1f4-4878-a277-0ddd8f4354fc",
+      "task_details": {
+        "model": "gemini/gemini-2.0-flash-exp",
+        "response_time": 1.8061139583587646,
+        "prompt_tokens": 8,
+        "completion_tokens": 16
+      },
+      "executed_at": "2025-01-28T11:06:32.803667",
+      "id": "c00d00d2-0983-4a49-8a95-49e921713487",
+      "task_logs": [],
+      "evaluated_at": "2025-01-28T11:06:33.583320",
+      "challenge_id": "gemini-2.0-flash-exp-strawberry_5",
+      "eval_spec": {
+        "id": "gemini-2.0-flash-exp-strawberry",
+        "context": "",
+        "checklist": [
+          "Answer states there are 3 Rs in strawberry"
+        ]
+      },
+      "finished_at": "2025-01-28T11:06:33.583320",
+      "task_number": 6,
+      "eval_passed": false
+    },
+    "gemini-2.0-flash-exp-strawberry_6": {
+      "status": "failed",
+      "eval_score": 0.0,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer states there are 3 Rs in strawberry",
+            "score": 0,
+            "rationale": "The submission incorrectly states that there are two 'R's in the word 'strawberry'. The correct number of 'R's is three. Therefore, the submission does not meet the criterion."
+          }
+        ],
+        "overall_score": 0.0
+      },
+      "task_input": {
+        "question": "How many Rs are in strawberry?",
+        "model": "gemini/gemini-2.0-flash-exp",
+        "params": {
+          "timeout": 30
+        }
+      },
+      "eval_logs": [],
+      "task_output": "There are **two** \"R\"s in the word \"strawberry\".\n",
+      "created_at": "2025-01-28T11:06:33.588187",
+      "job_id": "0230caf6-d1f4-4878-a277-0ddd8f4354fc",
+      "task_details": {
+        "model": "gemini/gemini-2.0-flash-exp",
+        "response_time": 1.9761772155761719,
+        "prompt_tokens": 8,
+        "completion_tokens": 16
+      },
+      "executed_at": "2025-01-28T11:06:35.573806",
+      "id": "15f31a59-3376-40fc-82a2-41a6ffd99fee",
+      "task_logs": [],
+      "evaluated_at": "2025-01-28T11:06:35.741062",
+      "challenge_id": "gemini-2.0-flash-exp-strawberry_6",
+      "eval_spec": {
+        "id": "gemini-2.0-flash-exp-strawberry",
+        "context": "",
+        "checklist": [
+          "Answer states there are 3 Rs in strawberry"
+        ]
+      },
+      "finished_at": "2025-01-28T11:06:35.741062",
+      "task_number": 7,
+      "eval_passed": false
+    },
+    "gemini-2.0-flash-exp-strawberry_7": {
+      "status": "completed",
+      "eval_score": 1.0,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer states there are 3 Rs in strawberry",
+            "score": 1.0,
+            "rationale": "The submission explicitly states that there are \"three\" Rs in the word \"strawberry,\" which directly satisfies the checklist item. The use of the word \"three\" clearly indicates the correct count of Rs, aligning perfectly with the requirement."
+          }
+        ],
+        "overall_score": 1.0
+      },
+      "task_input": {
+        "question": "How many Rs are in strawberry?",
+        "model": "gemini/gemini-2.0-flash-exp",
+        "params": {
+          "timeout": 30
+        }
+      },
+      "eval_logs": [],
+      "task_output": "There are **three** \"R\"s in the word \"strawberry\".\n",
+      "created_at": "2025-01-28T11:06:35.745521",
+      "job_id": "0230caf6-d1f4-4878-a277-0ddd8f4354fc",
+      "task_details": {
+        "model": "gemini/gemini-2.0-flash-exp",
+        "response_time": 1.8090550899505615,
+        "prompt_tokens": 8,
+        "completion_tokens": 16
+      },
+      "executed_at": "2025-01-28T11:06:37.562479",
+      "id": "e1a3e7ef-4648-4ea9-8c1f-df27b9cd323a",
+      "task_logs": [],
+      "evaluated_at": "2025-01-28T11:06:38.089306",
+      "challenge_id": "gemini-2.0-flash-exp-strawberry_7",
+      "eval_spec": {
+        "id": "gemini-2.0-flash-exp-strawberry",
+        "context": "",
+        "checklist": [
+          "Answer states there are 3 Rs in strawberry"
+        ]
+      },
+      "finished_at": "2025-01-28T11:06:38.089306",
+      "task_number": 8,
+      "eval_passed": true
+    },
+    "gemini-2.0-flash-exp-strawberry_8": {
+      "status": "failed",
+      "eval_score": 0.0,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer states there are 3 Rs in strawberry",
+            "score": 0,
+            "rationale": "The submission states that there are two 'R's in the word 'strawberry', which is incorrect. The correct number of 'R's in 'strawberry' is three. Therefore, the submission does not meet the criterion."
+          }
+        ],
+        "overall_score": 0.0
+      },
+      "task_input": {
+        "question": "How many Rs are in strawberry?",
+        "model": "gemini/gemini-2.0-flash-exp",
+        "params": {
+          "timeout": 30
+        }
+      },
+      "eval_logs": [],
+      "task_output": "Let's count the \"R\"s in the word \"strawberry\":\n\ns**tr**awbe**rr**y\n\nThere are **two** \"R\"s in the word \"strawberry\".\n",
+      "created_at": "2025-01-28T11:06:38.093185",
+      "job_id": "0230caf6-d1f4-4878-a277-0ddd8f4354fc",
+      "task_details": {
+        "model": "gemini/gemini-2.0-flash-exp",
+        "response_time": 2.7326459884643555,
+        "prompt_tokens": 8,
+        "completion_tokens": 43
+      },
+      "executed_at": "2025-01-28T11:06:40.834755",
+      "id": "6e21a2b0-25cb-4a42-9470-63545f75e13d",
+      "task_logs": [],
+      "evaluated_at": "2025-01-28T11:06:46.788029",
+      "challenge_id": "gemini-2.0-flash-exp-strawberry_8",
+      "eval_spec": {
+        "id": "gemini-2.0-flash-exp-strawberry",
+        "context": "",
+        "checklist": [
+          "Answer states there are 3 Rs in strawberry"
+        ]
+      },
+      "finished_at": "2025-01-28T11:06:46.788029",
+      "task_number": 9,
+      "eval_passed": false
+    },
+    "gemini-2.0-flash-exp-strawberry_9": {
+      "status": "failed",
+      "eval_score": 0.0,
+      "error": null,
+      "eval_details": {
+        "evaluations": [
+          {
+            "criterion": "Answer states there are 3 Rs in strawberry",
+            "score": 0,
+            "rationale": "The submission incorrectly states that there are two 'R's in the word 'strawberry'. The correct number of 'R's is three. Therefore, the submission does not meet the criterion."
+          }
+        ],
+        "overall_score": 0.0
+      },
+      "task_input": {
+        "question": "How many Rs are in strawberry?",
+        "model": "gemini/gemini-2.0-flash-exp",
+        "params": {
+          "timeout": 30
+        }
+      },
+      "eval_logs": [],
+      "task_output": "There are **two** \"R\"s in the word \"strawberry\".\n",
+      "created_at": "2025-01-28T11:06:46.792333",
+      "job_id": "0230caf6-d1f4-4878-a277-0ddd8f4354fc",
+      "task_details": {
+        "model": "gemini/gemini-2.0-flash-exp",
+        "response_time": 1.8154072761535645,
+        "prompt_tokens": 8,
+        "completion_tokens": 16
+      },
+      "executed_at": "2025-01-28T11:06:48.614052",
+      "id": "c6b52216-5a2a-43e4-a9c6-385dec911500",
+      "task_logs": [],
+      "evaluated_at": "2025-01-28T11:06:48.766031",
+      "challenge_id": "gemini-2.0-flash-exp-strawberry_9",
+      "eval_spec": {
+        "id": "gemini-2.0-flash-exp-strawberry",
+        "context": "",
+        "checklist": [
+          "Answer states there are 3 Rs in strawberry"
+        ]
+      },
+      "finished_at": "2025-01-28T11:06:48.766031",
+      "task_number": 10,
+      "eval_passed": false
+    }
+  }
+}
