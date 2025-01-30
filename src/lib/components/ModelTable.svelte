@@ -1,6 +1,8 @@
 <script>
   import { createEventDispatcher } from 'svelte';
   import ModelRow from './ModelRow.svelte';
+  import { flip } from 'svelte/animate';
+  import { fade, fly } from 'svelte/transition';
   const dispatch = createEventDispatcher();
 
   export let families;
@@ -32,6 +34,19 @@
     return [...(bestModel ? [bestModel] : []), ...otherModels]
       .map(model => model.avgTokens || 0);
   }));
+
+  // Flatten visible models for animation
+  $: visibleModels = families.flatMap(family => {
+    const bestModel = family.models[0];
+    const otherModels = expandedFamilies.has(family.name) ? family.models.slice(1) : [];
+    return [...(bestModel ? [bestModel] : []), ...otherModels].map(model => ({
+      model,
+      family,
+      hasExpandButton: true,
+      isExpandButtonVisible: family.models.length > 1 && model === bestModel,
+      isExpanded: expandedFamilies.has(family.name)
+    }));
+  });
 </script>
 
 <div class="overflow-x-auto">
@@ -77,39 +92,28 @@
       </tr>
     </thead>
     <tbody>
-      {#each families as family}
-        {@const bestModel = family.models[0]}
-        {@const hasMoreModels = family.models.length > 1}
-        
-        <!-- Best model in family -->
-        <ModelRow 
-          model={bestModel}
-          {family}
-          {maxCost}
-          {maxResponseTime}
-          {maxTokens}
-          {providers}
-          hasExpandButton={true}
-          isExpandButtonVisible={hasMoreModels}
-          isExpanded={expandedFamilies.has(family.name)}
-          on:showDetails
-          on:toggleExpand={() => dispatch('toggleFamily', { family: family.name })}
-        />
-
-        <!-- Other models in family when expanded -->
-        {#if expandedFamilies.has(family.name) && hasMoreModels}
-          {#each family.models.slice(1) as model}
-            <ModelRow 
-              {model}
-              {family}
-              {maxCost}
-              {maxResponseTime}
-              {maxTokens}
-              {providers}
-              on:showDetails
-            />
-          {/each}
-        {/if}
+      {#each visibleModels as { model, family, hasExpandButton, isExpandButtonVisible, isExpanded } (model.id)}
+        <tr 
+          class="hover:bg-base-200 cursor-pointer {!hasExpandButton ? 'bg-base-200/30' : ''}"
+          on:click={() => dispatch('showDetails', { model })}
+          animate:flip={{duration: 700}}
+          in:fly|local={{y: 20, duration: 700}}
+          out:fade|local
+        >
+          <ModelRow 
+            {model}
+            {family}
+            {maxCost}
+            {maxResponseTime}
+            {maxTokens}
+            {providers}
+            {hasExpandButton}
+            {isExpandButtonVisible}
+            {isExpanded}
+            on:showDetails
+            on:toggleExpand={() => dispatch('toggleFamily', { family: family.name })}
+          />
+        </tr>
       {/each}
     </tbody>
   </table>

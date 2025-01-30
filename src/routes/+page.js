@@ -74,7 +74,8 @@ export async function load({ fetch }) {
           const result = {
             name: modelConfig.display_name,
             family: modelConfig.family,
-            order: index, // Use the index within this group's models array
+            id: `${modelConfig.family}-${modelConfig.display_name}`,
+            order: index,
             passed,
             passRate,
             totalTests,

@@ -48,90 +48,85 @@
   $: tokenPercentage = maxTokens > 0 ? (model.avgTokens / maxTokens * 100) : 0;
 </script>
 
-<tr 
-  class="hover:bg-base-200 cursor-pointer {!hasExpandButton ? 'bg-base-200/30' : ''}" 
-  on:click={() => dispatch('showDetails', { model })}
->
-  <td class="flex items-center py-2">
-    <div class="w-8 flex items-center justify-start">
-      {#if isExpandButtonVisible}
-        <button 
-          class="btn btn-xs btn-ghost" 
-          on:click|stopPropagation={() => dispatch('toggleExpand')}
-        >
-          {isExpanded ? '▼' : '▶'}
-        </button>
-      {:else}
-        <div class="w-8"></div>
+<td class="flex items-center py-2">
+  <div class="w-8 flex items-center justify-start">
+    {#if isExpandButtonVisible}
+      <button 
+        class="btn btn-xs btn-ghost" 
+        on:click|stopPropagation={() => dispatch('toggleExpand')}
+      >
+        {isExpanded ? '▼' : '▶'}
+      </button>
+    {:else}
+      <div class="w-8"></div>
+    {/if}
+  </div>
+  <div>
+    <span>
+      {#if providerName}
+        <span class="text-base-content/70">{providerName} / </span>
       {/if}
+      {model.name}
+    </span>
+  </div>
+</td>
+<td class="py-2">
+  {#if model.passed}
+    <span class="badge badge-success text-white">PASSED</span>
+  {:else}
+    <span class="badge badge-error text-white">FAILED</span>
+  {/if}
+</td>
+<td class="py-2">
+  <div class="flex gap-2 items-center">
+    <div class="flex gap-px items-center">
+      {#each getPassRateSegments(model.passRate, model.totalTests) as passed}
+        <div class="w-2 h-4 {passed ? 'bg-success' : 'bg-error'}"></div>
+      {/each}
     </div>
-    <div>
-      <span>
-        {#if providerName}
-          <span class="text-base-content/70">{providerName} / </span>
-        {/if}
-        {model.name}
-      </span>
-    </div>
-  </td>
-  <td class="py-2">
-    {#if model.passed}
-      <span class="badge badge-success text-white">PASSED</span>
-    {:else}
-      <span class="badge badge-error text-white">FAILED</span>
-    {/if}
-  </td>
-  <td class="py-2">
-    <div class="flex gap-2 items-center">
-      <div class="flex gap-px items-center">
-        {#each getPassRateSegments(model.passRate, model.totalTests) as passed}
-          <div class="w-2 h-4 {passed ? 'bg-success' : 'bg-error'}"></div>
-        {/each}
-      </div>
-      <span class="text-sm tabular-nums">{model.passRate}/{model.totalTests}</span>
-    </div>
-  </td>
-  <td class="py-2">
-    <div class="flex items-center gap-2 tooltip" data-tip="Min: {model.minTokens} tokens
+    <span class="text-sm tabular-nums">{model.passRate}/{model.totalTests}</span>
+  </div>
+</td>
+<td class="py-2">
+  <div class="flex items-center gap-2 tooltip" data-tip="Min: {model.minTokens} tokens
 Max: {model.maxTokens} tokens">
-      <div class="flex flex-col" style="width: 100px">
-        <div class="flex items-center gap-2">
-          <span class="font-semibold">{Math.round(model.avgTokens)}</span>
-          <span class="text-xs text-base-content/50">±{getMaxDeltaPercent(model.minTokens, model.maxTokens, model.avgTokens).toFixed(0)}%</span>
-        </div>
-        <div class="h-[2px] bg-error/30 mt-0.5" style="width: {Math.max(tokenPercentage, 5)}%"></div>
-      </div>
-    </div>
-  </td>
-  <td class="py-2">
-    {#if model.hasPricing}
+    <div class="flex flex-col" style="width: 100px">
       <div class="flex items-center gap-2">
-        <div class="tooltip" data-tip="Min: {formatCost(model.minCost)}, Max: {formatCost(model.maxCost)}
-Cost: {formatPrice(family.price_input_tokens)}/{formatPrice(family.price_output_tokens)} per 1M tokens (in/out)">
-          <div class="flex flex-col" style="width: 100px">
-            <div class="flex items-center gap-2">
-              <span class="font-mono">{formatCost(model.avgCost)}</span>
-              <span class="text-xs text-base-content/50">±{getMaxDeltaPercent(model.minCost, model.maxCost, model.avgCost).toFixed(0)}%</span>
-            </div>
-            {#if model.avgCost != null && maxCost > 0}
-              <div class="h-[2px] bg-error/30 mt-0.5" style="width: {Math.max(costPercentage, 5)}%"></div>
-            {/if}
-          </div>
-        </div>
+        <span class="font-semibold">{Math.round(model.avgTokens)}</span>
+        <span class="text-xs text-base-content/50">±{getMaxDeltaPercent(model.minTokens, model.maxTokens, model.avgTokens).toFixed(0)}%</span>
       </div>
-    {:else}
-      <span class="text-base-content/50">-</span>
-    {/if}
-  </td>
-  <td class="py-2">
-    <div class="flex items-center gap-2 tooltip" data-tip="Min: {formatTime(model.minResponseTime)}s, Max: {formatTime(model.maxResponseTime)}s">
-      <div class="flex flex-col" style="width: 100px">
-        <div class="flex items-center gap-2">
-          <span class="font-semibold">{formatTime(model.avgResponseTime)}s</span>
-          <span class="text-xs text-base-content/50">±{getMaxDeltaPercent(model.minResponseTime, model.maxResponseTime, model.avgResponseTime).toFixed(0)}%</span>
+      <div class="h-[2px] bg-error/30 mt-0.5" style="width: {Math.max(tokenPercentage, 5)}%"></div>
+    </div>
+  </div>
+</td>
+<td class="py-2">
+  {#if model.hasPricing}
+    <div class="flex items-center gap-2">
+      <div class="tooltip" data-tip="Min: {formatCost(model.minCost)}, Max: {formatCost(model.maxCost)}
+Cost: {formatPrice(family.price_input_tokens)}/{formatPrice(family.price_output_tokens)} per 1M tokens (in/out)">
+        <div class="flex flex-col" style="width: 100px">
+          <div class="flex items-center gap-2">
+            <span class="font-mono">{formatCost(model.avgCost)}</span>
+            <span class="text-xs text-base-content/50">±{getMaxDeltaPercent(model.minCost, model.maxCost, model.avgCost).toFixed(0)}%</span>
+          </div>
+          {#if model.avgCost != null && maxCost > 0}
+            <div class="h-[2px] bg-error/30 mt-0.5" style="width: {Math.max(costPercentage, 5)}%"></div>
+          {/if}
         </div>
-        <div class="h-[2px] bg-error/30 mt-0.5" style="width: {Math.max(responseTimePercentage, 5)}%"></div>
       </div>
     </div>
-  </td>
-</tr> 
+  {:else}
+    <span class="text-base-content/50">-</span>
+  {/if}
+</td>
+<td class="py-2">
+  <div class="flex items-center gap-2 tooltip" data-tip="Min: {formatTime(model.minResponseTime)}s, Max: {formatTime(model.maxResponseTime)}s">
+    <div class="flex flex-col" style="width: 100px">
+      <div class="flex items-center gap-2">
+        <span class="font-semibold">{formatTime(model.avgResponseTime)}s</span>
+        <span class="text-xs text-base-content/50">±{getMaxDeltaPercent(model.minResponseTime, model.maxResponseTime, model.avgResponseTime).toFixed(0)}%</span>
+      </div>
+      <div class="h-[2px] bg-error/30 mt-0.5" style="width: {Math.max(responseTimePercentage, 5)}%"></div>
+    </div>
+  </div>
+</td> 
