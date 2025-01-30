@@ -11,6 +11,8 @@ providers:
     display_name: Anthropic
   - name: xai
     display_name: XAI
+  - name: mistralai
+    display_name: Mistral
 
 families:
   - name: o1
@@ -97,6 +99,12 @@ families:
     price_input_tokens: 3.0
     price_output_tokens: 12.0
 
+  - name: mistral-large
+    provider: mistralai
+    description: Mistral's Mistral Large
+    price_input_tokens: 2.0
+    price_output_tokens: 2.0
+
 tests:
   strawberry:
     name: 🍓
@@ -170,6 +178,10 @@ tests:
         family: llama-3.3
         display_name: Llama 3.3 (70B)
 
+      - file: s3/mistralai-mistral-large-2411.json
+        family: mistral-large
+        display_name: Mistral Large (2411)
+
   rephrased:
     name: 🍓 Rephrased
     description: How many Rs are in strawberry? - asked in different ways
@@ -221,6 +233,10 @@ tests:
       - file: s3rephrased/anthropic-claude-3-opus-20240229.json
         family: claude-3-opus
         display_name: Claude 3 Opus (2024-02-29)
+
+      - file: s3rephrased/mistralai-mistral-large-2411.json
+        family: mistral-large
+        display_name: Mistral Large (2411)
 
       - file: s3rephrased/anthropic-claude-3-5-sonnet-20241022.json
         family: claude-3-5-sonnet
@@ -313,3 +329,7 @@ tests:
       - file: countries/meta-llama-3.1-405b-instruct.json
         family: llama-3.1
         display_name: Llama 3.1 (405B)
+
+      - file: countries/mistralai-mistral-large-2411.json
+        family: mistral-large
+        display_name: Mistral Large (2411)
