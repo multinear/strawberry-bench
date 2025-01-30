@@ -107,7 +107,6 @@
             {maxResponseTime}
             {maxTokens}
             {providers}
-            {hasExpandButton}
             {isExpandButtonVisible}
             {isExpanded}
             on:showDetails

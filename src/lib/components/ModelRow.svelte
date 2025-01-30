@@ -9,7 +9,6 @@
   export let maxTokens;
   export let providers;
   export let isExpanded = false;
-  export let hasExpandButton = false;
   export let isExpandButtonVisible = false;
 
   // Get provider display name
@@ -107,7 +106,7 @@ Cost: {formatPrice(family.price_input_tokens)}/{formatPrice(family.price_output_
         <div class="flex flex-col" style="width: 100px">
           <div class="flex items-center gap-2">
             <span class="font-mono">{formatCost(model.avgCost)}</span>
-            <span class="text-xs text-base-content/50">±{getMaxDeltaPercent(model.minCost, model.maxCost, model.avgCost).toFixed(0)}%</span>
+            <!-- <span class="text-xs text-base-content/50">±{getMaxDeltaPercent(model.minCost, model.maxCost, model.avgCost).toFixed(0)}%</span> -->
           </div>
           {#if model.avgCost != null && maxCost > 0}
             <div class="h-[2px] bg-error/30 mt-0.5" style="width: {Math.max(costPercentage, 5)}%"></div>
