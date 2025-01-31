@@ -95,9 +95,15 @@ families:
 
   - name: o1-mini
     provider: openai
-    description: OpenAI's o1-Mini
+    description: OpenAI's o1-mini
     price_input_tokens: 3.0
     price_output_tokens: 12.0
+
+  - name: o3-mini
+    provider: openai
+    description: OpenAI's o3-mini
+    price_input_tokens: 1.1
+    price_output_tokens: 4.4
 
   - name: mistral-large
     provider: mistralai
@@ -117,6 +123,14 @@ tests:
       - file: s3/openai-o1-2024-12-17-high.json
         family: o1
         display_name: o1 (2024-12-17 High Reasoning)
+
+      - file: s3/openai-o3-mini-2025-01-31-low.json
+        family: o3-mini
+        display_name: o3-mini (2025-01-31)
+
+      - file: s3/openai-o3-mini-2025-01-31-high.json
+        family: o3-mini
+        display_name: o3-mini (2025-01-31 High Reasoning)
 
       - file: s3/openai-gpt-4o-2024-11-20.json
         family: gpt-4o
@@ -194,6 +208,14 @@ tests:
         family: o1
         display_name: o1 (2024-12-17 High Reasoning)
 
+      - file: s3rephrased/openai-o3-mini-2025-01-31-low.json
+        family: o3-mini
+        display_name: o3-mini (2025-01-31)
+
+      - file: s3rephrased/openai-o3-mini-2025-01-31-high.json
+        family: o3-mini
+        display_name: o3-mini (2025-01-31 High Reasoning)
+
       - file: s3rephrased/xai-grok-2-1212.json
         family: grok-2
         display_name: Grok 2 (1212)
@@ -266,13 +288,21 @@ tests:
         family: o1
         display_name: o1 (2024-12-17 High Reasoning)
 
-      - file: countries/deepseek-r1.json
-        family: deepseek-r1
-        display_name: R1
-
       - file: countries/openai-o1-2024-12-17-low.json
         family: o1
         display_name: o1 (2024-12-17)
+
+      - file: countries/openai-o3-mini-2025-01-31-high.json
+        family: o3-mini
+        display_name: o3-mini (2025-01-31 High Reasoning)
+
+      - file: countries/openai-o3-mini-2025-01-31-low.json
+        family: o3-mini
+        display_name: o3-mini (2025-01-31)
+
+      - file: countries/deepseek-r1.json
+        family: deepseek-r1
+        display_name: R1
 
       - file: countries/openai-o1-mini-2024-09-12.json
         family: o1-mini
