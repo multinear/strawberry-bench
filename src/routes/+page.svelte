@@ -13,6 +13,7 @@
   let expandedFamilies = new Set();
   let sortField = 'order';
   let sortDirection = 'asc';
+  let filterQuery = '';
 
   const selectedTestGroup = writable(null);
 
@@ -143,6 +144,19 @@
       return (a.sortValue > b.sortValue ? 1 : -1) * direction;
     });
 
+  // Filter models based on search query
+  $: filteredFamilies = sortedFamilies.map(family => ({
+    ...family,
+    models: family.models.filter(model => {
+      if (!filterQuery) return true;
+      
+      const searchStr = `${family.provider} ${model.name}`.toLowerCase();
+      const terms = filterQuery.toLowerCase().split('|').map(term => term.trim());
+      
+      return terms.some(term => searchStr.includes(term));
+    })
+  })).filter(family => family.models.length > 0);
+
   // Get family config by name
   function getFamilyConfig(familyName) {
     return data.families.find(f => f.name === familyName);
@@ -169,20 +183,31 @@
   <h1 class="text-3xl font-bold mb-6">Strawberry Bench 🍓</h1>
 
   <div class="flex justify-between items-center mb-6">
-    <div class="flex items-center gap-2">
+    <div class="flex items-center gap-4">
       {#if currentTestGroup && currentTestGroup.description}
-        <p class="text-base-content/70 mt-2 pl-4">{currentTestGroup.description}</p>
+        <p class="text-base-content/70">{currentTestGroup.description}</p>
       {/if}  
     </div>
-    <div class="flex items-center gap-2">
-      {#each Object.entries(data.testGroups) as [id, group]}
-        <button 
-          class="btn btn-sm {$selectedTestGroup === id ? 'bg-base-200 border-base-content/20' : 'btn-ghost'}"
-          on:click={() => selectedTestGroup.set(id)}
-        >
-          {group.name}
-        </button>
-      {/each}
+    <div class="flex items-center gap-6">
+      <div class="join">
+        <!-- <div class="join-item flex items-center bg-base-200 px-3 text-base-content/50">🔍</div> -->
+        <input 
+          type="text" 
+          bind:value={filterQuery}
+          placeholder="Filter models..." 
+          class="input join-item input-sm w-48 bg-base-200 focus:outline-none"
+        />
+      </div>
+      <div class="flex items-center gap-2">
+        {#each Object.entries(data.testGroups) as [id, group]}
+          <button 
+            class="btn btn-sm {$selectedTestGroup === id ? 'bg-base-200 border-base-content/20' : 'btn-ghost'}"
+            on:click={() => selectedTestGroup.set(id)}
+          >
+            {group.name}
+          </button>
+        {/each}
+      </div>
     </div>
   </div>
   
@@ -190,7 +215,7 @@
     {sortField}
     {sortDirection}
     {expandedFamilies}
-    families={sortedFamilies}
+    families={filteredFamilies}
     providers={data.providers}
     on:toggleSort={handleTableEvent}
     on:showDetails={handleTableEvent}
