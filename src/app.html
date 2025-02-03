@@ -7,18 +7,15 @@
     <title>🍓 Bench</title>
     %sveltekit.head%
 
-    <!-- Google Analytics (production only) -->
-    %sveltekit.env.PROD%
-      <!-- Google tag (gtag.js) -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-TZJGY7TZ8F"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TZJGY7TZ8F"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-        gtag('config', 'G-TZJGY7TZ8F');
-      </script>
-    %/sveltekit.env.PROD%
+      gtag('config', 'G-TZJGY7TZ8F');
+    </script>
   </head>
   <body data-sveltekit-preload-data="hover">
     <div style="display: contents">%sveltekit.body%</div>
