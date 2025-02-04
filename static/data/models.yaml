@@ -13,6 +13,8 @@ providers:
     display_name: XAI
   - name: mistralai
     display_name: Mistral
+  - name: alibaba
+    display_name: Alibaba
 
 families:
   - name: o1
@@ -111,6 +113,12 @@ families:
     price_input_tokens: 2.0
     price_output_tokens: 2.0
 
+  - name: qwen-max
+    provider: alibaba
+    description: Alibaba's Qwen Max
+    price_input_tokens: 1.6
+    price_output_tokens: 6.4
+
 tests:
   strawberry:
     name: 🍓
@@ -147,6 +155,10 @@ tests:
       - file: s3/deepseek-r1.json
         family: deepseek-r1
         display_name: R1
+
+      - file: s3/alibaba-qwen-max.json
+        family: qwen-max
+        display_name: Qwen 2.5 Max
 
       - file: s3/anthropic-claude-3-opus-20240229.json
         family: claude-3-opus
@@ -227,6 +239,10 @@ tests:
       - file: s3rephrased/deepseek-v3.json
         family: deepseek-v3
         display_name: V3
+
+      - file: s3rephrased/alibaba-qwen-max.json
+        family: qwen-max
+        display_name: Qwen 2.5 Max
 
       - file: s3rephrased/openai-gpt-4o-2024-11-20.json
         family: gpt-4o
@@ -363,3 +379,7 @@ tests:
       - file: countries/mistralai-mistral-large-2411.json
         family: mistral-large
         display_name: Mistral Large (2411)
+
+      - file: countries/alibaba-qwen-max.json
+        family: qwen-max
+        display_name: Qwen 2.5 Max
