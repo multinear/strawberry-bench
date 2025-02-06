@@ -119,6 +119,12 @@ families:
     price_input_tokens: 1.6
     price_output_tokens: 6.4
 
+  - name: gemini-pro
+    provider: google
+    description: Google's Gemini Pro
+    price_input_tokens: 1.25
+    price_output_tokens: 5
+
 tests:
   strawberry:
     name: 🍓
@@ -147,6 +153,10 @@ tests:
       - file: s3/openai-gpt-4o-2024-08-06.json
         family: gpt-4o
         display_name: gpt-4o (2024-08-06)
+
+      - file: s3/google-gemini-2.0-pro-exp-02-05.json
+        family: gemini-pro
+        display_name: Gemini 2.0 Pro
 
       - file: s3/xai-grok-2-1212.json
         family: grok-2
@@ -235,6 +245,10 @@ tests:
       - file: s3rephrased/deepseek-r1.json
         family: deepseek-r1
         display_name: R1
+
+      - file: s3rephrased/google-gemini-2.0-pro-exp-02-05.json
+        family: gemini-pro
+        display_name: Gemini 2.0 Pro
 
       - file: s3rephrased/deepseek-v3.json
         family: deepseek-v3
@@ -355,6 +369,10 @@ tests:
       - file: countries/anthropic-claude-3-5-haiku-20241022.json
         family: claude-3-5-haiku
         display_name: Claude 3.5 Haiku (2024-10-22)
+
+      - file: countries/google-gemini-2.0-pro-exp-02-05.json
+        family: gemini-pro
+        display_name: Gemini 2.0 Pro
 
       - file: countries/google-gemini-2.0-flash-exp.json
         family: gemini-flash
