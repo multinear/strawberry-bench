@@ -418,6 +418,10 @@ tests:
         family: gemini-flash-thinking
         display_name: Gemini Flash 2.0 (Thinking)
 
+      - file: poem/deepseek-r1.json
+        family: deepseek-r1
+        display_name: R1
+
       - file: poem/openai-gpt-4o-2024-11-20.json
         family: gpt-4o
         display_name: gpt-4o (2024-11-20)
