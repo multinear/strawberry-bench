@@ -401,3 +401,35 @@ tests:
       - file: countries/alibaba-qwen-max.json
         family: qwen-max
         display_name: Qwen 2.5 Max
+
+  poem:
+    name: 🪶 Poem
+    description: Compose a poem about a haircut - from Stanislaw Lem's Cyberiad
+    models:
+      - file: poem/anthropic-claude-3-5-sonnet-20241022.json
+        family: claude-3-5-sonnet
+        display_name: Claude 3.5 Sonnet (2024-10-22)
+
+      - file: poem/openai-o3-mini-2025-01-31-high.json
+        family: o3-mini
+        display_name: o3-mini (2025-01-31 High Reasoning)
+
+      - file: poem/google-gemini-2.0-flash-thinking-exp-01-21.json
+        family: gemini-flash-thinking
+        display_name: Gemini Flash 2.0 (Thinking)
+
+      - file: poem/openai-gpt-4o-2024-11-20.json
+        family: gpt-4o
+        display_name: gpt-4o (2024-11-20)
+
+      - file: poem/openai-gpt-4o-2024-08-06.json
+        family: gpt-4o
+        display_name: gpt-4o (2024-08-06)
+
+      - file: poem/xai-grok-2-1212.json
+        family: grok-2
+        display_name: Grok 2 (1212)
+
+      - file: poem/alibaba-qwen-max.json
+        family: qwen-max
+        display_name: Qwen 2.5 Max
