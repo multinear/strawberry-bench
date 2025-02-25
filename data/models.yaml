@@ -77,6 +77,12 @@ families:
     price_input_tokens: 2.0
     price_output_tokens: 10.0
 
+  - name: claude-3-7-sonnet-thinking
+    provider: anthropic
+    description: Anthropic's Claude 3.7 Sonnet (Thinking)
+    price_input_tokens: 3.0
+    price_output_tokens: 15.0
+
   - name: claude-3-5-sonnet
     provider: anthropic
     description: Anthropic's Claude 3.5 Sonnet
@@ -198,6 +204,14 @@ tests:
         family: gemini-flash
         display_name: Gemini Flash 1.5
 
+      - file: s3/anthropic-claude-3-7-sonnet-20250219-thinking.json
+        family: claude-3-7-sonnet-thinking
+        display_name: Claude 3.7 Sonnet (2025-02-19 Thinking)
+        
+      - file: s3/anthropic-claude-3-7-sonnet-20250219.json
+        family: claude-3-5-sonnet
+        display_name: Claude 3.7 Sonnet (2025-02-19)
+
       - file: s3/anthropic-claude-3-5-haiku-20241022.json
         family: claude-3-5-haiku
         display_name: Claude 3.5 Haiku (2024-10-22)
@@ -241,6 +255,10 @@ tests:
       - file: s3rephrased/xai-grok-2-1212.json
         family: grok-2
         display_name: Grok 2 (1212)
+
+      - file: s3rephrased/anthropic-claude-3-7-sonnet-20250219-thinking.json
+        family: claude-3-7-sonnet-thinking
+        display_name: Claude 3.7 Sonnet (2025-02-19 Thinking)
 
       - file: s3rephrased/deepseek-r1.json
         family: deepseek-r1
@@ -290,6 +308,10 @@ tests:
         family: mistral-large
         display_name: Mistral Large (2411)
 
+      - file: s3rephrased/anthropic-claude-3-7-sonnet-20250219.json
+        family: claude-3-5-sonnet
+        display_name: Claude 3.7 Sonnet (2025-02-19)
+        
       - file: s3rephrased/anthropic-claude-3-5-sonnet-20241022.json
         family: claude-3-5-sonnet
         display_name: Claude 3.5 Sonnet (2024-10-22)
@@ -338,6 +360,10 @@ tests:
         family: o1-mini
         display_name: o1-mini (2024-09-12)
 
+      - file: countries/anthropic-claude-3-7-sonnet-20250219-thinking.json
+        family: claude-3-7-sonnet-thinking
+        display_name: Claude 3.7 Sonnet (2025-02-19 Thinking)        
+
       - file: countries/google-gemini-2.0-flash-thinking-exp-01-21.json
         family: gemini-flash-thinking
         display_name: Gemini Flash 2.0 (Thinking)
@@ -361,6 +387,10 @@ tests:
       - file: countries/anthropic-claude-3-opus-20240229.json
         family: claude-3-opus
         display_name: Claude 3 Opus (2024-02-29)
+
+      - file: countries/anthropic-claude-3-7-sonnet-20250219.json
+        family: claude-3-5-sonnet
+        display_name: Claude 3.7 Sonnet (2025-02-19)
 
       - file: countries/anthropic-claude-3-5-sonnet-20241022.json
         family: claude-3-5-sonnet
@@ -406,6 +436,14 @@ tests:
     name: 🪶 Poem
     description: Compose a poem about a haircut - from Stanislaw Lem's Cyberiad
     models:
+      - file: poem/anthropic-claude-3-7-sonnet-20250219-thinking.json
+        family: claude-3-7-sonnet-thinking
+        display_name: Claude 3.7 Sonnet (2025-02-19 Thinking)
+
+      - file: poem/anthropic-claude-3-7-sonnet-20250219.json
+        family: claude-3-5-sonnet
+        display_name: Claude 3.7 Sonnet (2025-02-19)
+
       - file: poem/anthropic-claude-3-5-sonnet-20241022.json
         family: claude-3-5-sonnet
         display_name: Claude 3.5 Sonnet (2024-10-22)
