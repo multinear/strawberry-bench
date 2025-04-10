@@ -35,6 +35,12 @@ families:
     price_input_tokens: 0.15
     price_output_tokens: 0.6
 
+  - name: gpt-4.5
+    provider: openai
+    description: OpenAI's GPT-4.5 (Preview)
+    price_input_tokens: 75.0
+    price_output_tokens: 150.0
+
   - name: deepseek-r1
     provider: deepseek
     description: DeepSeek's DeepSeek R1
@@ -76,6 +82,12 @@ families:
     description: XAI's Grok 2
     price_input_tokens: 2.0
     price_output_tokens: 10.0
+
+  - name: grok-3
+    provider: xai
+    description: XAI's Grok 3
+    price_input_tokens: 3.0
+    price_output_tokens: 15.0
 
   - name: claude-3-7-sonnet-thinking
     provider: anthropic
@@ -131,6 +143,12 @@ families:
     price_input_tokens: 1.25
     price_output_tokens: 5
 
+  - name: gemini-pro-2.5
+    provider: google
+    description: Google's Gemini Pro 2.5
+    price_input_tokens: 1.25
+    price_output_tokens: 10
+
 tests:
   strawberry:
     name: 🍓
@@ -159,6 +177,10 @@ tests:
       - file: s3/openai-gpt-4o-2024-08-06.json
         family: gpt-4o
         display_name: gpt-4o (2024-08-06)
+      
+      - file: s3/google-gemini-2.5-pro-exp-03-25.json
+        family: gemini-pro-2.5
+        display_name: Gemini 2.5 Pro
 
       - file: s3/google-gemini-2.0-pro-exp-02-05.json
         family: gemini-pro
@@ -255,6 +277,10 @@ tests:
       - file: s3rephrased/xai-grok-2-1212.json
         family: grok-2
         display_name: Grok 2 (1212)
+
+      - file: s3rephrased/google-gemini-2.5-pro-exp-03-25.json
+        family: gemini-pro-2.5
+        display_name: Gemini 2.5 Pro
 
       - file: s3rephrased/anthropic-claude-3-7-sonnet-20250219-thinking.json
         family: claude-3-7-sonnet-thinking
@@ -364,6 +390,10 @@ tests:
         family: claude-3-7-sonnet-thinking
         display_name: Claude 3.7 Sonnet (2025-02-19 Thinking)        
 
+      - file: countries/google-gemini-2.5-pro-exp-03-25.json
+        family: gemini-pro-2.5
+        display_name: Gemini 2.5 Pro
+
       - file: countries/google-gemini-2.0-flash-thinking-exp-01-21.json
         family: gemini-flash-thinking
         display_name: Gemini Flash 2.0 (Thinking)
@@ -375,6 +405,14 @@ tests:
       - file: countries/openai-gpt-4o-mini-2024-07-18.json
         family: gpt-4o-mini
         display_name: gpt-4o-mini (2024-07-18)
+
+      - file: countries/openai-gpt-4.5-preview.json
+        family: gpt-4.5
+        display_name: gpt-4.5 (Preview)
+
+      - file: countries/xai-grok-3.json
+        family: grok-3
+        display_name: Grok 3
 
       - file: countries/xai-grok-2-1212.json
         family: grok-2
@@ -452,10 +490,22 @@ tests:
         family: o3-mini
         display_name: o3-mini (2025-01-31 High Reasoning)
 
+      - file: poem/google-gemini-2.5-pro-exp-03-25.json
+        family: gemini-pro-2.5
+        display_name: Gemini 2.5 Pro
+
       - file: poem/google-gemini-2.0-flash-thinking-exp-01-21.json
         family: gemini-flash-thinking
         display_name: Gemini Flash 2.0 (Thinking)
 
+      - file: poem/openai-gpt-4.5-preview.json
+        family: gpt-4.5
+        display_name: gpt-4.5 (Preview)
+
+      - file: poem/xai-grok-3.json
+        family: grok-3
+        display_name: Grok 3
+        
       - file: poem/deepseek-r1.json
         family: deepseek-r1
         display_name: R1
